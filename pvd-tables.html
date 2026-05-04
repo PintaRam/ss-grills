@@ -2,33 +2,211 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="SS Grills Works Mumbai - Custom Stainless Steel Window Grills, Door Grills, Balcony Safety Grills | Premium 304 & 316 Grade">
-    <meta name="keywords" content="SS Grills Mumbai, Window Grills, Door Grills, Balcony Grills, Safety Grills, Stainless Steel Grills">
-    <title>SS Grills Works - Premium Stainless Steel Grills Mumbai | SS Grills</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description" content="PVD Center Tables Mumbai Bangalore | Luxury Gold Rose Gold Bronze SS Tables | Premium PVD Coated Furniture 2024 | Designer Center Tables India | Latest Luxury Tables">
+    <meta name="keywords" content="PVD Tables Mumbai, PVD Center Tables Bangalore, Gold PVD Furniture, Rose Gold Tables, Luxury SS Tables India, PVD Coated Tables 2024, Designer Center Tables, Premium Furniture">
+    <title>PVD Center Tables Mumbai Bangalore | Luxury Gold Rose Gold Bronze SS Tables 2024 | Shree Ashish Industries</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/service-page.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/mobile-responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .catalogue-hero {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            padding: 120px 0 80px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        .catalogue-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('images/SS PVD Table/SS Table/SS PVD Table 1.jpg') center/cover;
+            opacity: 0.15;
+        }
+        .catalogue-hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        .catalogue-hero p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .catalogue-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 30px;
+            padding: 60px 0;
+        }
+        .catalogue-item {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .catalogue-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(211, 65, 63, 0.2);
+        }
+        .catalogue-item img {
+            width: 100%;
+            height: 350px;
+            object-fit: contain;
+            background: #f8f8f8;
+            padding: 15px;
+        }
+        .catalogue-info {
+            padding: 25px;
+        }
+        .catalogue-info h3 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+        }
+        .catalogue-info p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .catalogue-badge {
+            display: inline-block;
+            background: #D3413F;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-top: 10px;
+        }
+        .badge-gold { background: linear-gradient(135deg, #FFD700, #FFA500); }
+        .badge-rose { background: linear-gradient(135deg, #E0B0B0, #C08080); }
+        .badge-bronze { background: linear-gradient(135deg, #CD7F32, #8B4513); }
+        .whatsapp-btn-green, .whatsapp-btn-blue, .whatsapp-btn-red, 
+        .whatsapp-btn-purple, .whatsapp-btn-orange, .whatsapp-btn-teal {
+            display: block;
+            width: 100%;
+            color: white;
+            text-align: center;
+            padding: 12px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+        .whatsapp-btn-green { background: #25D366; }
+        .whatsapp-btn-green:hover { background: #20BA5A; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3); }
+        
+        .whatsapp-btn-blue { background: #0088cc; }
+        .whatsapp-btn-blue:hover { background: #006ba8; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(0, 136, 204, 0.3); }
+        
+        .whatsapp-btn-red { background: #D3413F; }
+        .whatsapp-btn-red:hover { background: #b32f2d; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(211, 65, 63, 0.3); }
+        
+        .whatsapp-btn-purple { background: #8B5CF6; }
+        .whatsapp-btn-purple:hover { background: #7C3AED; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(139, 92, 246, 0.3); }
+        
+        .whatsapp-btn-orange { background: #F97316; }
+        .whatsapp-btn-orange:hover { background: #EA580C; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(249, 115, 22, 0.3); }
+        
+        .whatsapp-btn-teal { background: #14B8A6; }
+        .whatsapp-btn-teal:hover { background: #0D9488; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(20, 184, 166, 0.3); }
+        
+        .whatsapp-btn-green svg, .whatsapp-btn-blue svg, .whatsapp-btn-red svg,
+        .whatsapp-btn-purple svg, .whatsapp-btn-orange svg, .whatsapp-btn-teal svg {
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+        .seo-section {
+            background: #f8f8f8;
+            padding: 60px 0;
+        }
+        .seo-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .seo-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+        }
+        .seo-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 20px;
+        }
+        .cta-section {
+            background: linear-gradient(135deg, #D3413F 0%, #a32f2d 100%);
+            padding: 60px 0;
+            text-align: center;
+            color: white;
+        }
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .cta-btn {
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .cta-btn-primary {
+            background: white;
+            color: #D3413F;
+        }
+        .cta-btn-primary:hover {
+            background: #f0f0f0;
+            transform: scale(1.05);
+        }
+        .cta-btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        .cta-btn-secondary:hover {
+            background: white;
+            color: #D3413F;
+        }
+        @media (max-width: 768px) {
+            .catalogue-hero h1 { font-size: 2.5rem; }
+            .catalogue-grid { grid-template-columns: 1fr; gap: 20px; }
+            .seo-content h2 { font-size: 2rem; }
+        }
+    </style>
 </head>
 <body>
-    <!-- Modern Navigation -->
+    <!-- Navigation -->
     <nav class="modern-navbar" id="navbar">
         <div class="container">
             <div class="nav-wrapper">
                 <div class="logo">
-                    <div class="logo-icon">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                            <rect x="5" y="5" width="30" height="30" stroke="#D3413F" stroke-width="2" fill="none"/>
-                            <rect x="10" y="10" width="20" height="20" stroke="#D3413F" stroke-width="2" fill="none"/>
-                            <circle cx="20" cy="20" r="5" fill="#D3413F"/>
-                        </svg>
-                    </div>
-                    <div class="logo-text">
-                        <h1>SS GRILLS</h1>
-                        <span>Premium Metal Works</span>
-                    </div>
+                    <a href="index.html">
+                        <img src="images/logo-removebg-preview.png" alt="SS Grills Logo" style="height: 60px;">
+                    </a>
                 </div>
                 <button class="mobile-menu-toggle" id="mobileMenuToggle">
                     <span></span>
@@ -37,10 +215,26 @@
                 </button>
                 <ul class="nav-menu" id="navMenu">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="has-dropdown">
+                        <a href="services.html" class="dropdown-toggle">Metal Works <span class="dropdown-arrow">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="ss-grills.html">SS Grills Works</a></li>
+                            <li><a href="ss-gates.html">Designer SS Gates</a></li>
+                            <li><a href="ss-railing.html">SS Railing & Handrails</a></li>
+                            <li><a href="pvd-tables.html" class="active">PVD Center Tables</a></li>
+                            <li><a href="dining-tables.html">SS Dining Tables</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="services.html" class="dropdown-toggle">Glass Works <span class="dropdown-arrow">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="glass-railing.html">Glass Railing Systems</a></li>
+                            <li><a href="shower-partition.html">Shower & Bathroom Partitions</a></li>
+                            <li><a href="glass-works.html">Complete Glass Works</a></li>
+                        </ul>
+                    </li>
                     <li><a href="products.html">Products</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="contact.html" class="nav-cta">Get Quote</a></li>
                 </ul>
@@ -48,319 +242,494 @@
         </div>
     </nav>
 
-    <!-- Services Sub Navigation -->
-    <div class="services-subnav">
+    <!-- Hero Section -->
+    <section class="catalogue-hero">
         <div class="container">
-            <div class="subnav-wrapper">
-                <div class="subnav-title">
-                    <span>Our Services</span>
-                </div>
-                <div class="subnav-scroll">
-                    <ul class="subnav-menu">
-                        <li><a href="ss-grills.html" class="active">SS Grills</a></li>
-                        <li><a href="glass-railing.html">Glass Railing</a></li>
-                        <li><a href="ss-railing.html">SS Railing</a></li>
-                        <li><a href="ss-gates.html">SS Gates</a></li>
-                        <li><a href="pvd-gates.html">PVD Gates</a></li>
-                        <li><a href="pvd-tables.html">PVD Tables</a></li>
-                        <li><a href="dining-tables.html">Dining Tables</a></li>
-                        <li><a href="shower-partition.html">Shower Partition</a></li>
-                        <li><a href="bath-partition.html">Bath Partition</a></li>
-                        <li><a href="glass-works.html">Glass Works</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Service Hero -->
-    <section class="service-hero">
-        <div class="service-hero-overlay"></div>
-        <div class="container">
-            <div class="hero-breadcrumb">
-                <a href="index.html">Home</a> / <a href="services.html">Services</a> / <span>SS Grills Works</span>
-            </div>
-            <h1 class="service-hero-title">SS Grills Works</h1>
-            <p class="service-hero-subtitle">Custom Designed Stainless Steel Grills for Windows, Doors & Balconies</p>
-            <div class="hero-badges">
-                <span class="badge">Premium 304 Grade</span>
-                <span class="badge">316 Grade Available</span>
-                <span class="badge">Custom Designs</span>
-                <span class="badge">Laser Cutting</span>
-            </div>
+            <h1>PVD Center Tables</h1>
+            <p>Luxury Gold, Rose Gold & Bronze PVD Coated Stainless Steel Center Tables in Mumbai & Bangalore | Premium Designer Tables 2024</p>
         </div>
     </section>
 
-    <!-- Service Overview -->
-    <section class="service-overview">
-        <div class="container">
-            <div class="overview-grid">
-                <div class="overview-content">
-                    <span class="section-subtitle">Premium Quality</span>
-                    <h2>Stainless Steel Grills for Modern Homes</h2>
-                    <p class="lead-text">We specialize in custom-designed stainless steel grills that combine security, durability, and aesthetic appeal. Our SS grills are crafted from premium 304 and 316 grade stainless steel, ensuring long-lasting performance and corrosion resistance.</p>
-                    
-                    <div class="features-grid">
-                        <div class="feature-box">
-                            <div class="feature-icon">🛡️</div>
-                            <h4>Enhanced Security</h4>
-                            <p>Robust construction for maximum protection</p>
-                        </div>
-                        <div class="feature-box">
-                            <div class="feature-icon">✨</div>
-                            <h4>Modern Designs</h4>
-                            <p>Contemporary patterns and laser-cut options</p>
-                        </div>
-                        <div class="feature-box">
-                            <div class="feature-icon">🔧</div>
-                            <h4>Custom Fabrication</h4>
-                            <p>Tailored to your exact specifications</p>
-                        </div>
-                        <div class="feature-box">
-                            <div class="feature-icon">⚡</div>
-                            <h4>Quick Installation</h4>
-                            <p>Professional installation by experts</p>
-                        </div>
-                    </div>
+    <!-- Catalogue Grid -->
+    <section class="container">
+        <div class="catalogue-grid">
 
-                    <div class="cta-buttons">
-                        <a href="contact.html" class="btn btn-primary">Get Free Quote</a>
-                        <a href="tel:+919876543210" class="btn btn-secondary">Call Now</a>
-                    </div>
-                </div>
-                <div class="overview-image">
-                    <img src="images/Gate/19ec28d329c6f3c631334f153e37008c-removebg-preview.png" alt="SS Grills Works Mumbai">
-                    <div class="image-badge">Premium Quality</div>
+            <!-- Table 1 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS PVD Table/CENTER TABLE PVD.jpg" alt="Luxury Gold PVD Coated Center Table Mumbai Bangalore 2024">
+                <div class="catalogue-info">
+                    <h3>Luxury Gold PVD Coated Center Table</h3>
+                    <p>Stunning gold PVD coated center table with modern geometric design. Perfect centerpiece for luxury living rooms in Mumbai & Bangalore.</p>
+                    <span class="catalogue-badge badge-gold">Gold Finish</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Luxury%20Gold%20PVD%20Coated%20Center%20Table*%20from%20your%20PVD%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-green" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        WhatsApp Inquiry
+                    </a>
                 </div>
             </div>
+
+            <!-- Table 2 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS PVD Table/CONSOLE pvd tABLE.jpg" alt="Premium PVD Console Table for Entryway India 2024">
+                <div class="catalogue-info">
+                    <h3>Premium PVD Console Table for Entryway</h3>
+                    <p>Elegant PVD console table with sleek minimalist design. Ideal for entryways and hallways with luxury gold finish.</p>
+                    <span class="catalogue-badge badge-gold">Premium</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Premium%20PVD%20Console%20Table%20for%20Entryway*%20from%20your%20PVD%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-blue" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Get Quote on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table 3 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS PVD Table/gOLD WITH BLACK COATED tABLE.jpg" alt="Designer Gold Black PVD Center Table Mumbai Bangalore 2024">
+                <div class="catalogue-info">
+                    <h3>Designer Gold & Black PVD Center Table</h3>
+                    <p>Luxurious dual-tone gold with black coated PVD table. Bold contemporary design for modern luxury interiors.</p>
+                    <span class="catalogue-badge badge-gold">Gold & Black</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Designer%20Gold%20%26%20Black%20PVD%20Center%20Table*%20from%20your%20PVD%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-red" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Chat with Us
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table 4 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS PVD Table/PVD CENTER 1.jpg" alt="Artistic Designer PVD Center Table India 2024">
+                <div class="catalogue-info">
+                    <h3>Artistic Designer PVD Center Table</h3>
+                    <p>Premium designer center table with artistic PVD coating. Combines unique sculptural design with luxury finish.</p>
+                    <span class="catalogue-badge">Designer</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Artistic%20Designer%20PVD%20Center%20Table*%20from%20your%20PVD%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-purple" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        WhatsApp Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table 5 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS PVD Table/pvd center 2.jpg" alt="Modern Glass Top PVD Center Table Mumbai 2024">
+                <div class="catalogue-info">
+                    <h3>Modern Glass Top PVD Center Table</h3>
+                    <p>Contemporary PVD center table with tempered glass top. Perfect for modern living spaces with elegant gold base.</p>
+                    <span class="catalogue-badge">Modern</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Modern%20Glass%20Top%20PVD%20Center%20Table*%20from%20your%20PVD%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-orange" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Inquire on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table 6 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS PVD Table/pvd center 3.jpg" alt="Exclusive Luxury PVD Coffee Table Bangalore 2024">
+                <div class="catalogue-info">
+                    <h3>Exclusive Luxury PVD Coffee Table</h3>
+                    <p>Exclusive luxury center table with premium rose gold PVD finish. Crafted for high-end residential interiors.</p>
+                    <span class="catalogue-badge">Luxury</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Exclusive%20Luxury%20PVD%20Coffee%20Table*%20from%20your%20PVD%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-teal" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Ask on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table 7 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS PVD Table/pvd center 4.jpg" alt="Premium Geometric PVD Center Table India 2024">
+                <div class="catalogue-info">
+                    <h3>Premium Geometric PVD Center Table</h3>
+                    <p>High-quality PVD center table with elegant geometric base design. Durable stainless steel with luxury coating.</p>
+                    <span class="catalogue-badge">Premium</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Premium%20Geometric%20PVD%20Center%20Table*%20from%20your%20PVD%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-green" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        WhatsApp Inquiry
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table 8 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS PVD Table/pvd center 7.jpg" alt="Rose Gold PVD Luxury Center Table Mumbai Bangalore 2024">
+                <div class="catalogue-info">
+                    <h3>Rose Gold PVD Luxury Center Table</h3>
+                    <p>Elegant rose gold PVD finish center table with modern design. Adds sophistication and warmth to contemporary interiors.</p>
+                    <span class="catalogue-badge badge-rose">Rose Gold</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Rose%20Gold%20PVD%20Luxury%20Center%20Table*%20from%20your%20PVD%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-blue" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Get Quote on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table 9 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS PVD Table/pvd center table 3.jpg" alt="Contemporary Round PVD Coffee Table India 2024">
+                <div class="catalogue-info">
+                    <h3>Contemporary Round PVD Coffee Table</h3>
+                    <p>Sleek contemporary round design with gold PVD coating. Perfect blend of functionality and luxury aesthetics.</p>
+                    <span class="catalogue-badge">Contemporary</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Contemporary%20Round%20PVD%20Coffee%20Table*%20from%20your%20PVD%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-red" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Chat with Us
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table 10 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS PVD Table/pvd center table 4.jpg" alt="Artistic Sculptural PVD Center Table Mumbai 2024">
+                <div class="catalogue-info">
+                    <h3>Artistic Sculptural PVD Center Table</h3>
+                    <p>Unique artistic sculptural design with premium PVD finish. Makes a bold architectural statement in any luxury space.</p>
+                    <span class="catalogue-badge">Artistic</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Artistic%20Sculptural%20PVD%20Center%20Table*%20from%20your%20PVD%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-purple" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        WhatsApp Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table 11 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS PVD Table/pvd center table 5.jpg" alt="Elegant Bronze PVD Center Table Bangalore 2024">
+                <div class="catalogue-info">
+                    <h3>Elegant Bronze PVD Center Table</h3>
+                    <p>Sophisticated elegant table with bronze PVD coating. Perfect for luxury homes and executive offices.</p>
+                    <span class="catalogue-badge">Elegant</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Elegant%20Bronze%20PVD%20Center%20Table*%20from%20your%20PVD%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-orange" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Inquire on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table 12 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS PVD Table/pvd center table 6.jpg" alt="Custom Designer PVD Furniture India 2024">
+                <div class="catalogue-info">
+                    <h3>Custom Designer PVD Furniture</h3>
+                    <p>Bespoke designer furniture with custom PVD finish. Tailored to your specific interior design preferences and space.</p>
+                    <span class="catalogue-badge">Custom</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Custom%20Designer%20PVD%20Furniture*%20from%20your%20PVD%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-teal" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Ask on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table 13 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS PVD Table/PVD CENTER TABLE.jpg" alt="Premium Gold PVD Glass Top Center Table Mumbai Bangalore 2024">
+                <div class="catalogue-info">
+                    <h3>Premium Gold PVD Glass Top Center Table</h3>
+                    <p>Stunning gold PVD center table with premium tempered glass top. Exceptional quality for luxury living spaces.</p>
+                    <span class="catalogue-badge badge-gold">Gold PVD</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Premium%20Gold%20PVD%20Glass%20Top%20Center%20Table*%20from%20your%20PVD%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-green" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        WhatsApp Inquiry
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table 14 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS PVD Table/PVD CENTER TABLEN WITH SINGLE STADING PIPE WITH UNIQUE BEND.jpg" alt="Unique Curved Pedestal PVD Table Design India 2024">
+                <div class="catalogue-info">
+                    <h3>Unique Curved Pedestal PVD Table</h3>
+                    <p>Innovative PVD table with single curved pedestal and unique bend design. One-of-a-kind architectural centerpiece.</p>
+                    <span class="catalogue-badge">Unique</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Unique%20Curved%20Pedestal%20PVD%20Table*%20from%20your%20PVD%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-blue" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Get Quote on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table 15 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS PVD Table/PVD CENTER TBALE WITH RINGL ON RING.jpg" alt="Geometric Ring Design PVD Center Table Mumbai 2024">
+                <div class="catalogue-info">
+                    <h3>Geometric Ring Design PVD Center Table</h3>
+                    <p>Artistic ring-on-ring geometric design PVD table. Modern geometric elegance with luxury gold finish.</p>
+                    <span class="catalogue-badge">Artistic</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Geometric%20Ring%20Design%20PVD%20Center%20Table*%20from%20your%20PVD%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-red" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Chat with Us
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table 16 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS PVD Table/PVD CENTER WITH RING DESIGN.jpg" alt="Decorative Ring Design PVD Center Table Bangalore 2024">
+                <div class="catalogue-info">
+                    <h3>Decorative Ring Design PVD Center Table</h3>
+                    <p>Functional PVD table with decorative circular ring design. Combines artistic aesthetics with practical everyday use.</p>
+                    <span class="catalogue-badge">Functional</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Decorative%20Ring%20Design%20PVD%20Center%20Table*%20from%20your%20PVD%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-purple" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        WhatsApp Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table 17 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS PVD Table/pvd console table 1.jpg" alt="Sleek Modern PVD Console Table India 2024">
+                <div class="catalogue-info">
+                    <h3>Sleek Modern PVD Console Table</h3>
+                    <p>Ultra-modern console table with gold PVD finish. Perfect for contemporary hallways and entryways.</p>
+                    <span class="catalogue-badge">Modern</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Sleek%20Modern%20PVD%20Console%20Table*%20from%20your%20PVD%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-orange" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Inquire on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table 18 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS PVD Table/PVD CONSOLE Table.jpg" alt="Classic Luxury PVD Console Table Mumbai 2024">
+                <div class="catalogue-info">
+                    <h3>Classic Luxury PVD Console Table</h3>
+                    <p>Timeless classic console design with premium PVD coating. Elegant addition to any luxury hallway or foyer.</p>
+                    <span class="catalogue-badge">Classic</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Classic%20Luxury%20PVD%20Console%20Table*%20from%20your%20PVD%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-teal" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Ask on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table 19 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS PVD Table/PVD MULTIPLE CENTER TABLE WITH SMALL TO BIGGER SIZE.jpg" alt="Nesting PVD Tables Set 3 Piece Bangalore 2024">
+                <div class="catalogue-info">
+                    <h3>Nesting PVD Tables Set (3-Piece)</h3>
+                    <p>Versatile 3-piece nesting tables set with gold PVD finish. Multiple sizes from small to large for flexible arrangement.</p>
+                    <span class="catalogue-badge">Versatile</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Nesting%20PVD%20Tables%20Set%20(3-Piece)*%20from%20your%20PVD%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-green" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        WhatsApp Inquiry
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table 20 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS PVD Table/pVD ROUNF CENTER TABLE.jpg" alt="Compact Round PVD Center Table India 2024">
+                <div class="catalogue-info">
+                    <h3>Compact Round PVD Center Table</h3>
+                    <p>Space-saving round PVD center table with glass top. Ideal design for smaller living areas and apartments.</p>
+                    <span class="catalogue-badge">Compact</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Compact%20Round%20PVD%20Center%20Table*%20from%20your%20PVD%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-blue" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Get Quote on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table 21 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS PVD Table/pvd side 4.jpg" alt="Minimalist PVD Side Table Mumbai Bangalore 2024">
+                <div class="catalogue-info">
+                    <h3>Minimalist PVD Side Table</h3>
+                    <p>Elegant minimalist PVD side table with clean lines. Perfect accent piece for bedrooms and living rooms.</p>
+                    <span class="catalogue-badge">Minimalist</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Minimalist%20PVD%20Side%20Table*%20from%20your%20PVD%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-red" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Chat with Us
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table 22 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS PVD Table/pvd side 5.jpg" alt="Premium Designer PVD Side Table India 2024">
+                <div class="catalogue-info">
+                    <h3>Premium Designer PVD Side Table</h3>
+                    <p>Exclusive designer side table with rose gold PVD coating. Adds luxury touch to bedrooms and living rooms.</p>
+                    <span class="catalogue-badge">Designer</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Premium%20Designer%20PVD%20Side%20Table*%20from%20your%20PVD%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-purple" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        WhatsApp Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table 23 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS PVD Table/pvd side 6.jpg" alt="Contemporary Modern PVD Side Table Mumbai 2024">
+                <div class="catalogue-info">
+                    <h3>Contemporary Modern PVD Side Table</h3>
+                    <p>Ultra-contemporary modern side table with gold PVD finish. Sleek geometric design for modern interiors.</p>
+                    <span class="catalogue-badge">Modern</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Contemporary%20Modern%20PVD%20Side%20Table*%20from%20your%20PVD%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-orange" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Inquire on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table 24 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS PVD Table/pvd side 7.jpg" alt="High-End Luxury PVD Side Table Bangalore 2024">
+                <div class="catalogue-info">
+                    <h3>High-End Luxury PVD Side Table</h3>
+                    <p>Premium luxury side table with durable PVD coating. Stylish and long-lasting accent furniture.</p>
+                    <span class="catalogue-badge">Luxury</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*High-End%20Luxury%20PVD%20Side%20Table*%20from%20your%20PVD%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-teal" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Ask on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table 25 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS PVD Table/pvd side table 3.jpg" alt="Sophisticated Elegant PVD Side Table India 2024">
+                <div class="catalogue-info">
+                    <h3>Sophisticated Elegant PVD Side Table</h3>
+                    <p>Refined elegant side table with bronze PVD finish. Perfect for luxury bedrooms and executive lounges.</p>
+                    <span class="catalogue-badge">Elegant</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Sophisticated%20Elegant%20PVD%20Side%20Table*%20from%20your%20PVD%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-green" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        WhatsApp Inquiry
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table 26 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS PVD Table/PVD SIDEE TABLE WITH SINGLE SLAP.jpg" alt="Minimalist Single Slab PVD Side Table Mumbai 2024">
+                <div class="catalogue-info">
+                    <h3>Minimalist Single Slab PVD Side Table</h3>
+                    <p>Ultra-minimalist single slab PVD side table. Clean architectural lines with functional modern design.</p>
+                    <span class="catalogue-badge">Minimalist</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Minimalist%20Single%20Slab%20PVD%20Side%20Table*%20from%20your%20PVD%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-blue" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Get Quote on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table 27 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS PVD Table/PVD TABLE CENTER.jpg" alt="Durable Premium PVD Center Table Bangalore 2024">
+                <div class="catalogue-info">
+                    <h3>Durable Premium PVD Center Table</h3>
+                    <p>Premium quality PVD center table with heavy-duty construction. Long-lasting luxury furniture for high-traffic areas.</p>
+                    <span class="catalogue-badge">Durable</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Durable%20Premium%20PVD%20Center%20Table*%20from%20your%20PVD%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-red" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Chat with Us
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table 28 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS PVD Table/ss pvd tABLE.jpg" alt="Timeless Classic PVD Table India 2024">
+                <div class="catalogue-info">
+                    <h3>Timeless Classic PVD Table</h3>
+                    <p>Enduring classic PVD table design with traditional elegance. Versatile piece that complements any interior style.</p>
+                    <span class="catalogue-badge">Classic</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Timeless%20Classic%20PVD%20Table*%20from%20your%20PVD%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-purple" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        WhatsApp Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table 29 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS PVD Table/ss pvd UNIQUE tABLE.jpg" alt="Exclusive Unique PVD Designer Table Mumbai Bangalore 2024">
+                <div class="catalogue-info">
+                    <h3>Exclusive Unique PVD Designer Table</h3>
+                    <p>Bespoke unique PVD designer table with custom finish. Specially crafted for those seeking one-of-a-kind luxury furniture pieces.</p>
+                    <span class="catalogue-badge">Exclusive</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Exclusive%20Unique%20PVD%20Designer%20Table*%20from%20your%20PVD%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-orange" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Inquire on WhatsApp
+                    </a>
+                </div>
+            </div>
+
         </div>
     </section>
 
-    <!-- Types of SS Grills -->
-    <section class="service-types">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">Our Range</span>
-                <h2 class="section-title">Types of SS Grills We Offer</h2>
-                <div class="title-underline"></div>
-            </div>
+    <!-- SEO Content Section -->
+    <section class="seo-section">
+        <div class="container seo-content">
+            <h2>PVD Center Tables in Mumbai & Bangalore - Shree Ashish Industries</h2>
+            <p>Transform your living space with <strong>luxury PVD coated center tables from Shree Ashish Industries</strong>. Our <strong>premium PVD tables in Mumbai and Bangalore</strong> feature stunning gold, rose gold, and bronze finishes that add elegance to any interior.</p>
 
-            <div class="types-grid">
-                <div class="type-card">
-                    <div class="type-image">
-                        <img src="images/Gate/19ec28d329c6f3c631334f153e37008c-removebg-preview.png" alt="Window Grills">
-                    </div>
-                    <h3>Window Grills</h3>
-                    <p>Modern window grills with various patterns - vertical bars, horizontal designs, geometric patterns, and custom laser-cut designs.</p>
-                    <ul class="type-features">
-                        <li>✓ Fixed & Sliding Options</li>
-                        <li>✓ Powder Coating Available</li>
-                        <li>✓ Child Safety Compliant</li>
-                    </ul>
-                </div>
+            <p>Our <strong>PVD center tables 2024 collection</strong> combines cutting-edge PVD coating technology with contemporary design. Each table is crafted using <strong>premium stainless steel</strong> and finished with scratch-resistant, fade-proof PVD coating.</p>
 
-                <div class="type-card">
-                    <div class="type-image">
-                        <img src="images/Gate/287e71d73c5cf112abc8bc5de39041c3-removebg-preview.png" alt="Door Grills">
-                    </div>
-                    <h3>Door Grills</h3>
-                    <p>Security door grills with elegant designs that enhance both safety and aesthetics of your entrance doors.</p>
-                    <ul class="type-features">
-                        <li>✓ Main Door Grills</li>
-                        <li>✓ Collapsible Grills</li>
-                        <li>✓ Designer Patterns</li>
-                    </ul>
-                </div>
+            <h2>Why Choose PVD Center Tables?</h2>
+            <p>✓ <strong>Luxury Finishes</strong> - Gold, Rose Gold, Bronze, and custom colors<br>
+            ✓ <strong>Scratch Resistant</strong> - PVD coating is extremely durable<br>
+            ✓ <strong>Never Fades</strong> - Color stays vibrant for decades<br>
+            ✓ <strong>Easy Maintenance</strong> - Simple cleaning keeps them looking new<br>
+            ✓ <strong>Custom Designs</strong> - Tailored to your interior style<br>
+            ✓ <strong>Premium Quality</strong> - Crafted with finest materials</p>
 
-                <div class="type-card">
-                    <div class="type-image">
-                        <img src="images/Gate/6e5fa9197d29d01c77c3b4f77cbd6a69-removebg-preview.png" alt="Balcony Grills">
-                    </div>
-                    <h3>Balcony Safety Grills</h3>
-                    <p>Child-safe balcony grills with close spacing and sturdy construction for complete peace of mind.</p>
-                    <ul class="type-features">
-                        <li>✓ Child-Safe Spacing</li>
-                        <li>✓ Weather Resistant</li>
-                        <li>✓ Aesthetic Designs</li>
-                    </ul>
-                </div>
-
-                <div class="type-card">
-                    <div class="type-image">
-                        <img src="images/Glass Railing/10fa0e6007b143eae105cb065b6d01ce-removebg-preview.png" alt="Designer Grills">
-                    </div>
-                    <h3>Designer SS Grills</h3>
-                    <p>Premium designer grills with laser-cut patterns, CNC designs, and custom artwork for luxury homes.</p>
-                    <ul class="type-features">
-                        <li>✓ Laser Cut Designs</li>
-                        <li>✓ CNC Patterns</li>
-                        <li>✓ Custom Artwork</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Specifications -->
-    <section class="service-specs">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">Technical Details</span>
-                <h2 class="section-title">Specifications & Materials</h2>
-                <div class="title-underline"></div>
-            </div>
-
-            <div class="specs-grid">
-                <div class="spec-card">
-                    <h3>Material Grade</h3>
-                    <ul>
-                        <li><strong>SS 304:</strong> Standard grade for indoor applications</li>
-                        <li><strong>SS 316:</strong> Marine grade for coastal areas</li>
-                        <li><strong>SS 202:</strong> Budget-friendly option</li>
-                    </ul>
-                </div>
-
-                <div class="spec-card">
-                    <h3>Finish Options</h3>
-                    <ul>
-                        <li><strong>Mirror Finish:</strong> High-gloss reflective surface</li>
-                        <li><strong>Satin Finish:</strong> Brushed matte appearance</li>
-                        <li><strong>Powder Coating:</strong> Custom colors available</li>
-                    </ul>
-                </div>
-
-                <div class="spec-card">
-                    <h3>Design Patterns</h3>
-                    <ul>
-                        <li><strong>Vertical Bars:</strong> Classic straight line design</li>
-                        <li><strong>Geometric:</strong> Modern angular patterns</li>
-                        <li><strong>Laser Cut:</strong> Intricate custom designs</li>
-                    </ul>
-                </div>
-
-                <div class="spec-card">
-                    <h3>Installation</h3>
-                    <ul>
-                        <li><strong>Fixed:</strong> Permanent installation</li>
-                        <li><strong>Removable:</strong> Easy maintenance access</li>
-                        <li><strong>Sliding:</strong> Space-saving options</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Us -->
-    <section class="why-choose">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">Why SS Grills</span>
-                <h2 class="section-title">Why Choose Our SS Grills?</h2>
-                <div class="title-underline"></div>
-            </div>
-
-            <div class="benefits-grid">
-                <div class="benefit-item">
-                    <div class="benefit-number">01</div>
-                    <h3>Premium Quality Materials</h3>
-                    <p>We use only genuine 304 and 316 grade stainless steel from certified suppliers, ensuring durability and corrosion resistance.</p>
-                </div>
-
-                <div class="benefit-item">
-                    <div class="benefit-number">02</div>
-                    <h3>Custom Design Options</h3>
-                    <p>From traditional patterns to modern laser-cut designs, we create grills that perfectly match your home's architecture.</p>
-                </div>
-
-                <div class="benefit-item">
-                    <div class="benefit-number">03</div>
-                    <h3>Expert Installation</h3>
-                    <p>Our experienced team ensures precise installation with minimal disruption to your daily routine.</p>
-                </div>
-
-                <div class="benefit-item">
-                    <div class="benefit-number">04</div>
-                    <h3>Competitive Pricing</h3>
-                    <p>Direct manufacturing and installation means better prices without compromising on quality.</p>
-                </div>
-
-                <div class="benefit-item">
-                    <div class="benefit-number">05</div>
-                    <h3>Warranty & Support</h3>
-                    <p>Comprehensive warranty on materials and workmanship with dedicated after-sales support.</p>
-                </div>
-
-                <div class="benefit-item">
-                    <div class="benefit-number">06</div>
-                    <h3>Fast Turnaround</h3>
-                    <p>Quick fabrication and installation timelines to complete your project on schedule.</p>
-                </div>
-            </div>
+            <p>From <strong>gold PVD center tables for luxury homes</strong> to <strong>rose gold tables for modern apartments</strong>, from <strong>bronze PVD furniture</strong> to <strong>custom designer tables</strong>, we deliver unmatched quality. Serving Mumbai, Bangalore, and across India since 1984.</p>
         </div>
     </section>
 
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
-            <h2>Ready to Secure Your Home with Premium SS Grills?</h2>
-            <p>Get a free consultation and quote for your SS grills project today</p>
+            <h2>Ready for a Luxury PVD Center Table?</h2>
+            <p>Get a free consultation and quote today!</p>
             <div class="cta-buttons">
-                <a href="contact.html" class="btn btn-white">Request Quote</a>
-                <a href="tel:+919876543210" class="btn btn-outline-white">📞 Call: +91 98765 43210</a>
+                <a href="contact.html" class="cta-btn cta-btn-primary">Get Free Quote</a>
+                <a href="tel:+919844010835" class="cta-btn cta-btn-secondary">Call: +91 98440 10835</a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="modern-footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-col">
-                    <h3>SS Grills</h3>
-                    <p>Premium stainless steel works and fabrication services with ultimate finishing and quality.</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
-                        <a href="#" aria-label="Instagram"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
-                        <a href="#" aria-label="WhatsApp"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></a>
-                    </div>
+                <div class="footer-section">
+                    <h3>Shree Ashish Industries</h3>
+                    <p>Premium PVD Furniture & Metal Works since 1984</p>
+                    <p>#37, 3rd Cross, Magadi Road<br>Bangalore - 560023, India</p>
                 </div>
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html#about">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
                         <li><a href="products.html">Products</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Our Services</h4>
+                <div class="footer-section">
+                    <h3>Our Services</h3>
                     <ul>
                         <li><a href="ss-grills.html">SS Grills Works</a></li>
+                        <li><a href="ss-gates.html">Designer SS Gates</a></li>
+                        <li><a href="pvd-tables.html">PVD Tables</a></li>
                         <li><a href="glass-railing.html">Glass Railing</a></li>
-                        <li><a href="ss-railing.html">SS Railing</a></li>
-                        <li><a href="ss-gates.html">SS Gates</a></li>
-                        <li><a href="pvd-gates.html">PVD Gates</a></li>
-                        <li><a href="glass-works.html">Glass Works</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Contact Info</h4>
-                    <p>📍 Shree Ashish Industries</p>
-                    <p>#37, 3rd Cross, Magadi Road</p>
-                    <p>Bangalore, Karnataka - 560023</p>
-                    <p>📧 info@grillswala.com</p>
-                    <p>📞 +91 98765 43210</p>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Mohan Lal: <a href="tel:+919844010835">+91 98440 10835</a></p>
+                    <p>Ashok Kumar: <a href="tel:+918951845341">+91 89518 45341</a></p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 SS Grills. All rights reserved.</p>
-                <div class="footer-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                </div>
+                <p>&copy; 2024 Shree Ashish Industries. All rights reserved. | Established 1984</p>
             </div>
         </div>
     </footer>

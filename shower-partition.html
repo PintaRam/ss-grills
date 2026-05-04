@@ -2,33 +2,208 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Glass Railing Systems Mumbai - Frameless Glass Railings, Balcony Glass Railings, Staircase Glass Railings | Premium Quality">
-    <meta name="keywords" content="Glass Railing Mumbai, Frameless Glass Railing, Balcony Railing, Staircase Railing, Glass Balustrade">
-    <title>Glass Railing Systems - Frameless & Framed Glass Railings Mumbai | SS Grills</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description" content="Shower & Bathroom Partitions Mumbai Bangalore | Premium Glass Shower Enclosures, Frameless Doors, Bathroom Dividers | Modern Partitions 2024 | Designer Glass India">
+    <meta name="keywords" content="Shower Partitions Mumbai, Bathroom Partitions Bangalore, Glass Shower Enclosures India, Frameless Shower Doors, Bathroom Glass Dividers, Modern Shower Enclosures 2024, Designer Partitions">
+    <title>Shower & Bathroom Partitions Mumbai Bangalore | Premium Glass Enclosures & Doors 2024 | Shree Ashish Industries</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/service-page.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/mobile-responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .catalogue-hero {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            padding: 120px 0 80px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        .catalogue-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('images/Glass Railing/0946a71bccf7fda8f033632c906c11b7-removebg-preview.png') center/cover;
+            opacity: 0.15;
+        }
+        .catalogue-hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        .catalogue-hero p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .catalogue-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 30px;
+            padding: 60px 0;
+        }
+        .catalogue-item {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .catalogue-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(211, 65, 63, 0.2);
+        }
+        .catalogue-item img {
+            width: 100%;
+            height: 350px;
+            object-fit: contain;
+            background: #f8f8f8;
+            padding: 15px;
+        }
+        .catalogue-info {
+            padding: 25px;
+        }
+        .catalogue-info h3 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+        }
+        .catalogue-info p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .catalogue-badge {
+            display: inline-block;
+            background: #D3413F;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-top: 10px;
+        }
+        .whatsapp-btn-green, .whatsapp-btn-blue, .whatsapp-btn-red, 
+        .whatsapp-btn-purple, .whatsapp-btn-orange, .whatsapp-btn-teal {
+            display: block;
+            width: 100%;
+            color: white;
+            text-align: center;
+            padding: 12px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+        .whatsapp-btn-green { background: #25D366; }
+        .whatsapp-btn-green:hover { background: #20BA5A; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3); }
+        
+        .whatsapp-btn-blue { background: #0088cc; }
+        .whatsapp-btn-blue:hover { background: #006ba8; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(0, 136, 204, 0.3); }
+        
+        .whatsapp-btn-red { background: #D3413F; }
+        .whatsapp-btn-red:hover { background: #b32f2d; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(211, 65, 63, 0.3); }
+        
+        .whatsapp-btn-purple { background: #8B5CF6; }
+        .whatsapp-btn-purple:hover { background: #7C3AED; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(139, 92, 246, 0.3); }
+        
+        .whatsapp-btn-orange { background: #F97316; }
+        .whatsapp-btn-orange:hover { background: #EA580C; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(249, 115, 22, 0.3); }
+        
+        .whatsapp-btn-teal { background: #14B8A6; }
+        .whatsapp-btn-teal:hover { background: #0D9488; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(20, 184, 166, 0.3); }
+        
+        .whatsapp-btn-green svg, .whatsapp-btn-blue svg, .whatsapp-btn-red svg,
+        .whatsapp-btn-purple svg, .whatsapp-btn-orange svg, .whatsapp-btn-teal svg {
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+        .seo-section {
+            background: #f8f8f8;
+            padding: 60px 0;
+        }
+        .seo-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .seo-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+        }
+        .seo-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 20px;
+        }
+        .cta-section {
+            background: linear-gradient(135deg, #D3413F 0%, #a32f2d 100%);
+            padding: 60px 0;
+            text-align: center;
+            color: white;
+        }
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .cta-btn {
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .cta-btn-primary {
+            background: white;
+            color: #D3413F;
+        }
+        .cta-btn-primary:hover {
+            background: #f0f0f0;
+            transform: scale(1.05);
+        }
+        .cta-btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        .cta-btn-secondary:hover {
+            background: white;
+            color: #D3413F;
+        }
+        @media (max-width: 768px) {
+            .catalogue-hero h1 { font-size: 2.5rem; }
+            .catalogue-grid { grid-template-columns: 1fr; gap: 20px; }
+            .seo-content h2 { font-size: 2rem; }
+        }
+    </style>
 </head>
 <body>
-    <!-- Modern Navigation -->
+    <!-- Navigation -->
     <nav class="modern-navbar" id="navbar">
         <div class="container">
             <div class="nav-wrapper">
                 <div class="logo">
-                    <div class="logo-icon">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                            <rect x="5" y="5" width="30" height="30" stroke="#D3413F" stroke-width="2" fill="none"/>
-                            <rect x="10" y="10" width="20" height="20" stroke="#D3413F" stroke-width="2" fill="none"/>
-                            <circle cx="20" cy="20" r="5" fill="#D3413F"/>
-                        </svg>
-                    </div>
-                    <div class="logo-text">
-                        <h1>SS GRILLS</h1>
-                        <span>Premium Metal Works</span>
-                    </div>
+                    <a href="index.html">
+                        <img src="images/logo-removebg-preview.png" alt="SS Grills Logo" style="height: 60px;">
+                    </a>
                 </div>
                 <button class="mobile-menu-toggle" id="mobileMenuToggle">
                     <span></span>
@@ -37,10 +212,27 @@
                 </button>
                 <ul class="nav-menu" id="navMenu">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="has-dropdown">
+                        <a href="services.html" class="dropdown-toggle">Metal Works <span class="dropdown-arrow">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="ss-grills.html">SS Grills Works</a></li>
+                            <li><a href="ss-gates.html">Designer SS Gates</a></li>
+                            <li><a href="pvd-gates.html">PVD Coated Gates</a></li>
+                            <li><a href="ss-railing.html">SS Railing & Handrails</a></li>
+                            <li><a href="pvd-tables.html">PVD Center Tables</a></li>
+                            <li><a href="dining-tables.html">SS Dining Tables</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="services.html" class="dropdown-toggle">Glass Works <span class="dropdown-arrow">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="glass-railing.html">Glass Railing Systems</a></li>
+                            <li><a href="shower-partition.html" class="active">Shower & Bathroom Partitions</a></li>
+                            <li><a href="glass-works.html">Complete Glass Works</a></li>
+                        </ul>
+                    </li>
                     <li><a href="products.html">Products</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="contact.html" class="nav-cta">Get Quote</a></li>
                 </ul>
@@ -48,319 +240,451 @@
         </div>
     </nav>
 
-    <!-- Services Sub Navigation -->
-    <div class="services-subnav">
+    <!-- Hero Section -->
+    <section class="catalogue-hero">
         <div class="container">
-            <div class="subnav-wrapper">
-                <div class="subnav-title">
-                    <span>Our Services</span>
-                </div>
-                <div class="subnav-scroll">
-                    <ul class="subnav-menu">
-                        <li><a href="ss-grills.html">SS Grills</a></li>
-                        <li><a href="glass-railing.html" class="active">Glass Railing</a></li>
-                        <li><a href="ss-railing.html">SS Railing</a></li>
-                        <li><a href="ss-gates.html">SS Gates</a></li>
-                        <li><a href="pvd-gates.html">PVD Gates</a></li>
-                        <li><a href="pvd-tables.html">PVD Tables</a></li>
-                        <li><a href="dining-tables.html">Dining Tables</a></li>
-                        <li><a href="shower-partition.html">Shower Partition</a></li>
-                        <li><a href="bath-partition.html">Bath Partition</a></li>
-                        <li><a href="glass-works.html">Glass Works</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Service Hero -->
-    <section class="service-hero">
-        <div class="service-hero-overlay"></div>
-        <div class="container">
-            <div class="hero-breadcrumb">
-                <a href="index.html">Home</a> / <a href="services.html">Services</a> / <span>Glass Railing Systems</span>
-            </div>
-            <h1 class="service-hero-title">Glass Railing Systems</h1>
-            <p class="service-hero-subtitle">Elegant Frameless & Framed Glass Railings for Balconies, Staircases & Terraces</p>
-            <div class="hero-badges">
-                <span class="badge">Frameless Design</span>
-                <span class="badge">12mm Toughened Glass</span>
-                <span class="badge">SS Fittings</span>
-                <span class="badge">Modern Look</span>
-            </div>
+            <h1>Shower & Bathroom Partitions</h1>
+            <p>Premium Glass Shower Enclosures, Frameless Doors & Bathroom Dividers in Mumbai & Bangalore | Modern Partitions 2024</p>
         </div>
     </section>
 
-    <!-- Service Overview -->
-    <section class="service-overview">
-        <div class="container">
-            <div class="overview-grid">
-                <div class="overview-content">
-                    <span class="section-subtitle">Premium Quality</span>
-                    <h2>Modern Glass Railing Solutions</h2>
-                    <p class="lead-text">Transform your spaces with our premium glass railing systems. We offer both frameless and framed glass railings using 12mm toughened safety glass with high-quality stainless steel fittings. Perfect for balconies, staircases, terraces, and pool areas.</p>
-                    
-                    <div class="features-grid">
-                        <div class="feature-box">
-                            <div class="feature-icon">🔒</div>
-                            <h4>Safety First</h4>
-                            <p>12mm toughened glass for maximum safety</p>
-                        </div>
-                        <div class="feature-box">
-                            <div class="feature-icon">✨</div>
-                            <h4>Unobstructed Views</h4>
-                            <p>Frameless design for clear panoramic views</p>
-                        </div>
-                        <div class="feature-box">
-                            <div class="feature-icon">🔧</div>
-                            <h4>Premium Fittings</h4>
-                            <p>SS 304/316 grade hardware and clamps</p>
-                        </div>
-                        <div class="feature-box">
-                            <div class="feature-icon">💎</div>
-                            <h4>Elegant Design</h4>
-                            <p>Modern aesthetics that enhance property value</p>
-                        </div>
-                    </div>
+    <!-- Catalogue Grid -->
+    <section class="container">
+        <div class="catalogue-grid">
 
-                    <div class="cta-buttons">
-                        <a href="contact.html" class="btn btn-primary">Get Free Quote</a>
-                        <a href="tel:+919876543210" class="btn btn-secondary">Call Now</a>
-                    </div>
-                </div>
-                <div class="overview-image">
-                    <img src="images/Glass Railing/0946a71bccf7fda8f033632c906c11b7-removebg-preview.png" alt="Glass Railing Systems Mumbai">
-                    <div class="image-badge">Premium Quality</div>
+            <!-- Partition 1 -->
+            <div class="catalogue-item">
+                <img src="images/Shower partition/clear glass bathroom partition.jpg" alt="Clear Glass Shower Partition Mumbai Bangalore 2024">
+                <div class="catalogue-info">
+                    <h3>Clear Glass Shower Partition</h3>
+                    <p>Premium clear glass shower partition with stainless steel fittings. Creates an open, spacious feel in modern bathrooms.</p>
+                    <span class="catalogue-badge">Premium</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Clear%20Glass%20Shower%20Partition*%20from%20your%20Shower%20&%20Bathroom%20Partitions%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-green" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        WhatsApp Inquiry
+                    </a>
                 </div>
             </div>
+
+            <!-- Partition 2 -->
+            <div class="catalogue-item">
+                <img src="images/Shower partition/bath partion with glass and ss fitting.jpg" alt="Bathroom Partition with SS Fittings India 2024">
+                <div class="catalogue-info">
+                    <h3>Bathroom Partition with SS Fittings</h3>
+                    <p>Elegant bathroom partition with toughened glass and premium stainless steel fittings. Durable and stylish design.</p>
+                    <span class="catalogue-badge">Elegant</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Bathroom%20Partition%20with%20SS%20Fittings*%20from%20your%20Shower%20&%20Bathroom%20Partitions%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-blue" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Get Quote on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Partition 3 -->
+            <div class="catalogue-item">
+                <img src="images/Shower partition/Frameless glass shower door.jpg" alt="Frameless Glass Shower Door Mumbai 2024">
+                <div class="catalogue-info">
+                    <h3>Frameless Glass Shower Door</h3>
+                    <p>Premium frameless glass shower door with invisible hardware. Clean minimalist design for modern luxury bathrooms.</p>
+                    <span class="catalogue-badge">Frameless</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Frameless%20Glass%20Shower%20Door*%20from%20your%20Shower%20&%20Bathroom%20Partitions%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-red" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Chat with Us
+                    </a>
+                </div>
+            </div>
+
+            <!-- Partition 4 -->
+            <div class="catalogue-item">
+                <img src="images/Shower partition/Frameless Glass shower doors.jpg" alt="Frameless Glass Shower Doors Bangalore 2024">
+                <div class="catalogue-info">
+                    <h3>Frameless Glass Shower Doors</h3>
+                    <p>Elegant frameless glass shower door system with seamless installation. Maximum transparency with safety glass.</p>
+                    <span class="catalogue-badge">Premium</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Frameless%20Glass%20Shower%20Doors*%20from%20your%20Shower%20&%20Bathroom%20Partitions%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-purple" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        WhatsApp Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Partition 5 -->
+            <div class="catalogue-item">
+                <img src="images/Shower partition/Frameless swing shower enclosure.jpg" alt="Frameless Swing Shower Enclosure India 2024">
+                <div class="catalogue-info">
+                    <h3>Frameless Swing Shower Enclosure</h3>
+                    <p>Frameless swing door shower enclosure with pivot mechanism. Easy access and modern aesthetics for luxury spaces.</p>
+                    <span class="catalogue-badge">Luxury</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Frameless%20Swing%20Shower%20Enclosure*%20from%20your%20Shower%20&%20Bathroom%20Partitions%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-orange" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Inquire on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Partition 6 -->
+            <div class="catalogue-item">
+                <img src="images/Shower partition/Black Swing Shower Enclosure.jpg" alt="Black Swing Shower Enclosure Mumbai 2024">
+                <div class="catalogue-info">
+                    <h3>Black Swing Shower Enclosure</h3>
+                    <p>Stylish swing shower enclosure with black frame and clear glass. Contemporary design with bold black accents.</p>
+                    <span class="catalogue-badge">Stylish</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Black%20Swing%20Shower%20Enclosure*%20from%20your%20Shower%20&%20Bathroom%20Partitions%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-teal" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Ask on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Partition 7 -->
+            <div class="catalogue-item">
+                <img src="images/Shower partition/black type glass.jpg" alt="Black Tinted Glass Shower Partition Bangalore 2024">
+                <div class="catalogue-info">
+                    <h3>Black Tinted Glass Shower Partition</h3>
+                    <p>Modern black tinted glass shower partition for privacy. Adds contemporary elegance to luxury bathrooms.</p>
+                    <span class="catalogue-badge">Modern</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Black%20Tinted%20Glass%20Shower%20Partition*%20from%20your%20Shower%20&%20Bathroom%20Partitions%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-green" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        WhatsApp Inquiry
+                    </a>
+                </div>
+            </div>
+
+            <!-- Partition 8 -->
+            <div class="catalogue-item">
+                <img src="images/Shower partition/blue type color glass.jpg" alt="Blue Tinted Glass Shower Enclosure India 2024">
+                <div class="catalogue-info">
+                    <h3>Blue Tinted Glass Shower Enclosure</h3>
+                    <p>Unique blue tinted glass shower enclosure with sleek design. Creates a calming spa-like atmosphere.</p>
+                    <span class="catalogue-badge">Unique</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Blue%20Tinted%20Glass%20Shower%20Enclosure*%20from%20your%20Shower%20&%20Bathroom%20Partitions%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-blue" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Get Quote on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Partition 9 -->
+            <div class="catalogue-item">
+                <img src="images/Shower partition/Glass partition simple.jpg" alt="Simple Glass Partition Mumbai Bangalore 2024">
+                <div class="catalogue-info">
+                    <h3>Simple Glass Partition</h3>
+                    <p>Clean and simple glass partition for bathrooms. Minimalist design perfect for compact and modern bathrooms.</p>
+                    <span class="catalogue-badge">Minimalist</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Simple%20Glass%20Partition*%20from%20your%20Shower%20&%20Bathroom%20Partitions%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-red" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Chat with Us
+                    </a>
+                </div>
+            </div>
+
+            <!-- Partition 10 -->
+            <div class="catalogue-item">
+                <img src="images/Shower partition/Single Glass Doors Shower.jpg" alt="Single Glass Door Shower India 2024">
+                <div class="catalogue-info">
+                    <h3>Single Glass Door Shower</h3>
+                    <p>Single glass door shower enclosure with hinged mechanism. Space-saving design for smaller bathrooms.</p>
+                    <span class="catalogue-badge">Space Saver</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Single%20Glass%20Door%20Shower*%20from%20your%20Shower%20&%20Bathroom%20Partitions%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-purple" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        WhatsApp Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Partition 11 -->
+            <div class="catalogue-item">
+                <img src="images/Shower partition/Shower Glass - Affordable Frameless Shower Door.jpg" alt="Affordable Frameless Shower Door Mumbai 2024">
+                <div class="catalogue-info">
+                    <h3>Affordable Frameless Shower Door</h3>
+                    <p>Cost-effective frameless shower door solution without compromising quality. Premium look at competitive pricing.</p>
+                    <span class="catalogue-badge">Affordable</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Affordable%20Frameless%20Shower%20Door*%20from%20your%20Shower%20&%20Bathroom%20Partitions%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-orange" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Inquire on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Partition 12 -->
+            <div class="catalogue-item">
+                <img src="images/Shower partition/Shower with sliding door.jpg" alt="Sliding Door Shower Enclosure Bangalore 2024">
+                <div class="catalogue-info">
+                    <h3>Sliding Door Shower Enclosure</h3>
+                    <p>Smooth sliding door shower enclosure system. Perfect for bathrooms with limited space and modern design needs.</p>
+                    <span class="catalogue-badge">Sliding</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Sliding%20Door%20Shower%20Enclosure*%20from%20your%20Shower%20&%20Bathroom%20Partitions%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-teal" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Ask on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Partition 13 -->
+            <div class="catalogue-item">
+                <img src="images/Shower partition/Slider Shower.jpg" alt="Slider Shower System India 2024">
+                <div class="catalogue-info">
+                    <h3>Slider Shower System</h3>
+                    <p>Premium slider shower system with smooth gliding mechanism. Contemporary design with easy maintenance.</p>
+                    <span class="catalogue-badge">Contemporary</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Slider%20Shower%20System*%20from%20your%20Shower%20&%20Bathroom%20Partitions%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-green" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        WhatsApp Inquiry
+                    </a>
+                </div>
+            </div>
+
+            <!-- Partition 14 -->
+            <div class="catalogue-item">
+                <img src="images/Shower partition/Custom-Made Sliding Shower Doors.jpg" alt="Custom Sliding Shower Doors Mumbai 2024">
+                <div class="catalogue-info">
+                    <h3>Custom-Made Sliding Shower Doors</h3>
+                    <p>Custom-made sliding shower doors tailored to your bathroom dimensions. Precision engineering for perfect fit.</p>
+                    <span class="catalogue-badge">Custom</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Custom-Made%20Sliding%20Shower%20Doors*%20from%20your%20Shower%20&%20Bathroom%20Partitions%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-blue" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Get Quote on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Partition 15 -->
+            <div class="catalogue-item">
+                <img src="images/Shower partition/Three-Partition shower cubicle.jpg" alt="Three Partition Shower Cubicle Bangalore 2024">
+                <div class="catalogue-info">
+                    <h3>Three-Partition Shower Cubicle</h3>
+                    <p>Complete three-partition shower cubicle system. Enclosed shower area with door and fixed glass panels.</p>
+                    <span class="catalogue-badge">Complete</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Three-Partition%20Shower%20Cubicle*%20from%20your%20Shower%20&%20Bathroom%20Partitions%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-red" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Chat with Us
+                    </a>
+                </div>
+            </div>
+
+            <!-- Partition 16 -->
+            <div class="catalogue-item">
+                <img src="images/Shower partition/FROSTED SHOWER GLASS.jpg" alt="Frosted Glass Shower Enclosure India 2024">
+                <div class="catalogue-info">
+                    <h3>Frosted Glass Shower Enclosure</h3>
+                    <p>Frosted glass shower enclosure for enhanced privacy. Elegant matte finish that diffuses light beautifully.</p>
+                    <span class="catalogue-badge">Privacy</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Frosted%20Glass%20Shower%20Enclosure*%20from%20your%20Shower%20&%20Bathroom%20Partitions%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-purple" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        WhatsApp Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Partition 17 -->
+            <div class="catalogue-item">
+                <img src="images/Shower partition/FROSTED SHOWER GLASS 2.jpg" alt="Premium Frosted Shower Glass Mumbai 2024">
+                <div class="catalogue-info">
+                    <h3>Premium Frosted Shower Glass</h3>
+                    <p>Premium quality frosted shower glass with smooth finish. Provides privacy while allowing natural light flow.</p>
+                    <span class="catalogue-badge">Premium</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Premium%20Frosted%20Shower%20Glass*%20from%20your%20Shower%20&%20Bathroom%20Partitions%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-orange" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Inquire on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Partition 18 -->
+            <div class="catalogue-item">
+                <img src="images/Shower partition/COMPLETE FROSTED GLASS.jpg" alt="Complete Frosted Glass Shower Bangalore 2024">
+                <div class="catalogue-info">
+                    <h3>Complete Frosted Glass Shower</h3>
+                    <p>Complete frosted glass shower system with door and panels. Full privacy with elegant frosted glass finish.</p>
+                    <span class="catalogue-badge">Complete</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Complete%20Frosted%20Glass%20Shower*%20from%20your%20Shower%20&%20Bathroom%20Partitions%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-teal" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Ask on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Partition 19 -->
+            <div class="catalogue-item">
+                <img src="images/Shower partition/CUSTOM FORSTED GLASS.jpg" alt="Custom Frosted Glass Shower India 2024">
+                <div class="catalogue-info">
+                    <h3>Custom Frosted Glass Shower</h3>
+                    <p>Custom frosted glass shower with personalized design patterns. Unique privacy solution tailored to your style.</p>
+                    <span class="catalogue-badge">Designer</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Custom%20Frosted%20Glass%20Shower*%20from%20your%20Shower%20&%20Bathroom%20Partitions%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-green" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        WhatsApp Inquiry
+                    </a>
+                </div>
+            </div>
+
+            <!-- Partition 20 -->
+            <div class="catalogue-item">
+                <img src="images/Shower partition/Shower enclosure Sliding Type WITH CUSTOM FROSTED.jpg" alt="Sliding Frosted Glass Shower Mumbai 2024">
+                <div class="catalogue-info">
+                    <h3>Sliding Frosted Glass Shower Enclosure</h3>
+                    <p>Sliding shower enclosure with custom frosted glass design. Combines space-saving functionality with privacy.</p>
+                    <span class="catalogue-badge">Functional</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Sliding%20Frosted%20Glass%20Shower%20Enclosure*%20from%20your%20Shower%20&%20Bathroom%20Partitions%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-blue" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Get Quote on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Partition 21 -->
+            <div class="catalogue-item">
+                <img src="images/Shower partition/Bathroom shower door PRL Glass.jpg" alt="PRL Glass Bathroom Shower Door Bangalore 2024">
+                <div class="catalogue-info">
+                    <h3>PRL Glass Bathroom Shower Door</h3>
+                    <p>High-quality PRL glass bathroom shower door with premium hardware. Superior clarity and durability.</p>
+                    <span class="catalogue-badge">Quality</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*PRL%20Glass%20Bathroom%20Shower%20Door*%20from%20your%20Shower%20&%20Bathroom%20Partitions%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-red" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Chat with Us
+                    </a>
+                </div>
+            </div>
+
+            <!-- Partition 22 -->
+            <div class="catalogue-item">
+                <img src="images/Shower partition/pvd gold and etcing glass.jpg" alt="PVD Gold Etched Glass Shower Partition India 2024">
+                <div class="catalogue-info">
+                    <h3>PVD Gold Etched Glass Shower Partition</h3>
+                    <p>Luxury shower partition with PVD gold fittings and etched glass design. Premium finish for high-end bathrooms.</p>
+                    <span class="catalogue-badge badge-gold">Gold PVD</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*PVD%20Gold%20Etched%20Glass%20Shower%20Partition*%20from%20your%20Shower%20&%20Bathroom%20Partitions%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-purple" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        WhatsApp Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Partition 23 -->
+            <div class="catalogue-item">
+                <img src="images/Shower partition/shower with gold pvd and blakc glass.jpg" alt="Gold PVD Black Glass Shower Mumbai Bangalore 2024">
+                <div class="catalogue-info">
+                    <h3>Gold PVD with Black Glass Shower</h3>
+                    <p>Stunning combination of gold PVD fittings with black tinted glass. Bold luxury design for modern bathrooms.</p>
+                    <span class="catalogue-badge badge-gold">Luxury</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Gold%20PVD%20with%20Black%20Glass%20Shower*%20from%20your%20Shower%20&%20Bathroom%20Partitions%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-orange" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Inquire on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Partition 24 -->
+            <div class="catalogue-item">
+                <img src="images/Shower partition/muliplt bathroom partiton in a singlw row.jpg" alt="Multiple Bathroom Partitions Commercial India 2024">
+                <div class="catalogue-info">
+                    <h3>Multiple Bathroom Partitions (Commercial)</h3>
+                    <p>Commercial-grade multiple bathroom partitions in a single row. Ideal for hotels, gyms, and commercial facilities.</p>
+                    <span class="catalogue-badge">Commercial</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Multiple%20Bathroom%20Partitions%20(Commercial)*%20from%20your%20Shower%20&%20Bathroom%20Partitions%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-teal" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Ask on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Partition 25 -->
+            <div class="catalogue-item">
+                <img src="images/Shower partition/frosted glass pendant lighting.frosted glass wall light.frosted glass bathroom wall lights.frosted glass vanity light.jpg" alt="Frosted Glass Bathroom Lighting Mumbai 2024">
+                <div class="catalogue-info">
+                    <h3>Frosted Glass Bathroom with Lighting</h3>
+                    <p>Frosted glass bathroom partition with integrated lighting. Pendant and wall lights create ambient bathroom atmosphere.</p>
+                    <span class="catalogue-badge">Ambient</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Frosted%20Glass%20Bathroom%20with%20Lighting*%20from%20your%20Shower%20&%20Bathroom%20Partitions%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-green" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        WhatsApp Inquiry
+                    </a>
+                </div>
+            </div>
+
+            <!-- Partition 26 -->
+            <div class="catalogue-item">
+                <img src="images/Shower partition/Frosted Glass Shower Enclosure – Privacy with Light in London & Essex.jpg" alt="Frosted Glass Shower Privacy Bangalore 2024">
+                <div class="catalogue-info">
+                    <h3>Frosted Glass Shower - Privacy with Light</h3>
+                    <p>Frosted glass shower enclosure balancing privacy with natural light. Perfect solution for bright yet private bathrooms.</p>
+                    <span class="catalogue-badge">Balanced</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Frosted%20Glass%20Shower%20-%20Privacy%20with%20Light*%20from%20your%20Shower%20&%20Bathroom%20Partitions%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-blue" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Get Quote on WhatsApp
+                    </a>
+                </div>
+            </div>
+
         </div>
     </section>
 
-    <!-- Types of Glass Railings -->
-    <section class="service-types">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">Our Range</span>
-                <h2 class="section-title">Types of Glass Railings We Offer</h2>
-                <div class="title-underline"></div>
-            </div>
+    <!-- SEO Content Section -->
+    <section class="seo-section">
+        <div class="container seo-content">
+            <h2>Shower & Bathroom Partitions in Mumbai & Bangalore - Shree Ashish Industries</h2>
+            <p>Transform your bathroom with <strong>premium glass shower and bathroom partitions from Shree Ashish Industries</strong>. Our <strong>frameless shower enclosures and bathroom dividers in Mumbai and Bangalore</strong> combine elegance with functionality.</p>
 
-            <div class="types-grid">
-                <div class="type-card">
-                    <div class="type-image">
-                        <img src="images/Glass Railing/0946a71bccf7fda8f033632c906c11b7-removebg-preview.png" alt="Frameless Glass Railing">
-                    </div>
-                    <h3>Frameless Glass Railing</h3>
-                    <p>Sleek frameless design with minimal hardware for unobstructed views. Perfect for modern homes and commercial spaces.</p>
-                    <ul class="type-features">
-                        <li>✓ Channel/Clamp Mounted</li>
-                        <li>✓ 12mm Toughened Glass</li>
-                        <li>✓ Invisible Fixing</li>
-                    </ul>
-                </div>
+            <p>Our <strong>shower & bathroom partitions 2024 collection</strong> features toughened safety glass with premium hardware. From <strong>frameless walk-in showers</strong> to <strong>wet/dry area dividers</strong> and <strong>commercial bathroom partitions</strong>, we offer complete solutions.</p>
 
-                <div class="type-card">
-                    <div class="type-image">
-                        <img src="images/Glass Railing/10fa0e6007b143eae105cb065b6d01ce-removebg-preview.png" alt="Framed Glass Railing">
-                    </div>
-                    <h3>Framed Glass Railing</h3>
-                    <p>Glass panels with stainless steel frame for added strength and traditional appeal.</p>
-                    <ul class="type-features">
-                        <li>✓ SS Frame Design</li>
-                        <li>✓ Enhanced Durability</li>
-                        <li>✓ Classic Look</li>
-                    </ul>
-                </div>
+            <h2>Why Choose Glass Shower & Bathroom Partitions?</h2>
+            <p>✓ <strong>Toughened Safety Glass</strong> - 10mm thick for maximum safety<br>
+            ✓ <strong>Easy Maintenance</strong> - Simple to clean and maintain<br>
+            ✓ <strong>Modern Aesthetics</strong> - Elegant frameless designs<br>
+            ✓ <strong>Custom Sizes</strong> - Tailored to your bathroom<br>
+            ✓ <strong>Premium Hardware</strong> - Chrome, brushed nickel, gold options<br>
+            ✓ <strong>Expert Installation</strong> - Professional fitting guaranteed</p>
 
-                <div class="type-card">
-                    <div class="type-image">
-                        <img src="images/Glass Railing/94dd3ec87e9a55fee010b3f9d4301bd3-removebg-preview.png" alt="Balcony Glass Railing">
-                    </div>
-                    <h3>Balcony Glass Railing</h3>
-                    <p>Weather-resistant glass railings designed specifically for balconies with wind load considerations.</p>
-                    <ul class="type-features">
-                        <li>✓ Wind Load Tested</li>
-                        <li>✓ Weather Resistant</li>
-                        <li>✓ Child Safe</li>
-                    </ul>
-                </div>
-
-                <div class="type-card">
-                    <div class="type-image">
-                        <img src="images/Glass Railing/a0e8e2e8e8e8e8e8e8e8e8e8-removebg-preview.png" alt="Staircase Glass Railing">
-                    </div>
-                    <h3>Staircase Glass Railing</h3>
-                    <p>Custom-designed glass railings for staircases with precise measurements and safe installation.</p>
-                    <ul class="type-features">
-                        <li>✓ Custom Angles</li>
-                        <li>✓ Handrail Options</li>
-                        <li>✓ Code Compliant</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Specifications -->
-    <section class="service-specs">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">Technical Details</span>
-                <h2 class="section-title">Specifications & Materials</h2>
-                <div class="title-underline"></div>
-            </div>
-
-            <div class="specs-grid">
-                <div class="spec-card">
-                    <h3>Glass Specifications</h3>
-                    <ul>
-                        <li><strong>Thickness:</strong> 12mm toughened safety glass</li>
-                        <li><strong>Type:</strong> Clear, frosted, tinted options</li>
-                        <li><strong>Safety:</strong> IS 2553 certified toughened glass</li>
-                    </ul>
-                </div>
-
-                <div class="spec-card">
-                    <h3>Hardware & Fittings</h3>
-                    <ul>
-                        <li><strong>Material:</strong> SS 304/316 grade fittings</li>
-                        <li><strong>Finish:</strong> Mirror, satin, or matte</li>
-                        <li><strong>Type:</strong> Spigots, clamps, channels</li>
-                    </ul>
-                </div>
-
-                <div class="spec-card">
-                    <h3>Installation Types</h3>
-                    <ul>
-                        <li><strong>Top Mount:</strong> Glass fixed on top of surface</li>
-                        <li><strong>Side Mount:</strong> Glass fixed to side walls</li>
-                        <li><strong>Channel:</strong> Glass in aluminum channel</li>
-                    </ul>
-                </div>
-
-                <div class="spec-card">
-                    <h3>Applications</h3>
-                    <ul>
-                        <li><strong>Balconies:</strong> Residential & commercial</li>
-                        <li><strong>Staircases:</strong> Indoor & outdoor</li>
-                        <li><strong>Terraces:</strong> Rooftop & pool areas</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Us -->
-    <section class="why-choose">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">Why Glass Railing</span>
-                <h2 class="section-title">Why Choose Our Glass Railings?</h2>
-                <div class="title-underline"></div>
-            </div>
-
-            <div class="benefits-grid">
-                <div class="benefit-item">
-                    <div class="benefit-number">01</div>
-                    <h3>Certified Safety Glass</h3>
-                    <p>We use only IS 2553 certified 12mm toughened safety glass that meets all international safety standards.</p>
-                </div>
-
-                <div class="benefit-item">
-                    <div class="benefit-number">02</div>
-                    <h3>Premium SS Fittings</h3>
-                    <p>High-grade SS 304/316 hardware ensures long-lasting performance and corrosion resistance.</p>
-                </div>
-
-                <div class="benefit-item">
-                    <div class="benefit-number">03</div>
-                    <h3>Professional Installation</h3>
-                    <p>Expert installation team with years of experience in glass railing systems.</p>
-                </div>
-
-                <div class="benefit-item">
-                    <div class="benefit-number">04</div>
-                    <h3>Custom Solutions</h3>
-                    <p>Tailored designs to match your specific requirements and architectural style.</p>
-                </div>
-
-                <div class="benefit-item">
-                    <div class="benefit-number">05</div>
-                    <h3>Warranty Coverage</h3>
-                    <p>Comprehensive warranty on glass, fittings, and installation workmanship.</p>
-                </div>
-
-                <div class="benefit-item">
-                    <div class="benefit-number">06</div>
-                    <h3>Maintenance Support</h3>
-                    <p>Easy maintenance with cleaning guidance and replacement support when needed.</p>
-                </div>
-            </div>
+            <p>From <strong>luxury walk-in showers</strong> to <strong>compact corner enclosures</strong>, from <strong>steam shower systems</strong> to <strong>designer partitions</strong>, we deliver excellence. Serving Mumbai, Bangalore, and across India since 1984.</p>
         </div>
     </section>
 
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
-            <h2>Ready to Install Premium Glass Railings?</h2>
-            <p>Get a free site visit and quote for your glass railing project today</p>
+            <h2>Ready for a Premium Shower Partition?</h2>
+            <p>Get a free consultation and quote today!</p>
             <div class="cta-buttons">
-                <a href="contact.html" class="btn btn-white">Request Quote</a>
-                <a href="tel:+919876543210" class="btn btn-outline-white">📞 Call: +91 98765 43210</a>
+                <a href="contact.html" class="cta-btn cta-btn-primary">Get Free Quote</a>
+                <a href="tel:+919844010835" class="cta-btn cta-btn-secondary">Call: +91 98440 10835</a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="modern-footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-col">
-                    <h3>SS Grills</h3>
-                    <p>Premium stainless steel works and fabrication services with ultimate finishing and quality.</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
-                        <a href="#" aria-label="Instagram"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
-                        <a href="#" aria-label="WhatsApp"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></a>
-                    </div>
+                <div class="footer-section">
+                    <h3>Shree Ashish Industries</h3>
+                    <p>Premium Shower Partitions & Glass Works since 1984</p>
+                    <p>#37, 3rd Cross, Magadi Road<br>Bangalore - 560023, India</p>
                 </div>
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html#about">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
                         <li><a href="products.html">Products</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Our Services</h4>
+                <div class="footer-section">
+                    <h3>Our Services</h3>
                     <ul>
-                        <li><a href="ss-grills.html">SS Grills Works</a></li>
                         <li><a href="glass-railing.html">Glass Railing</a></li>
-                        <li><a href="ss-railing.html">SS Railing</a></li>
-                        <li><a href="ss-gates.html">SS Gates</a></li>
-                        <li><a href="pvd-gates.html">PVD Gates</a></li>
-                        <li><a href="glass-works.html">Glass Works</a></li>
+                        <li><a href="shower-partition.html">Shower & Bathroom Partitions</a></li>
+                        <li><a href="ss-grills.html">SS Grills Works</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Contact Info</h4>
-                    <p>📍 Shree Ashish Industries</p>
-                    <p>#37, 3rd Cross, Magadi Road</p>
-                    <p>Bangalore, Karnataka - 560023</p>
-                    <p>📧 info@grillswala.com</p>
-                    <p>📞 +91 98765 43210</p>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Mohan Lal: <a href="tel:+919844010835">+91 98440 10835</a></p>
+                    <p>Ashok Kumar: <a href="tel:+918951845341">+91 89518 45341</a></p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 SS Grills. All rights reserved.</p>
-                <div class="footer-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                </div>
+                <p>&copy; 2024 Shree Ashish Industries. All rights reserved. | Established 1984</p>
             </div>
         </div>
     </footer>

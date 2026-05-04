@@ -3,11 +3,24 @@ const mobileMenuToggle = document.getElementById('mobileMenuToggle');
 const navMenu = document.getElementById('navMenu');
 
 if (mobileMenuToggle) {
-    mobileMenuToggle.addEventListener('click', () => {
+    mobileMenuToggle.addEventListener('click', (e) => {
+        e.stopPropagation();
         navMenu.classList.toggle('active');
         mobileMenuToggle.classList.toggle('active');
+        document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
     });
 }
+
+// Close mobile menu when clicking outside
+document.addEventListener('click', (e) => {
+    if (navMenu && navMenu.classList.contains('active')) {
+        if (!navMenu.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
+            navMenu.classList.remove('active');
+            mobileMenuToggle.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    }
+});
 
 // Dropdown Menu Toggle for Mobile
 document.addEventListener('DOMContentLoaded', () => {
@@ -520,13 +533,23 @@ if (servicesTrack && serviceSlides.length > 0) {
         serviceSlides[leftIndex].classList.add('left');
         serviceSlides[rightIndex].classList.add('right');
 
-        // Calculate the offset to show 3 cards (left, center, right visible)
-        const slideWidth = 380 + 30; // fixed width + gap
+        // Get actual slide width and gap (responsive)
         const containerWidth = servicesTrack.parentElement.offsetWidth;
+        const isMobile = window.innerWidth <= 992;
 
-        // Center the middle card in the viewport
-        const offset = -(currentService * slideWidth) + (containerWidth / 2) - (slideWidth / 2);
-        servicesTrack.style.transform = `translateX(${offset}px)`;
+        // Calculate offset
+        if (isMobile) {
+            // Mobile: NO TRANSFORM - only show center card with absolute positioning
+            servicesTrack.style.transform = 'translateX(0)';
+
+            // Only the center card is visible, others are absolutely positioned and hidden
+            // So no need to translate the track
+        } else {
+            // Desktop: center the middle card with side cards visible
+            const slideWidth = 350 + 30; // fixed width (350px) + gap (30px)
+            const offset = -(currentService * slideWidth) + (containerWidth / 2) - (slideWidth / 2);
+            servicesTrack.style.transform = `translateX(${offset}px)`;
+        }
 
         // Update dots
         serviceDots().forEach((dot, index) => {
@@ -633,13 +656,21 @@ if (productsTrack && productSlides.length > 0) {
         productSlides[leftIndex].classList.add('left');
         productSlides[rightIndex].classList.add('right');
 
-        // Calculate the offset to show 3 cards (left, center, right visible)
-        const slideWidth = 320 + 25; // fixed width + gap
-        const containerWidth = productsTrack.parentElement.offsetWidth;
+        // Check if mobile
+        const isMobile = window.innerWidth <= 992;
 
-        // Center the middle card in the viewport
-        const offset = -(currentProduct * slideWidth) + (containerWidth / 2) - (slideWidth / 2);
-        productsTrack.style.transform = `translateX(${offset}px)`;
+        if (isMobile) {
+            // Mobile: NO TRANSFORM - only show center card with absolute positioning
+            productsTrack.style.transform = 'translateX(0)';
+        } else {
+            // Desktop: Calculate the offset to show 3 cards (left, center, right visible)
+            const slideWidth = 320 + 25; // fixed width + gap
+            const containerWidth = productsTrack.parentElement.offsetWidth;
+
+            // Center the middle card in the viewport
+            const offset = -(currentProduct * slideWidth) + (containerWidth / 2) - (slideWidth / 2);
+            productsTrack.style.transform = `translateX(${offset}px)`;
+        }
 
         // Update dots
         productDots().forEach((dot, index) => {

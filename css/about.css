@@ -1,0 +1,668 @@
+/* About Page Styles */
+
+/* Hero Section */
+.about-hero {
+    position: relative;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    overflow: hidden;
+}
+
+.about-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(211, 65, 63, 0.8) 0%, rgba(44, 62, 80, 0.9) 100%);
+    z-index: 1;
+}
+
+.about-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.about-hero .hero-content {
+    text-align: center;
+    color: white;
+    padding: 80px 20px 60px;
+}
+
+.about-hero .hero-badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.about-hero .hero-title {
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.about-hero .hero-subtitle {
+    font-size: 20px;
+    margin-bottom: 40px;
+    opacity: 0.95;
+}
+
+.about-hero .hero-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-hero .stat-item {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 30px 20px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.about-hero .stat-item:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-5px);
+}
+
+.about-hero .stat-item h3 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.about-hero .stat-item p {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+
+/* Company Overview */
+.company-overview {
+    padding: 100px 0;
+    background: white;
+}
+
+.overview-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.overview-content .lead-text {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.overview-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.overview-features {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.feature-icon {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #D3413F 0%, #A02E2C 100%);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.feature-item h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+.feature-item p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+
+.overview-image {
+    position: relative;
+}
+
+.overview-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.overview-image .image-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #D3413F 0%, #A02E2C 100%);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    box-shadow: 0 10px 30px rgba(211, 65, 63, 0.3);
+}
+
+/* Mission & Vision */
+.mission-vision {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.mv-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.mv-card {
+    background: white;
+    padding: 50px 40px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border-top: 4px solid #D3413F;
+}
+
+.mv-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.mv-icon {
+    font-size: 60px;
+    margin-bottom: 25px;
+}
+
+.mv-card h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.mv-card p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #666;
+}
+
+/* Why Choose Us */
+.why-choose {
+    padding: 100px 0;
+    background: white;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.why-card {
+    position: relative;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    padding: 40px 30px;
+    border-radius: 16px;
+    border: 2px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+
+.why-card:hover {
+    border-color: #D3413F;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(211, 65, 63, 0.15);
+}
+
+.why-number {
+    position: absolute;
+    top: -20px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #D3413F 0%, #A02E2C 100%);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 700;
+    box-shadow: 0 5px 20px rgba(211, 65, 63, 0.3);
+}
+
+.why-icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.why-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.why-card p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #666;
+}
+
+/* Our Process */
+.our-process {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: white;
+}
+
+.our-process .section-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.our-process .section-subtitle,
+.our-process .section-title,
+.our-process .section-description {
+    color: white;
+}
+
+.our-process .title-underline {
+    background: white;
+}
+
+.process-timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    position: relative;
+}
+
+.process-timeline::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.2);
+    z-index: 0;
+}
+
+.process-step {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.step-number {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #D3413F 0%, #A02E2C 100%);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 auto 25px;
+    box-shadow: 0 10px 30px rgba(211, 65, 63, 0.4);
+    border: 5px solid #2c3e50;
+}
+
+.step-content h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.step-content p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* Leadership Section */
+.leadership-section {
+    padding: 100px 0;
+    background: white;
+}
+
+.leadership-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    margin-top: 60px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.leader-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    border: 2px solid #e9ecef;
+}
+
+.leader-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 60px rgba(211, 65, 63, 0.2);
+    border-color: #D3413F;
+}
+
+.leader-image {
+    position: relative;
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    padding: 50px 30px 30px;
+    text-align: center;
+}
+
+.leader-avatar {
+    margin: 0 auto 20px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.leader-avatar svg {
+    width: 100%;
+    height: 100%;
+}
+
+.leader-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #D3413F 0%, #A02E2C 100%);
+    color: white;
+    padding: 8px 25px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 5px 20px rgba(211, 65, 63, 0.4);
+}
+
+.leader-badge.ceo {
+    background: linear-gradient(135deg, #2c3e50 0%, #1a252f 100%);
+}
+
+.leader-info {
+    padding: 40px 30px;
+}
+
+.leader-info h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.leader-title {
+    font-size: 16px;
+    color: #D3413F;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.leader-bio {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.leader-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 18px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    color: #2c3e50;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 1px solid #e9ecef;
+}
+
+.contact-link:hover {
+    background: linear-gradient(135deg, #D3413F 0%, #A02E2C 100%);
+    color: white;
+    transform: translateX(5px);
+    border-color: #D3413F;
+}
+
+.contact-link svg {
+    flex-shrink: 0;
+}
+
+/* Our Team */
+.our-team {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.team-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.team-stat {
+    text-align: center;
+    padding: 40px 30px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 16px;
+    transition: all 0.3s ease;
+}
+
+.team-stat:hover {
+    background: linear-gradient(135deg, #D3413F 0%, #A02E2C 100%);
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(211, 65, 63, 0.3);
+}
+
+.team-stat:hover .stat-icon,
+.team-stat:hover h3,
+.team-stat:hover p {
+    color: white;
+}
+
+.stat-icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.team-stat h3 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #2c3e50;
+    transition: all 0.3s ease;
+}
+
+.team-stat p {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #666;
+    transition: all 0.3s ease;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .overview-grid {
+        gap: 60px;
+    }
+
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .process-timeline {
+        flex-wrap: wrap;
+    }
+
+    .process-step {
+        flex-basis: calc(50% - 15px);
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-hero .hero-title {
+        font-size: 36px;
+    }
+
+    .about-hero .hero-subtitle {
+        font-size: 16px;
+    }
+
+    .about-hero .hero-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .overview-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .overview-image {
+        order: -1;
+    }
+
+    .mv-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .process-timeline::before {
+        display: none;
+    }
+
+    .process-step {
+        flex-basis: 100%;
+    }
+
+    .leadership-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .team-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .company-overview,
+    .mission-vision,
+    .why-choose,
+    .our-process,
+    .leadership-section,
+    .our-team {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-hero .hero-title {
+        font-size: 28px;
+    }
+
+    .about-hero .hero-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .leadership-grid {
+        gap: 20px;
+    }
+
+    .leader-info {
+        padding: 30px 20px;
+    }
+
+    .leader-info h3 {
+        font-size: 24px;
+    }
+
+    .team-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .mv-card {
+        padding: 40px 30px;
+    }
+
+    .why-card {
+        padding: 30px 20px;
+    }
+}
+

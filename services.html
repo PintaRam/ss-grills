@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     <meta name="description" content="Complete SS Grills Services - Stainless Steel Grills, Gates, Glass Railings, PVD Furniture, Shower Partitions & More">
-    <meta name="keywords" content="SS Grills Mumbai, Glass Railing, PVD Gates, Stainless Steel Furniture, Shower Partition, SS Dining Table">
+    <meta name="keywords" content="SS Grills Mumbai, Glass Railing, Stainless Steel Gates, PVD Furniture, Shower Partition, SS Dining Table">
     <title>Our Services - SS Grills | Premium Stainless Steel Solutions</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/mobile-responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -18,13 +19,7 @@
         <div class="container">
             <div class="nav-wrapper">
                 <div class="logo">
-                    <div class="logo-icon">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                            <rect x="5" y="5" width="30" height="30" stroke="#D3413F" stroke-width="2" fill="none"/>
-                            <rect x="10" y="10" width="20" height="20" stroke="#D3413F" stroke-width="2" fill="none"/>
-                            <circle cx="20" cy="20" r="5" fill="#D3413F"/>
-                        </svg>
-                    </div>
+                    <img src="images/logo-removebg-preview.png" alt="SS Grills Logo" class="logo-image">
                     <div class="logo-text">
                         <h1>SS GRILLS</h1>
                         <span>Premium Metal Works</span>
@@ -37,10 +32,26 @@
                 </button>
                 <ul class="nav-menu" id="navMenu">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="has-dropdown">
+                        <a href="services.html">Metal Works <span class="dropdown-arrow">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="ss-grills.html">SS Grills Works</a></li>
+                            <li><a href="ss-gates.html">Designer SS Gates (Including PVD)</a></li>
+                            <li><a href="ss-railing.html">SS Railing & Handrails</a></li>
+                            <li><a href="pvd-tables.html">PVD Center Tables</a></li>
+                            <li><a href="dining-tables.html">SS Dining Tables</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="services.html">Glass Works <span class="dropdown-arrow">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="glass-railing.html">Glass Railing Systems</a></li>
+                            <li><a href="shower-partition.html">Shower & Bathroom Partitions</a></li>
+                            <li><a href="glass-works.html">Complete Glass Works</a></li>
+                        </ul>
+                    </li>
                     <li><a href="products.html">Products</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
@@ -146,26 +157,7 @@
                     <a href="#ss-gates" class="service-btn">Learn More →</a>
                 </div>
 
-                <!-- Service 5: PVD Gates -->
-                <div class="service-box" data-service="pvd-gates">
-                    <div class="service-icon">
-                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" stroke="#D3413F" stroke-width="2">
-                            <rect x="10" y="10" width="18" height="40" rx="2" fill="url(#gold)"/>
-                            <rect x="32" y="10" width="18" height="40" rx="2" fill="url(#gold)"/>
-                            <defs>
-                                <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#FFD700;stop-opacity:0.3" />
-                                    <stop offset="100%" style="stop-color:#FFA500;stop-opacity:0.3" />
-                                </linearGradient>
-                            </defs>
-                        </svg>
-                    </div>
-                    <h3>PVD Coated SS Gates</h3>
-                    <p>Luxury PVD coated gates in gold, rose gold, and custom finishes with 10+ years warranty</p>
-                    <a href="#pvd-gates" class="service-btn">Learn More →</a>
-                </div>
-
-                <!-- Service 6: PVD Tables -->
+                <!-- Service 5: PVD Tables -->
                 <div class="service-box" data-service="pvd-tables">
                     <div class="service-icon">
                         <svg width="60" height="60" viewBox="0 0 60 60" fill="none" stroke="#D3413F" stroke-width="2">
@@ -209,20 +201,7 @@
                     <a href="#shower-partition" class="service-btn">Learn More →</a>
                 </div>
 
-                <!-- Service 9: Bath Partition -->
-                <div class="service-box" data-service="bath-partition">
-                    <div class="service-icon">
-                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" stroke="#D3413F" stroke-width="2">
-                            <rect x="10" y="10" width="18" height="40" rx="2" opacity="0.3"/>
-                            <rect x="32" y="10" width="18" height="40" rx="2" opacity="0.3"/>
-                        </svg>
-                    </div>
-                    <h3>Bathroom Partitions</h3>
-                    <p>Complete bathroom partition solutions for wet/dry separation and toilet cubicles</p>
-                    <a href="#bath-partition" class="service-btn">Learn More →</a>
-                </div>
-
-                <!-- Service 10: Glass Works -->
+                <!-- Service 9: Glass Works -->
                 <div class="service-box" data-service="glass-works">
                     <div class="service-icon">
                         <svg width="60" height="60" viewBox="0 0 60 60" fill="none" stroke="#D3413F" stroke-width="2">
@@ -283,7 +262,7 @@
 
                     <div class="detail-cta">
                         <a href="contact.html" class="btn btn-primary">Get Quote</a>
-                        <a href="gallery.html" class="btn btn-secondary">View Gallery</a>
+                        <a href="products.html" class="btn btn-secondary">View Products</a>
                     </div>
                 </div>
                 <div class="service-detail-image">
@@ -340,7 +319,7 @@
 
                     <div class="detail-cta">
                         <a href="contact.html" class="btn btn-primary">Get Quote</a>
-                        <a href="gallery.html" class="btn btn-secondary">View Gallery</a>
+                        <a href="products.html" class="btn btn-secondary">View Products</a>
                     </div>
                 </div>
             </div>
@@ -389,7 +368,7 @@
 
                     <div class="detail-cta">
                         <a href="contact.html" class="btn btn-primary">Get Quote</a>
-                        <a href="gallery.html" class="btn btn-secondary">View Gallery</a>
+                        <a href="products.html" class="btn btn-secondary">View Products</a>
                     </div>
                 </div>
                 <div class="service-detail-image">
@@ -446,67 +425,14 @@
 
                     <div class="detail-cta">
                         <a href="contact.html" class="btn btn-primary">Get Quote</a>
-                        <a href="gallery.html" class="btn btn-secondary">View Gallery</a>
+                        <a href="products.html" class="btn btn-secondary">View Products</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Service 5: PVD Coated SS Gates -->
-    <section class="service-detail" id="pvd-gates">
-        <div class="container">
-            <div class="service-detail-wrapper">
-                <div class="service-detail-content">
-                    <span class="detail-badge">Service 05</span>
-                    <h2>PVD Coated SS Gates</h2>
-                    <p class="detail-intro">Luxury PVD coated stainless steel gates in gold, rose gold, champagne, bronze, and black finishes. Scratch-resistant, corrosion-proof coating with 10+ years warranty.</p>
-
-                    <div class="features-list">
-                        <div class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            <div>
-                                <h4>Gold PVD Gates</h4>
-                                <p>Luxurious gold finish for premium homes</p>
-                            </div>
-                        </div>
-                        <div class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            <div>
-                                <h4>Rose Gold Finish</h4>
-                                <p>Elegant rose gold coating for modern aesthetics</p>
-                            </div>
-                        </div>
-                        <div class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            <div>
-                                <h4>Black PVD Coating</h4>
-                                <p>Sophisticated black finish for contemporary designs</p>
-                            </div>
-                        </div>
-                        <div class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            <div>
-                                <h4>Custom Color Options</h4>
-                                <p>Champagne, bronze, and custom PVD colors</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="detail-cta">
-                        <a href="contact.html" class="btn btn-primary">Get Quote</a>
-                        <a href="gallery.html" class="btn btn-secondary">View Gallery</a>
-                    </div>
-                </div>
-                <div class="service-detail-image">
-                    <img src="images/Gate/6e5fa9197d29d01c77c3b4f77cbd6a69-removebg-preview.png" alt="PVD Coated SS Gates Mumbai">
-                    <div class="image-badge">Luxury Finish</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Service 6: PVD Center Tables -->
+    <!-- Service 5: PVD Center Tables -->
     <section class="service-detail alt-bg" id="pvd-tables">
         <div class="container">
             <div class="service-detail-wrapper reverse">
@@ -515,7 +441,7 @@
                     <div class="image-badge">Premium Furniture</div>
                 </div>
                 <div class="service-detail-content">
-                    <span class="detail-badge">Service 06</span>
+                    <span class="detail-badge">Service 05</span>
                     <h2>PVD Center Tables</h2>
                     <p class="detail-intro">Exquisite PVD coated stainless steel center tables, coffee tables, and side tables. Contemporary designs with glass, marble, or wooden tops. Gold, rose gold, and custom PVD finishes.</p>
 
@@ -552,7 +478,7 @@
 
                     <div class="detail-cta">
                         <a href="contact.html" class="btn btn-primary">Get Quote</a>
-                        <a href="gallery.html" class="btn btn-secondary">View Gallery</a>
+                        <a href="products.html" class="btn btn-secondary">View Products</a>
                     </div>
                 </div>
             </div>
@@ -564,7 +490,7 @@
         <div class="container">
             <div class="service-detail-wrapper">
                 <div class="service-detail-content">
-                    <span class="detail-badge">Service 07</span>
+                    <span class="detail-badge">Service 06</span>
                     <h2>SS Dining Tables</h2>
                     <p class="detail-intro">Premium stainless steel dining tables with PVD coating, glass tops, and marble tops. 4-seater, 6-seater, and 8-seater options. Modern and classic designs for luxury homes and restaurants.</p>
 
@@ -601,7 +527,7 @@
 
                     <div class="detail-cta">
                         <a href="contact.html" class="btn btn-primary">Get Quote</a>
-                        <a href="gallery.html" class="btn btn-secondary">View Gallery</a>
+                        <a href="products.html" class="btn btn-secondary">View Products</a>
                     </div>
                 </div>
                 <div class="service-detail-image">
@@ -621,7 +547,7 @@
                     <div class="image-badge">Bathroom Solutions</div>
                 </div>
                 <div class="service-detail-content">
-                    <span class="detail-badge">Service 08</span>
+                    <span class="detail-badge">Service 07</span>
                     <h2>SS Shower Partitions</h2>
                     <p class="detail-intro">Frameless and framed glass shower partitions with SS 304 fittings. Sliding, hinged, and fixed shower enclosures. Toughened safety glass with water-resistant coating and modern hardware.</p>
 
@@ -658,67 +584,14 @@
 
                     <div class="detail-cta">
                         <a href="contact.html" class="btn btn-primary">Get Quote</a>
-                        <a href="gallery.html" class="btn btn-secondary">View Gallery</a>
+                        <a href="products.html" class="btn btn-secondary">View Products</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Service 9: Bathroom Partitions -->
-    <section class="service-detail" id="bath-partition">
-        <div class="container">
-            <div class="service-detail-wrapper">
-                <div class="service-detail-content">
-                    <span class="detail-badge">Service 09</span>
-                    <h2>Bathroom Partitions</h2>
-                    <p class="detail-intro">Complete bathroom partition solutions with toughened glass and SS frames. Wet and dry area separation, toilet cubicles, and privacy partitions for homes, hotels, and commercial spaces.</p>
-
-                    <div class="features-list">
-                        <div class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            <div>
-                                <h4>Wet/Dry Area Dividers</h4>
-                                <p>Functional separation for modern bathrooms</p>
-                            </div>
-                        </div>
-                        <div class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            <div>
-                                <h4>Toilet Cubicle Partitions</h4>
-                                <p>Commercial-grade toilet partitions</p>
-                            </div>
-                        </div>
-                        <div class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            <div>
-                                <h4>Frosted Glass Options</h4>
-                                <p>Privacy glass with elegant finish</p>
-                            </div>
-                        </div>
-                        <div class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            <div>
-                                <h4>Commercial & Residential</h4>
-                                <p>Solutions for homes, hotels, and offices</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="detail-cta">
-                        <a href="contact.html" class="btn btn-primary">Get Quote</a>
-                        <a href="gallery.html" class="btn btn-secondary">View Gallery</a>
-                    </div>
-                </div>
-                <div class="service-detail-image">
-                    <img src="images/Glass Railing/94dd3ec87e9a55fee010b3f9d4301bd3-removebg-preview.png" alt="Bathroom Partitions Mumbai">
-                    <div class="image-badge">Space Dividers</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Service 10: Complete Glass Works -->
+    <!-- Service 9: Complete Glass Works -->
     <section class="service-detail alt-bg" id="glass-works">
         <div class="container">
             <div class="service-detail-wrapper reverse">
@@ -727,7 +600,7 @@
                     <div class="image-badge">Complete Solutions</div>
                 </div>
                 <div class="service-detail-content">
-                    <span class="detail-badge">Service 10</span>
+                    <span class="detail-badge">Service 08</span>
                     <h2>Complete Glass Works</h2>
                     <p class="detail-intro">Comprehensive glass fabrication and installation services. Toughened glass, laminated glass, frosted glass partitions, glass doors, glass canopies, and custom glass solutions for all applications.</p>
 
@@ -764,7 +637,7 @@
 
                     <div class="detail-cta">
                         <a href="contact.html" class="btn btn-primary">Get Quote</a>
-                        <a href="gallery.html" class="btn btn-secondary">View Gallery</a>
+                        <a href="products.html" class="btn btn-secondary">View Products</a>
                     </div>
                 </div>
             </div>
@@ -815,10 +688,9 @@
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="about.html">About Us</a></li>
                         <li><a href="services.html">Services</a></li>
                         <li><a href="products.html">Products</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
@@ -829,7 +701,6 @@
                         <li><a href="#glass-railing">Glass Railing</a></li>
                         <li><a href="#ss-railing">SS Railing</a></li>
                         <li><a href="#ss-gates">SS Gates</a></li>
-                        <li><a href="#pvd-gates">PVD Gates</a></li>
                         <li><a href="#glass-works">Glass Works</a></li>
                     </ul>
                 </div>

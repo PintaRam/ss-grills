@@ -2,13 +2,381 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     <meta name="description" content="SS Grills - Premium Stainless Steel Grills, Gates, Glass Railings & PVD Furniture">
     <title>SS Grills - Premium Metal Works & Fabrication</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=33">
+    <link rel="stylesheet" href="css/mobile-responsive.css?v=33">
+    <script src="js/script.js?v=33" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Force hide slide counter on mobile devices */
+        @media (max-width: 992px) {
+            .slide-counter {
+                display: none !important;
+                visibility: hidden !important;
+                opacity: 0 !important;
+            }
+            .slide-number {
+                display: none !important;
+            }
+
+            /* Fix slider going under navbar on mobile - CRITICAL FIX */
+            .fullscreen-slider {
+                margin-top: 70px !important;
+                padding-top: 20px !important;
+                min-height: calc(100vh - 70px) !important;
+                height: auto !important;
+            }
+
+            /* Keep absolute positioning for slider mechanics to work */
+            .slider-slide {
+                position: absolute !important;
+                top: 0 !important;
+                left: 0 !important;
+                width: 100% !important;
+                height: 100% !important;
+                padding: 30px 0 !important;
+                flex-direction: column !important;
+                justify-content: flex-start !important;
+                align-items: center !important;
+            }
+
+            /* Only active slide shows, others hidden by opacity */
+            .slider-slide.active {
+                display: flex !important;
+            }
+
+            .slide-image {
+                position: relative !important;
+                top: 20px !important;
+                right: auto !important;
+                left: auto !important;
+                transform: none !important;
+                width: 90% !important;
+                max-width: 350px !important;
+                max-height: 280px !important;
+                margin: 0 auto 20px !important;
+            }
+
+            .slide-content {
+                position: relative !important;
+                top: auto !important;
+                left: auto !important;
+                width: 100% !important;
+                padding: 0 20px !important;
+                text-align: center !important;
+            }
+
+            .slide-content .container {
+                max-width: 100% !important;
+                padding: 0 !important;
+            }
+
+            /* Fix service carousel - single card display */
+            .services-carousel-wrapper {
+                padding: 0 !important;
+                overflow: hidden !important;
+                margin: 0 auto !important;
+                width: 100% !important;
+                position: relative !important;
+            }
+
+            .services-carousel {
+                overflow: hidden !important;
+                width: 100% !important;
+                padding: 0 60px !important;
+            }
+
+            .services-track {
+                gap: 0 !important;
+                padding: 30px 0 40px !important;
+                display: flex !important;
+                align-items: stretch !important;
+            }
+
+            .service-slide {
+                min-width: 100% !important;
+                max-width: 100% !important;
+                margin: 0 !important;
+                padding: 0 10px !important;
+                flex-shrink: 0 !important;
+            }
+
+            .service-card {
+                margin: 0 auto !important;
+                max-width: 100% !important;
+                width: 100% !important;
+                box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12) !important;
+                display: flex !important;
+                flex-direction: column !important;
+                overflow: hidden !important;
+                height: auto !important;
+            }
+
+            .service-image {
+                height: 200px !important;
+                min-height: 200px !important;
+                max-height: 200px !important;
+                width: 100% !important;
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                position: relative !important;
+                background: #f8f8f8 !important;
+                padding: 15px !important;
+                flex-shrink: 0 !important;
+                overflow: hidden !important;
+            }
+
+            .service-image img {
+                object-fit: contain !important;
+                width: auto !important;
+                height: auto !important;
+                max-height: 100% !important;
+                max-width: 100% !important;
+                position: relative !important;
+            }
+
+            .service-content {
+                padding: 20px 18px 18px !important;
+                flex: 1 !important;
+                display: flex !important;
+                flex-direction: column !important;
+                gap: 8px !important;
+                position: relative !important;
+                z-index: 1 !important;
+            }
+
+            .service-card h3 {
+                font-size: 19px !important;
+                margin-bottom: 0 !important;
+                line-height: 1.3 !important;
+            }
+
+            .service-description {
+                font-size: 12px !important;
+                line-height: 1.4 !important;
+                margin-bottom: 0 !important;
+                display: -webkit-box !important;
+                -webkit-line-clamp: 2 !important;
+                -webkit-box-orient: vertical !important;
+                overflow: hidden !important;
+                color: #666 !important;
+            }
+
+            .service-features {
+                margin-bottom: 0 !important;
+                max-height: 80px !important;
+                overflow: hidden !important;
+            }
+
+            .service-features li {
+                font-size: 11px !important;
+                padding: 3px 0 !important;
+                line-height: 1.3 !important;
+            }
+
+            .service-btn {
+                margin-top: 8px !important;
+                padding: 10px 20px !important;
+                font-size: 13px !important;
+            }
+
+            .service-badge {
+                position: absolute !important;
+                top: 10px !important;
+                left: 10px !important;
+                z-index: 10 !important;
+            }
+
+            /* Disable any transforms on mobile */
+            .service-slide,
+            .service-slide.center,
+            .service-slide.left,
+            .service-slide.right {
+                transform: none !important;
+            }
+
+            .service-arrow {
+                width: 48px !important;
+                height: 48px !important;
+                background: var(--primary-color) !important;
+                color: white !important;
+                border-radius: 50% !important;
+                box-shadow: 0 4px 15px rgba(211, 65, 63, 0.4) !important;
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                z-index: 100 !important;
+            }
+
+            .service-arrow:hover {
+                background: var(--dark-color) !important;
+                transform: scale(1.1) !important;
+            }
+
+            .service-prev {
+                left: 10px !important;
+            }
+
+            .service-next {
+                right: 10px !important;
+            }
+
+            /* Hide side cards completely on mobile */
+            .service-slide:not(.center) {
+                opacity: 0 !important;
+                visibility: hidden !important;
+                pointer-events: none !important;
+            }
+
+            /* Better spacing for mobile sections */
+            section {
+                padding: 40px 0 !important;
+            }
+
+            .section-title {
+                font-size: 26px !important;
+                margin-bottom: 15px !important;
+                padding: 0 15px !important;
+            }
+
+            .section-description {
+                font-size: 14px !important;
+                padding: 0 15px !important;
+                margin-bottom: 30px !important;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .fullscreen-slider {
+                margin-top: 70px !important;
+                padding-top: 15px !important;
+            }
+
+            .slide-image {
+                max-height: 200px !important;
+                max-width: 280px !important;
+                top: 10px !important;
+            }
+
+            .slider-slide {
+                padding: 20px 0 !important;
+            }
+
+            .slide-title {
+                font-size: 24px !important;
+            }
+
+            .slide-description {
+                font-size: 13px !important;
+            }
+
+            /* Single card carousel on small phones */
+            .services-carousel-wrapper {
+                padding: 0 !important;
+            }
+
+            .services-carousel {
+                padding: 0 52px !important;
+            }
+
+            .services-track {
+                padding: 25px 0 35px !important;
+            }
+
+            .service-slide {
+                min-width: 100% !important;
+                max-width: 100% !important;
+                padding: 0 8px !important;
+            }
+
+            .service-image {
+                height: 170px !important;
+                min-height: 170px !important;
+                max-height: 170px !important;
+                padding: 12px !important;
+                flex-shrink: 0 !important;
+            }
+
+            .service-image img {
+                width: auto !important;
+                height: auto !important;
+            }
+
+            .service-content {
+                padding: 16px 14px 14px !important;
+                gap: 6px !important;
+                position: relative !important;
+                z-index: 1 !important;
+            }
+
+            .service-card h3 {
+                font-size: 17px !important;
+                margin-bottom: 0 !important;
+            }
+
+            .service-description {
+                font-size: 11px !important;
+                -webkit-line-clamp: 2 !important;
+                margin-bottom: 0 !important;
+            }
+
+            .service-features {
+                margin-bottom: 0 !important;
+                max-height: 70px !important;
+            }
+
+            .service-features li {
+                font-size: 10px !important;
+                padding: 2px 0 !important;
+            }
+
+            .service-btn {
+                padding: 8px 16px !important;
+                font-size: 12px !important;
+            }
+
+            .service-arrow {
+                width: 44px !important;
+                height: 44px !important;
+            }
+
+            .service-prev {
+                left: 8px !important;
+            }
+
+            .service-next {
+                right: 8px !important;
+            }
+
+            .section-title {
+                font-size: 20px !important;
+            }
+
+            .section-description {
+                font-size: 13px !important;
+            }
+
+            /* Floating buttons better positioning */
+            .whatsapp-float {
+                bottom: 20px !important;
+                right: 15px !important;
+                width: 56px !important;
+                height: 56px !important;
+            }
+
+            .call-float {
+                bottom: 85px !important;
+                right: 15px !important;
+                width: 56px !important;
+                height: 56px !important;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Modern Navigation -->
@@ -16,13 +384,7 @@
         <div class="container">
             <div class="nav-wrapper">
                 <div class="logo">
-                    <div class="logo-icon">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                            <rect x="2" y="2" width="36" height="36" stroke="#D3413F" stroke-width="2"/>
-                            <rect x="8" y="8" width="24" height="24" stroke="#D3413F" stroke-width="2"/>
-                            <rect x="14" y="14" width="12" height="12" fill="#D3413F"/>
-                        </svg>
-                    </div>
+                    <img src="images/logo-removebg-preview.png" alt="SS Grills Logo" class="logo-image">
                     <div class="logo-text">
                         <h1>SS GRILLS</h1>
                         <span>Premium Metal Works</span>
@@ -35,24 +397,26 @@
                 </button>
                 <ul class="nav-menu" id="navMenu">
                     <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li class="has-dropdown">
-                        <a href="services.html">Services <span class="dropdown-arrow">▼</span></a>
+                        <a href="services.html">Metal Works <span class="dropdown-arrow">▼</span></a>
                         <ul class="dropdown-menu">
                             <li><a href="ss-grills.html">SS Grills Works</a></li>
-                            <li><a href="glass-railing.html">Glass Railing Systems</a></li>
-                            <li><a href="ss-railing.html">SS Railing & Handrails</a></li>
                             <li><a href="ss-gates.html">Designer SS Gates</a></li>
-                            <li><a href="pvd-gates.html">PVD Coated Gates</a></li>
+                            <li><a href="ss-railing.html">SS Railing & Handrails</a></li>
                             <li><a href="pvd-tables.html">PVD Center Tables</a></li>
                             <li><a href="dining-tables.html">SS Dining Tables</a></li>
-                            <li><a href="shower-partition.html">Shower Partitions</a></li>
-                            <li><a href="bath-partition.html">Bathroom Partitions</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="services.html">Glass Works <span class="dropdown-arrow">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="glass-railing.html">Glass Railing Systems</a></li>
+                            <li><a href="shower-partition.html">Shower & Bathroom Partitions</a></li>
                             <li><a href="glass-works.html">Complete Glass Works</a></li>
                         </ul>
                     </li>
                     <li><a href="products.html">Products</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="contact.html" class="nav-cta">Get Quote</a></li>
                 </ul>
@@ -65,16 +429,16 @@
         <div class="slider-container">
             <!-- Slide 1 -->
             <div class="slider-slide active">
-                <img src="images/Gate/19ec28d329c6f3c631334f153e37008c-removebg-preview.png" alt="Designer SS Gates" class="slide-image">
+                <img src="images/SS Grills/SS PVD1.jpg" alt="PVD Coated Grills" class="slide-image">
                 <div class="slide-overlay"></div>
                 <span class="slide-number">01</span>
                 <div class="slide-content">
                     <div class="container">
-                        <span class="slide-category">Grand Entrance</span>
-                        <h1 class="slide-title">Designer SS Gates</h1>
-                        <p class="slide-description">Elegant entrance gates with automated systems and premium designs for your dream home</p>
+                        <span class="slide-category">Luxury Finish</span>
+                        <h1 class="slide-title">PVD Coated Grills</h1>
+                        <p class="slide-description">Premium PVD coated stainless steel grills with stunning metallic finishes and superior durability</p>
                         <div class="slide-buttons">
-                            <a href="products.html#gates" class="btn btn-primary">View Gates</a>
+                            <a href="products.html#grills" class="btn btn-primary">View Grills</a>
                             <a href="contact.html" class="btn btn-outline">Contact Us</a>
                         </div>
                     </div>
@@ -83,16 +447,16 @@
 
             <!-- Slide 2 -->
             <div class="slider-slide">
-                <img src="images/Gate/287e71d73c5cf112abc8bc5de39041c3-removebg-preview.png" alt="Premium Gates" class="slide-image">
+                <img src="images/SS Grills/SS PVD 2.jpg" alt="Designer PVD Grills" class="slide-image">
                 <div class="slide-overlay"></div>
                 <span class="slide-number">02</span>
                 <div class="slide-content">
                     <div class="container">
-                        <span class="slide-category">Luxury Gates</span>
-                        <h1 class="slide-title">Premium SS Gates</h1>
-                        <p class="slide-description">High-end stainless steel gates with intricate designs and superior craftsmanship</p>
+                        <span class="slide-category">Premium Design</span>
+                        <h1 class="slide-title">Designer PVD Grills</h1>
+                        <p class="slide-description">Exquisite PVD grills with custom patterns and luxurious metallic coatings</p>
                         <div class="slide-buttons">
-                            <a href="products.html#gates" class="btn btn-primary">Explore Gates</a>
+                            <a href="products.html#grills" class="btn btn-primary">Explore Grills</a>
                             <a href="contact.html" class="btn btn-outline">Get Quote</a>
                         </div>
                     </div>
@@ -101,7 +465,7 @@
 
             <!-- Slide 3 -->
             <div class="slider-slide">
-                <img src="images/Gate/6e5fa9197d29d01c77c3b4f77cbd6a69-removebg-preview.png" alt="Modern Gates" class="slide-image">
+                <img src="images/Gate/SS Gate 10.jpg" alt="Modern Gates" class="slide-image">
                 <div class="slide-overlay"></div>
                 <span class="slide-number">03</span>
                 <div class="slide-content">
@@ -111,7 +475,7 @@
                         <p class="slide-description">Sleek and modern gate designs that complement contemporary architecture</p>
                         <div class="slide-buttons">
                             <a href="products.html#gates" class="btn btn-primary">View Collection</a>
-                            <a href="gallery.html" class="btn btn-outline">View Gallery</a>
+                            <a href="contact.html" class="btn btn-outline">Get Quote</a>
                         </div>
                     </div>
                 </div>
@@ -129,7 +493,7 @@
                         <p class="slide-description">Frameless and framed glass railings for stairs, balconies, and terraces with crystal-clear views</p>
                         <div class="slide-buttons">
                             <a href="products.html#railing" class="btn btn-primary">Discover More</a>
-                            <a href="gallery.html" class="btn btn-outline">View Gallery</a>
+                            <a href="contact.html" class="btn btn-outline">Get Quote</a>
                         </div>
                     </div>
                 </div>
@@ -183,7 +547,7 @@
                         <p class="slide-description">Sophisticated glass railing solutions for staircases with modern aesthetics</p>
                         <div class="slide-buttons">
                             <a href="products.html#railing" class="btn btn-primary">Discover More</a>
-                            <a href="gallery.html" class="btn btn-outline">View Gallery</a>
+                            <a href="contact.html" class="btn btn-outline">Get Quote</a>
                         </div>
                     </div>
                 </div>
@@ -319,7 +683,7 @@
                         <div class="service-slide">
                             <div class="service-card">
                                 <div class="service-image">
-                                    <img src="images/Gate/19ec28d329c6f3c631334f153e37008c-removebg-preview.png" alt="Stainless Steel Grills Mumbai | SS Window Grills | Door Grills">
+                                    <img src="images/SS Grills/SS PVD 3.jpg" alt="Stainless Steel Grills Mumbai | SS Window Grills | Door Grills">
                                     <div class="service-badge">Premium Quality</div>
                                 </div>
                                 <div class="service-content">
@@ -361,7 +725,7 @@
                         <div class="service-slide">
                             <div class="service-card">
                                 <div class="service-image">
-                                    <img src="images/Glass Railing/0946a71bccf7fda8f033632c906c11b7-removebg-preview.png" alt="SS Railing Mumbai | Stainless Steel Handrails | SS Balcony Railing">
+                                    <img src="images/Railing/SS PVD Railing with ball design.jpg" alt="SS Railing Mumbai | Stainless Steel Handrails | SS Balcony Railing">
                                     <div class="service-badge">Durable</div>
                                 </div>
                                 <div class="service-content">
@@ -382,7 +746,7 @@
                         <div class="service-slide">
                             <div class="service-card">
                                 <div class="service-image">
-                                    <img src="images/Gate/287e71d73c5cf112abc8bc5de39041c3-removebg-preview.png" alt="SS Gates Mumbai | Designer Stainless Steel Gates | Main Gate Design">
+                                    <img src="images/Gate/ssGate1.jpg" alt="SS Gates Mumbai | Designer Stainless Steel Gates | Main Gate Design">
                                     <div class="service-badge">Designer Collection</div>
                                 </div>
                                 <div class="service-content">
@@ -399,28 +763,7 @@
                             </div>
                         </div>
 
-                        <!-- Service 5: SS PVD Gates -->
-                        <div class="service-slide">
-                            <div class="service-card">
-                                <div class="service-image">
-                                    <img src="images/Gate/6e5fa9197d29d01c77c3b4f77cbd6a69-removebg-preview.png" alt="PVD Coated Gates | Gold PVD Gates | Rose Gold SS Gates Mumbai">
-                                    <div class="service-badge">Luxury Finish</div>
-                                </div>
-                                <div class="service-content">
-                                    <h3>PVD Coated SS Gates</h3>
-                                    <p class="service-description">Luxury PVD coated stainless steel gates in gold, rose gold, champagne, bronze, and black finishes. Scratch-resistant, corrosion-proof coating with 10+ years warranty.</p>
-                                    <ul class="service-features">
-                                        <li>✓ Gold PVD Gates</li>
-                                        <li>✓ Rose Gold Finish</li>
-                                        <li>✓ Black PVD Coating</li>
-                                        <li>✓ Custom Color Options</li>
-                                    </ul>
-                                    <a href="products.html#pvd-gates" class="service-link">Explore PVD Gates →</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Service 6: SS PVD Tables -->
+                        <!-- Service 5: SS PVD Tables -->
                         <div class="service-slide">
                             <div class="service-card">
                                 <div class="service-image">
@@ -441,7 +784,7 @@
                             </div>
                         </div>
 
-                        <!-- Service 7: SS Dining Tables -->
+                        <!-- Service 6: SS Dining Tables -->
                         <div class="service-slide">
                             <div class="service-card">
                                 <div class="service-image">
@@ -462,53 +805,32 @@
                             </div>
                         </div>
 
-                        <!-- Service 8: SS Partition Bath Shower -->
+                        <!-- Service 7: Shower & Bathroom Partitions -->
                         <div class="service-slide">
                             <div class="service-card">
                                 <div class="service-image">
-                                    <img src="images/Glass Railing/7befa7f15e6519136d84e73c319a0713-removebg-preview.png" alt="SS Shower Partition | Glass Shower Enclosure | Bathroom Partition Mumbai">
+                                    <img src="images/Shower partition/Frameless glass shower door.jpg" alt="SS Shower Partition | Glass Shower Enclosure | Bathroom Partition Mumbai">
                                     <div class="service-badge">Bathroom Solutions</div>
                                 </div>
                                 <div class="service-content">
-                                    <h3>SS Shower Partitions</h3>
-                                    <p class="service-description">Frameless and framed glass shower partitions with SS 304 fittings. Sliding, hinged, and fixed shower enclosures. Toughened safety glass with water-resistant coating and modern hardware.</p>
+                                    <h3>Shower & Bathroom Partitions</h3>
+                                    <p class="service-description">Premium glass shower partitions and bathroom enclosures with SS 304 fittings. Frameless, sliding, and hinged options. Wet/dry area dividers, toughened safety glass, and custom designs for modern bathrooms.</p>
                                     <ul class="service-features">
                                         <li>✓ Frameless Shower Doors</li>
-                                        <li>✓ Sliding Shower Enclosures</li>
-                                        <li>✓ Fixed Glass Partitions</li>
-                                        <li>✓ Custom Sizes Available</li>
+                                        <li>✓ Sliding & Hinged Enclosures</li>
+                                        <li>✓ Wet/Dry Area Dividers</li>
+                                        <li>✓ Custom Sizes & Designs</li>
                                     </ul>
                                     <a href="products.html#shower-partition" class="service-link">View Shower Partitions →</a>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Service 9: Bath Partitions -->
+                        <!-- Service 8: Glass Works -->
                         <div class="service-slide">
                             <div class="service-card">
                                 <div class="service-image">
-                                    <img src="images/Glass Railing/94dd3ec87e9a55fee010b3f9d4301bd3-removebg-preview.png" alt="Bathroom Glass Partition | Toilet Partition | SS Bathroom Divider Mumbai">
-                                    <div class="service-badge">Space Dividers</div>
-                                </div>
-                                <div class="service-content">
-                                    <h3>Bathroom Partitions</h3>
-                                    <p class="service-description">Complete bathroom partition solutions with toughened glass and SS frames. Wet and dry area separation, toilet cubicles, and privacy partitions for homes, hotels, and commercial spaces.</p>
-                                    <ul class="service-features">
-                                        <li>✓ Wet/Dry Area Dividers</li>
-                                        <li>✓ Toilet Cubicle Partitions</li>
-                                        <li>✓ Frosted Glass Options</li>
-                                        <li>✓ Commercial & Residential</li>
-                                    </ul>
-                                    <a href="products.html#bath-partition" class="service-link">Explore Bath Partitions →</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Service 10: Glass Works -->
-                        <div class="service-slide">
-                            <div class="service-card">
-                                <div class="service-image">
-                                    <img src="images/SS PVD Table/6f450857da2156b13d0de22917ae973a-removebg-preview.png" alt="Glass Work Mumbai | Toughened Glass | Glass Partition | Glass Door">
+                                    <img src="images/Glass Railing/Balcony glass railing with etching design glass.jpg" alt="Glass Work Mumbai | Toughened Glass | Glass Partition | Glass Door">
                                     <div class="service-badge">Complete Solutions</div>
                                 </div>
                                 <div class="service-content">
@@ -563,7 +885,7 @@
                         <div class="product-slide">
                             <div class="product-card">
                                 <div class="product-image">
-                                    <img src="images/Gate/19ec28d329c6f3c631334f153e37008c-removebg-preview.png" alt="Designer SS Gate Mumbai">
+                                    <img src="images/Gate/ss gate2.jpg" alt="Designer SS Gate Mumbai">
                                     <div class="product-badge">Premium</div>
                                 </div>
                                 <div class="product-content">
@@ -578,7 +900,7 @@
                         <div class="product-slide">
                             <div class="product-card">
                                 <div class="product-image">
-                                    <img src="images/Glass Railing/10fa0e6007b143eae105cb065b6d01ce-removebg-preview.png" alt="Frameless Glass Railing Mumbai">
+                                    <img src="images/Glass Railing/Balcony railing with D bracket and wooden.jpg" alt="Frameless Glass Railing Mumbai">
                                     <div class="product-badge">Trending</div>
                                 </div>
                                 <div class="product-content">
@@ -593,7 +915,7 @@
                         <div class="product-slide">
                             <div class="product-card">
                                 <div class="product-image">
-                                    <img src="images/SS PVD Table/2e598a0d249090c76c2af5f0b48d3cad-removebg-preview.png" alt="PVD Center Table Mumbai">
+                                    <img src="images/SS PVD Table/SS PVD Table/CENTER TABLE PVD.jpg" alt="PVD Center Table Mumbai">
                                     <div class="product-badge">Luxury</div>
                                 </div>
                                 <div class="product-content">
@@ -608,7 +930,7 @@
                         <div class="product-slide">
                             <div class="product-card">
                                 <div class="product-image">
-                                    <img src="images/Gate/287e71d73c5cf112abc8bc5de39041c3-removebg-preview.png" alt="Modern SS Gate Design">
+                                    <img src="images/Gate/SS Gate 7.jpg" alt="Modern SS Gate Design">
                                     <div class="product-badge">New</div>
                                 </div>
                                 <div class="product-content">
@@ -623,7 +945,7 @@
                         <div class="product-slide">
                             <div class="product-card">
                                 <div class="product-image">
-                                    <img src="images/Glass Railing/0946a71bccf7fda8f033632c906c11b7-removebg-preview.png" alt="Balcony Glass Railing">
+                                    <img src="images/Glass Railing/Balcony with black glass railing.jpg" alt="Balcony Glass Railing">
                                     <div class="product-badge">Popular</div>
                                 </div>
                                 <div class="product-content">
@@ -634,17 +956,77 @@
                             </div>
                         </div>
 
-                        <!-- Product 6: PVD Table 2 -->
+                        <!-- Product 6: SS Grills -->
                         <div class="product-slide">
                             <div class="product-card">
                                 <div class="product-image">
-                                    <img src="images/SS PVD Table/6f450857da2156b13d0de22917ae973a-removebg-preview.png" alt="PVD Dining Table">
+                                    <img src="images/SS Grills/ss grills 10.jpg" alt="Designer SS Grills">
                                     <div class="product-badge">Exclusive</div>
                                 </div>
                                 <div class="product-content">
-                                    <h3>PVD Dining Table</h3>
-                                    <p class="product-description">Premium PVD coated dining tables with rose gold finish</p>
-                                    <a href="products.html#pvd-furniture" class="product-link">View Details →</a>
+                                    <h3>Designer SS Grills</h3>
+                                    <p class="product-description">Premium stainless steel grills with modern geometric designs</p>
+                                    <a href="products.html#grills" class="product-link">View Details →</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 7: Shower Partition -->
+                        <div class="product-slide">
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <img src="images/Shower partition/Black Swing Shower Enclosure.jpg" alt="Shower Partition">
+                                    <div class="product-badge">Luxury</div>
+                                </div>
+                                <div class="product-content">
+                                    <h3>Shower Partitions</h3>
+                                    <p class="product-description">Premium glass shower enclosures with designer SS fittings</p>
+                                    <a href="products.html#shower-partition" class="product-link">View Details →</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 8: SS Railing -->
+                        <div class="product-slide">
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <img src="images/Railing/SS PVD with Latest design.jpg" alt="PVD SS Railing">
+                                    <div class="product-badge">Premium</div>
+                                </div>
+                                <div class="product-content">
+                                    <h3>PVD SS Railing</h3>
+                                    <p class="product-description">Luxurious PVD coated stainless steel railings for modern interiors</p>
+                                    <a href="products.html#ss-railing" class="product-link">View Details →</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 9: Dining Table -->
+                        <div class="product-slide">
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <img src="images/SS PVD Table/SS Dinning Table/ss dinning table 1.jpg" alt="SS Dining Table">
+                                    <div class="product-badge">Elegant</div>
+                                </div>
+                                <div class="product-content">
+                                    <h3>SS Dining Tables</h3>
+                                    <p class="product-description">Contemporary stainless steel dining tables with elegant design</p>
+                                    <a href="products.html#dining-tables" class="product-link">View Details →</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 10: Gate -->
+                        <div class="product-slide">
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <img src="images/Gate/SS Folding gate.jpg" alt="SS Folding Gate">
+                                    <div class="product-badge">Smart</div>
+                                </div>
+                                <div class="product-content">
+                                    <h3>SS Folding Gates</h3>
+                                    <p class="product-description">Space-saving stainless steel folding gates for commercial & residential</p>
+                                    <a href="products.html#gates" class="product-link">View Details →</a>
                                 </div>
                             </div>
                         </div>
@@ -1131,8 +1513,9 @@
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
                         <li><a href="products.html">Products</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>

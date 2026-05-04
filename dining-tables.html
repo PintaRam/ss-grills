@@ -2,33 +2,208 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="SS Grills Works Mumbai - Custom Stainless Steel Window Grills, Door Grills, Balcony Safety Grills | Premium 304 & 316 Grade">
-    <meta name="keywords" content="SS Grills Mumbai, Window Grills, Door Grills, Balcony Grills, Safety Grills, Stainless Steel Grills">
-    <title>SS Grills Works - Premium Stainless Steel Grills Mumbai | SS Grills</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description" content="SS Dining Tables Mumbai Bangalore | Premium Stainless Steel Dining Tables | Modern Dining Furniture 2024 | Designer SS Tables India | Latest Luxury Dining Tables">
+    <meta name="keywords" content="SS Dining Tables Mumbai, Stainless Steel Dining Tables Bangalore, Modern Dining Tables India, Designer Dining Furniture, Premium SS Tables 2024, Luxury Dining Tables">
+    <title>SS Dining Tables Mumbai Bangalore | Premium Stainless Steel Dining Furniture 2024 | Shree Ashish Industries</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/service-page.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/mobile-responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .catalogue-hero {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            padding: 120px 0 80px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        .catalogue-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('images/SS PVD Table/SS Table/SS Table 1.jpg') center/cover;
+            opacity: 0.15;
+        }
+        .catalogue-hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        .catalogue-hero p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .catalogue-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 30px;
+            padding: 60px 0;
+        }
+        .catalogue-item {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .catalogue-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(211, 65, 63, 0.2);
+        }
+        .catalogue-item img {
+            width: 100%;
+            height: 350px;
+            object-fit: contain;
+            background: #f8f8f8;
+            padding: 15px;
+        }
+        .catalogue-info {
+            padding: 25px;
+        }
+        .catalogue-info h3 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+        }
+        .catalogue-info p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .catalogue-badge {
+            display: inline-block;
+            background: #D3413F;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-top: 10px;
+        }
+        .whatsapp-btn-green, .whatsapp-btn-blue, .whatsapp-btn-red, 
+        .whatsapp-btn-purple, .whatsapp-btn-orange, .whatsapp-btn-teal {
+            display: block;
+            width: 100%;
+            color: white;
+            text-align: center;
+            padding: 12px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+        .whatsapp-btn-green { background: #25D366; }
+        .whatsapp-btn-green:hover { background: #20BA5A; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3); }
+        
+        .whatsapp-btn-blue { background: #0088cc; }
+        .whatsapp-btn-blue:hover { background: #006ba8; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(0, 136, 204, 0.3); }
+        
+        .whatsapp-btn-red { background: #D3413F; }
+        .whatsapp-btn-red:hover { background: #b32f2d; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(211, 65, 63, 0.3); }
+        
+        .whatsapp-btn-purple { background: #8B5CF6; }
+        .whatsapp-btn-purple:hover { background: #7C3AED; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(139, 92, 246, 0.3); }
+        
+        .whatsapp-btn-orange { background: #F97316; }
+        .whatsapp-btn-orange:hover { background: #EA580C; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(249, 115, 22, 0.3); }
+        
+        .whatsapp-btn-teal { background: #14B8A6; }
+        .whatsapp-btn-teal:hover { background: #0D9488; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(20, 184, 166, 0.3); }
+        
+        .whatsapp-btn-green svg, .whatsapp-btn-blue svg, .whatsapp-btn-red svg,
+        .whatsapp-btn-purple svg, .whatsapp-btn-orange svg, .whatsapp-btn-teal svg {
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+        .seo-section {
+            background: #f8f8f8;
+            padding: 60px 0;
+        }
+        .seo-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .seo-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+        }
+        .seo-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 20px;
+        }
+        .cta-section {
+            background: linear-gradient(135deg, #D3413F 0%, #a32f2d 100%);
+            padding: 60px 0;
+            text-align: center;
+            color: white;
+        }
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .cta-btn {
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .cta-btn-primary {
+            background: white;
+            color: #D3413F;
+        }
+        .cta-btn-primary:hover {
+            background: #f0f0f0;
+            transform: scale(1.05);
+        }
+        .cta-btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        .cta-btn-secondary:hover {
+            background: white;
+            color: #D3413F;
+        }
+        @media (max-width: 768px) {
+            .catalogue-hero h1 { font-size: 2.5rem; }
+            .catalogue-grid { grid-template-columns: 1fr; gap: 20px; }
+            .seo-content h2 { font-size: 2rem; }
+        }
+    </style>
 </head>
 <body>
-    <!-- Modern Navigation -->
+    <!-- Navigation -->
     <nav class="modern-navbar" id="navbar">
         <div class="container">
             <div class="nav-wrapper">
                 <div class="logo">
-                    <div class="logo-icon">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                            <rect x="5" y="5" width="30" height="30" stroke="#D3413F" stroke-width="2" fill="none"/>
-                            <rect x="10" y="10" width="20" height="20" stroke="#D3413F" stroke-width="2" fill="none"/>
-                            <circle cx="20" cy="20" r="5" fill="#D3413F"/>
-                        </svg>
-                    </div>
-                    <div class="logo-text">
-                        <h1>SS GRILLS</h1>
-                        <span>Premium Metal Works</span>
-                    </div>
+                    <a href="index.html">
+                        <img src="images/logo-removebg-preview.png" alt="SS Grills Logo" style="height: 60px;">
+                    </a>
                 </div>
                 <button class="mobile-menu-toggle" id="mobileMenuToggle">
                     <span></span>
@@ -37,10 +212,26 @@
                 </button>
                 <ul class="nav-menu" id="navMenu">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="has-dropdown">
+                        <a href="services.html" class="dropdown-toggle">Metal Works <span class="dropdown-arrow">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="ss-grills.html">SS Grills Works</a></li>
+                            <li><a href="ss-gates.html">Designer SS Gates</a></li>
+                            <li><a href="ss-railing.html">SS Railing & Handrails</a></li>
+                            <li><a href="pvd-tables.html">PVD Center Tables</a></li>
+                            <li><a href="dining-tables.html" class="active">SS Dining Tables</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="services.html" class="dropdown-toggle">Glass Works <span class="dropdown-arrow">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="glass-railing.html">Glass Railing Systems</a></li>
+                            <li><a href="shower-partition.html">Shower & Bathroom Partitions</a></li>
+                            <li><a href="glass-works.html">Complete Glass Works</a></li>
+                        </ul>
+                    </li>
                     <li><a href="products.html">Products</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="contact.html" class="nav-cta">Get Quote</a></li>
                 </ul>
@@ -48,319 +239,326 @@
         </div>
     </nav>
 
-    <!-- Services Sub Navigation -->
-    <div class="services-subnav">
+    <!-- Hero Section -->
+    <section class="catalogue-hero">
         <div class="container">
-            <div class="subnav-wrapper">
-                <div class="subnav-title">
-                    <span>Our Services</span>
-                </div>
-                <div class="subnav-scroll">
-                    <ul class="subnav-menu">
-                        <li><a href="ss-grills.html" class="active">SS Grills</a></li>
-                        <li><a href="glass-railing.html">Glass Railing</a></li>
-                        <li><a href="ss-railing.html">SS Railing</a></li>
-                        <li><a href="ss-gates.html">SS Gates</a></li>
-                        <li><a href="pvd-gates.html">PVD Gates</a></li>
-                        <li><a href="pvd-tables.html">PVD Tables</a></li>
-                        <li><a href="dining-tables.html">Dining Tables</a></li>
-                        <li><a href="shower-partition.html">Shower Partition</a></li>
-                        <li><a href="bath-partition.html">Bath Partition</a></li>
-                        <li><a href="glass-works.html">Glass Works</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Service Hero -->
-    <section class="service-hero">
-        <div class="service-hero-overlay"></div>
-        <div class="container">
-            <div class="hero-breadcrumb">
-                <a href="index.html">Home</a> / <a href="services.html">Services</a> / <span>SS Grills Works</span>
-            </div>
-            <h1 class="service-hero-title">SS Grills Works</h1>
-            <p class="service-hero-subtitle">Custom Designed Stainless Steel Grills for Windows, Doors & Balconies</p>
-            <div class="hero-badges">
-                <span class="badge">Premium 304 Grade</span>
-                <span class="badge">316 Grade Available</span>
-                <span class="badge">Custom Designs</span>
-                <span class="badge">Laser Cutting</span>
-            </div>
+            <h1>SS Dining Tables</h1>
+            <p>Premium Stainless Steel Dining Tables in Mumbai & Bangalore | Modern Dining Furniture 2024 | Designer SS Tables India</p>
         </div>
     </section>
 
-    <!-- Service Overview -->
-    <section class="service-overview">
-        <div class="container">
-            <div class="overview-grid">
-                <div class="overview-content">
-                    <span class="section-subtitle">Premium Quality</span>
-                    <h2>Stainless Steel Grills for Modern Homes</h2>
-                    <p class="lead-text">We specialize in custom-designed stainless steel grills that combine security, durability, and aesthetic appeal. Our SS grills are crafted from premium 304 and 316 grade stainless steel, ensuring long-lasting performance and corrosion resistance.</p>
-                    
-                    <div class="features-grid">
-                        <div class="feature-box">
-                            <div class="feature-icon">🛡️</div>
-                            <h4>Enhanced Security</h4>
-                            <p>Robust construction for maximum protection</p>
-                        </div>
-                        <div class="feature-box">
-                            <div class="feature-icon">✨</div>
-                            <h4>Modern Designs</h4>
-                            <p>Contemporary patterns and laser-cut options</p>
-                        </div>
-                        <div class="feature-box">
-                            <div class="feature-icon">🔧</div>
-                            <h4>Custom Fabrication</h4>
-                            <p>Tailored to your exact specifications</p>
-                        </div>
-                        <div class="feature-box">
-                            <div class="feature-icon">⚡</div>
-                            <h4>Quick Installation</h4>
-                            <p>Professional installation by experts</p>
-                        </div>
-                    </div>
+    <!-- Catalogue Grid -->
+    <section class="container">
+        <div class="catalogue-grid">
 
-                    <div class="cta-buttons">
-                        <a href="contact.html" class="btn btn-primary">Get Free Quote</a>
-                        <a href="tel:+919876543210" class="btn btn-secondary">Call Now</a>
-                    </div>
-                </div>
-                <div class="overview-image">
-                    <img src="images/Gate/19ec28d329c6f3c631334f153e37008c-removebg-preview.png" alt="SS Grills Works Mumbai">
-                    <div class="image-badge">Premium Quality</div>
+            <!-- Table 1 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS Table/SS Table 1.jpg" alt="Premium SS Dining Table Mumbai Bangalore 2024">
+                <div class="catalogue-info">
+                    <h3>Premium SS Dining Table</h3>
+                    <p>High-quality stainless steel dining table with glass top. Perfect for modern dining rooms in Mumbai & Bangalore.</p>
+                    <span class="catalogue-badge">Premium</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Premium%20SS%20Dining%20Table*%20from%20your%20Dining%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-green" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        WhatsApp Inquiry
+                    </a>
                 </div>
             </div>
+
+            <!-- Table 2 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS Table/SS 6seater folding type.jpg" alt="6 Seater Folding Dining Table Bangalore India 2024">
+                <div class="catalogue-info">
+                    <h3>6-Seater Folding Dining Table</h3>
+                    <p>Space-efficient folding dining table for 6 people. Perfect for families and compact dining spaces with modern design.</p>
+                    <span class="catalogue-badge">Space Saver</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*6-Seater%20Folding%20Dining%20Table*%20from%20your%20Dining%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-blue" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Get Quote on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table 3 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS Table/SS DInign tbale 4 seater folding type.jpg" alt="4 Seater Folding Dining Table Mumbai 2024">
+                <div class="catalogue-info">
+                    <h3>4-Seater Folding Dining Table</h3>
+                    <p>Compact folding dining table for 4 people. Ideal for small apartments and homes with limited space.</p>
+                    <span class="catalogue-badge">Compact</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*4-Seater%20Folding%20Dining%20Table*%20from%20your%20Dining%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-red" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Chat with Us
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table 4 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS Table/SS DIning tbale with seater.jpg" alt="SS Dining Table with Seating Bangalore 2024">
+                <div class="catalogue-info">
+                    <h3>SS Dining Table with Seating</h3>
+                    <p>Complete stainless steel dining table with integrated seating. Modern design for contemporary dining areas.</p>
+                    <span class="catalogue-badge">Complete Set</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*SS%20Dining%20Table%20with%20Seating*%20from%20your%20Dining%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-purple" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        WhatsApp Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table 5 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS Table/ss burner table.jpg" alt="Commercial SS Burner Table Mumbai India 2024">
+                <div class="catalogue-info">
+                    <h3>Commercial SS Burner Table</h3>
+                    <p>Heavy-duty stainless steel burner table for commercial kitchens. Heat-resistant and durable for professional cooking.</p>
+                    <span class="catalogue-badge">Commercial</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Commercial%20SS%20Burner%20Table*%20from%20your%20Dining%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-orange" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Inquire on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table 6 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS Table/SS canteen servinf table.jpg" alt="SS Canteen Serving Table Bangalore 2024">
+                <div class="catalogue-info">
+                    <h3>SS Canteen Serving Table</h3>
+                    <p>Professional canteen serving table with stainless steel construction. Ideal for cafeterias and institutional kitchens.</p>
+                    <span class="catalogue-badge">Institutional</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*SS%20Canteen%20Serving%20Table*%20from%20your%20Dining%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-teal" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Ask on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table 7 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS Table/SS Drawer ana closed slab type table.jpg" alt="SS Drawer Slab Table Mumbai India 2024">
+                <div class="catalogue-info">
+                    <h3>SS Drawer Slab Table</h3>
+                    <p>Functional table with drawer and closed slab design. Perfect for kitchens and utility areas with storage needs.</p>
+                    <span class="catalogue-badge">Functional</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*SS%20Drawer%20Slab%20Table*%20from%20your%20Dining%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-green" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        WhatsApp Inquiry
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table 8 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS Table/SS Drawer type tbal;e.jpg" alt="SS Drawer Type Table Bangalore 2024">
+                <div class="catalogue-info">
+                    <h3>SS Drawer Type Table</h3>
+                    <p>Practical stainless steel table with storage drawers. Combines workspace with storage solutions.</p>
+                    <span class="catalogue-badge">Storage</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*SS%20Drawer%20Type%20Table*%20from%20your%20Dining%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-blue" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Get Quote on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table 9 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS Table/ss double sink.jpg" alt="SS Double Sink Table India Mumbai 2024">
+                <div class="catalogue-info">
+                    <h3>SS Double Sink Table</h3>
+                    <p>Commercial double sink table with stainless steel construction. Perfect for restaurants and commercial kitchens.</p>
+                    <span class="catalogue-badge">Commercial</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*SS%20Double%20Sink%20Table*%20from%20your%20Dining%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-red" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Chat with Us
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table 10 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS Table/SS serving table.jpg" alt="SS Serving Table Mumbai Bangalore 2024">
+                <div class="catalogue-info">
+                    <h3>SS Serving Table</h3>
+                    <p>Professional serving table with stainless steel construction. Ideal for restaurants and catering services.</p>
+                    <span class="catalogue-badge">Professional</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*SS%20Serving%20Table*%20from%20your%20Dining%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-purple" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        WhatsApp Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table 11 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS Table/ss serving with heavy wheel.jpg" alt="SS Serving Table with Wheels India 2024">
+                <div class="catalogue-info">
+                    <h3>SS Serving Table with Wheels</h3>
+                    <p>Mobile serving table with heavy-duty wheels. Easy to move and perfect for hospitality industry.</p>
+                    <span class="catalogue-badge">Mobile</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*SS%20Serving%20Table%20with%20Wheels*%20from%20your%20Dining%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-orange" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Inquire on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table 12 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS Table/ss side table.jpg" alt="SS Side Table Mumbai Bangalore 2024">
+                <div class="catalogue-info">
+                    <h3>SS Side Table</h3>
+                    <p>Versatile stainless steel side table. Perfect for living rooms, bedrooms, and office spaces.</p>
+                    <span class="catalogue-badge">Versatile</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*SS%20Side%20Table*%20from%20your%20Dining%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-teal" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Ask on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table 13 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS Table/SS sink type table.jpg" alt="SS Sink Table India 2024">
+                <div class="catalogue-info">
+                    <h3>SS Sink Type Table</h3>
+                    <p>Industrial sink table with stainless steel construction. Perfect for commercial kitchens and laboratories.</p>
+                    <span class="catalogue-badge">Industrial</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*SS%20Sink%20Type%20Table*%20from%20your%20Dining%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-green" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        WhatsApp Inquiry
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table 14 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS Table/SS Slab type table.jpg" alt="SS Slab Table Mumbai Bangalore 2024">
+                <div class="catalogue-info">
+                    <h3>SS Slab Type Table</h3>
+                    <p>Heavy-duty slab type stainless steel table. Durable construction for commercial and industrial use.</p>
+                    <span class="catalogue-badge">Heavy Duty</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*SS%20Slab%20Type%20Table*%20from%20your%20Dining%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-blue" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Get Quote on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table 15 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS Table/SS Slab type.jpg" alt="SS Slab Work Table India 2024">
+                <div class="catalogue-info">
+                    <h3>SS Slab Work Table</h3>
+                    <p>Professional work table with solid slab top. Ideal for food preparation and industrial applications.</p>
+                    <span class="catalogue-badge">Professional</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*SS%20Slab%20Work%20Table*%20from%20your%20Dining%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-red" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Chat with Us
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table 16 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS Table/SS Slab.jpg" alt="Heavy Duty SS Slab Table Bangalore 2024">
+                <div class="catalogue-info">
+                    <h3>Heavy Duty SS Slab Table</h3>
+                    <p>Industrial-grade stainless steel slab table. Robust construction for heavy-duty commercial and industrial applications.</p>
+                    <span class="catalogue-badge">Industrial</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Heavy%20Duty%20SS%20Slab%20Table*%20from%20your%20Dining%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-purple" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        WhatsApp Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table 17 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS Table/SS unique center tabl;e.jpg" alt="Unique SS Center Table Mumbai Bangalore 2024">
+                <div class="catalogue-info">
+                    <h3>Unique SS Center Table</h3>
+                    <p>One-of-a-kind unique stainless steel center table. Custom design for those seeking exclusive furniture pieces.</p>
+                    <span class="catalogue-badge">Exclusive</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Unique%20SS%20Center%20Table*%20from%20your%20Dining%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-orange" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Inquire on WhatsApp
+                    </a>
+                </div>
+            </div>
+
         </div>
     </section>
 
-    <!-- Types of SS Grills -->
-    <section class="service-types">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">Our Range</span>
-                <h2 class="section-title">Types of SS Grills We Offer</h2>
-                <div class="title-underline"></div>
-            </div>
+    <!-- SEO Content Section -->
+    <section class="seo-section">
+        <div class="container seo-content">
+            <h2>SS Dining Tables in Mumbai & Bangalore - Shree Ashish Industries</h2>
+            <p>Elevate your dining experience with <strong>premium stainless steel dining tables from Shree Ashish Industries</strong>. Our <strong>SS dining tables in Mumbai and Bangalore</strong> combine durability, elegance, and modern design.</p>
 
-            <div class="types-grid">
-                <div class="type-card">
-                    <div class="type-image">
-                        <img src="images/Gate/19ec28d329c6f3c631334f153e37008c-removebg-preview.png" alt="Window Grills">
-                    </div>
-                    <h3>Window Grills</h3>
-                    <p>Modern window grills with various patterns - vertical bars, horizontal designs, geometric patterns, and custom laser-cut designs.</p>
-                    <ul class="type-features">
-                        <li>✓ Fixed & Sliding Options</li>
-                        <li>✓ Powder Coating Available</li>
-                        <li>✓ Child Safety Compliant</li>
-                    </ul>
-                </div>
+            <p>Our <strong>dining tables 2024 collection</strong> features contemporary designs with premium stainless steel frames and glass tops. Available in standard SS finish or luxury PVD coatings in gold, rose gold, and bronze.</p>
 
-                <div class="type-card">
-                    <div class="type-image">
-                        <img src="images/Gate/287e71d73c5cf112abc8bc5de39041c3-removebg-preview.png" alt="Door Grills">
-                    </div>
-                    <h3>Door Grills</h3>
-                    <p>Security door grills with elegant designs that enhance both safety and aesthetics of your entrance doors.</p>
-                    <ul class="type-features">
-                        <li>✓ Main Door Grills</li>
-                        <li>✓ Collapsible Grills</li>
-                        <li>✓ Designer Patterns</li>
-                    </ul>
-                </div>
+            <h2>Why Choose SS Dining Tables?</h2>
+            <p>✓ <strong>Durable Construction</strong> - Premium stainless steel that lasts decades<br>
+            ✓ <strong>Easy Maintenance</strong> - Simple to clean and maintain<br>
+            ✓ <strong>Modern Designs</strong> - Contemporary styles for modern homes<br>
+            ✓ <strong>Custom Sizes</strong> - Tailored to your dining space<br>
+            ✓ <strong>PVD Options</strong> - Luxury finishes available<br>
+            ✓ <strong>Quality Guaranteed</strong> - Backed by 40+ years experience</p>
 
-                <div class="type-card">
-                    <div class="type-image">
-                        <img src="images/Gate/6e5fa9197d29d01c77c3b4f77cbd6a69-removebg-preview.png" alt="Balcony Grills">
-                    </div>
-                    <h3>Balcony Safety Grills</h3>
-                    <p>Child-safe balcony grills with close spacing and sturdy construction for complete peace of mind.</p>
-                    <ul class="type-features">
-                        <li>✓ Child-Safe Spacing</li>
-                        <li>✓ Weather Resistant</li>
-                        <li>✓ Aesthetic Designs</li>
-                    </ul>
-                </div>
-
-                <div class="type-card">
-                    <div class="type-image">
-                        <img src="images/Glass Railing/10fa0e6007b143eae105cb065b6d01ce-removebg-preview.png" alt="Designer Grills">
-                    </div>
-                    <h3>Designer SS Grills</h3>
-                    <p>Premium designer grills with laser-cut patterns, CNC designs, and custom artwork for luxury homes.</p>
-                    <ul class="type-features">
-                        <li>✓ Laser Cut Designs</li>
-                        <li>✓ CNC Patterns</li>
-                        <li>✓ Custom Artwork</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Specifications -->
-    <section class="service-specs">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">Technical Details</span>
-                <h2 class="section-title">Specifications & Materials</h2>
-                <div class="title-underline"></div>
-            </div>
-
-            <div class="specs-grid">
-                <div class="spec-card">
-                    <h3>Material Grade</h3>
-                    <ul>
-                        <li><strong>SS 304:</strong> Standard grade for indoor applications</li>
-                        <li><strong>SS 316:</strong> Marine grade for coastal areas</li>
-                        <li><strong>SS 202:</strong> Budget-friendly option</li>
-                    </ul>
-                </div>
-
-                <div class="spec-card">
-                    <h3>Finish Options</h3>
-                    <ul>
-                        <li><strong>Mirror Finish:</strong> High-gloss reflective surface</li>
-                        <li><strong>Satin Finish:</strong> Brushed matte appearance</li>
-                        <li><strong>Powder Coating:</strong> Custom colors available</li>
-                    </ul>
-                </div>
-
-                <div class="spec-card">
-                    <h3>Design Patterns</h3>
-                    <ul>
-                        <li><strong>Vertical Bars:</strong> Classic straight line design</li>
-                        <li><strong>Geometric:</strong> Modern angular patterns</li>
-                        <li><strong>Laser Cut:</strong> Intricate custom designs</li>
-                    </ul>
-                </div>
-
-                <div class="spec-card">
-                    <h3>Installation</h3>
-                    <ul>
-                        <li><strong>Fixed:</strong> Permanent installation</li>
-                        <li><strong>Removable:</strong> Easy maintenance access</li>
-                        <li><strong>Sliding:</strong> Space-saving options</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Us -->
-    <section class="why-choose">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">Why SS Grills</span>
-                <h2 class="section-title">Why Choose Our SS Grills?</h2>
-                <div class="title-underline"></div>
-            </div>
-
-            <div class="benefits-grid">
-                <div class="benefit-item">
-                    <div class="benefit-number">01</div>
-                    <h3>Premium Quality Materials</h3>
-                    <p>We use only genuine 304 and 316 grade stainless steel from certified suppliers, ensuring durability and corrosion resistance.</p>
-                </div>
-
-                <div class="benefit-item">
-                    <div class="benefit-number">02</div>
-                    <h3>Custom Design Options</h3>
-                    <p>From traditional patterns to modern laser-cut designs, we create grills that perfectly match your home's architecture.</p>
-                </div>
-
-                <div class="benefit-item">
-                    <div class="benefit-number">03</div>
-                    <h3>Expert Installation</h3>
-                    <p>Our experienced team ensures precise installation with minimal disruption to your daily routine.</p>
-                </div>
-
-                <div class="benefit-item">
-                    <div class="benefit-number">04</div>
-                    <h3>Competitive Pricing</h3>
-                    <p>Direct manufacturing and installation means better prices without compromising on quality.</p>
-                </div>
-
-                <div class="benefit-item">
-                    <div class="benefit-number">05</div>
-                    <h3>Warranty & Support</h3>
-                    <p>Comprehensive warranty on materials and workmanship with dedicated after-sales support.</p>
-                </div>
-
-                <div class="benefit-item">
-                    <div class="benefit-number">06</div>
-                    <h3>Fast Turnaround</h3>
-                    <p>Quick fabrication and installation timelines to complete your project on schedule.</p>
-                </div>
-            </div>
+            <p>From <strong>modern dining tables for apartments</strong> to <strong>luxury PVD dining sets for villas</strong>, we deliver excellence. Serving Mumbai, Bangalore, and across India since 1984.</p>
         </div>
     </section>
 
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
-            <h2>Ready to Secure Your Home with Premium SS Grills?</h2>
-            <p>Get a free consultation and quote for your SS grills project today</p>
+            <h2>Ready for a Premium SS Dining Table?</h2>
+            <p>Get a free consultation and quote today!</p>
             <div class="cta-buttons">
-                <a href="contact.html" class="btn btn-white">Request Quote</a>
-                <a href="tel:+919876543210" class="btn btn-outline-white">📞 Call: +91 98765 43210</a>
+                <a href="contact.html" class="cta-btn cta-btn-primary">Get Free Quote</a>
+                <a href="tel:+919844010835" class="cta-btn cta-btn-secondary">Call: +91 98440 10835</a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="modern-footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-col">
-                    <h3>SS Grills</h3>
-                    <p>Premium stainless steel works and fabrication services with ultimate finishing and quality.</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
-                        <a href="#" aria-label="Instagram"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
-                        <a href="#" aria-label="WhatsApp"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></a>
-                    </div>
+                <div class="footer-section">
+                    <h3>Shree Ashish Industries</h3>
+                    <p>Premium SS Dining Tables & Furniture since 1984</p>
+                    <p>#37, 3rd Cross, Magadi Road<br>Bangalore - 560023, India</p>
                 </div>
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html#about">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
                         <li><a href="products.html">Products</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Our Services</h4>
+                <div class="footer-section">
+                    <h3>Our Services</h3>
                     <ul>
                         <li><a href="ss-grills.html">SS Grills Works</a></li>
+                        <li><a href="ss-gates.html">Designer SS Gates</a></li>
+                        <li><a href="dining-tables.html">SS Dining Tables</a></li>
                         <li><a href="glass-railing.html">Glass Railing</a></li>
-                        <li><a href="ss-railing.html">SS Railing</a></li>
-                        <li><a href="ss-gates.html">SS Gates</a></li>
-                        <li><a href="pvd-gates.html">PVD Gates</a></li>
-                        <li><a href="glass-works.html">Glass Works</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Contact Info</h4>
-                    <p>📍 Shree Ashish Industries</p>
-                    <p>#37, 3rd Cross, Magadi Road</p>
-                    <p>Bangalore, Karnataka - 560023</p>
-                    <p>📧 info@grillswala.com</p>
-                    <p>📞 +91 98765 43210</p>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Mohan Lal: <a href="tel:+919844010835">+91 98440 10835</a></p>
+                    <p>Ashok Kumar: <a href="tel:+918951845341">+91 89518 45341</a></p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 SS Grills. All rights reserved.</p>
-                <div class="footer-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                </div>
+                <p>&copy; 2024 Shree Ashish Industries. All rights reserved. | Established 1984</p>
             </div>
         </div>
     </footer>
