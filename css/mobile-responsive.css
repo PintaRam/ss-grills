@@ -1,7 +1,21 @@
-/* Mobile Responsive Fixes */
+/* ============================================
+   SS GRILLS - PREMIUM MOBILE RESPONSIVE DESIGN
+   ============================================ */
 
-/* Force hide slide counter on all mobile/tablet devices */
+/* Mobile-First Optimizations */
 @media (max-width: 992px) {
+    /* Smooth Scrolling */
+    html {
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Force hide slide counter on all mobile/tablet devices */
     .slide-counter,
     .fullscreen-slider .slide-counter,
     section.fullscreen-slider .slide-counter {
@@ -14,6 +28,27 @@
     .slider-slide .slide-number {
         display: none !important;
         visibility: hidden !important;
+    }
+
+    /* Enhanced Touch Targets */
+    a, button, .btn, .cta-btn, .nav-menu a {
+        min-height: 44px;
+        min-width: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Prevent text selection during swipes */
+    * {
+        -webkit-tap-highlight-color: rgba(211, 65, 63, 0.2);
+        user-select: none;
+        -webkit-user-select: none;
+    }
+
+    input, textarea {
+        user-select: text;
+        -webkit-user-select: text;
     }
 }
 
@@ -43,28 +78,53 @@
     }
 }
 
-/* Base Mobile Styles */
+/* ============================================
+   MOBILE STYLES - TABLETS & PHONES (768px)
+   ============================================ */
 @media (max-width: 768px) {
     /* Prevent horizontal scroll */
     body {
         overflow-x: hidden;
         width: 100%;
+        font-size: 15px;
     }
 
     .container {
-        padding: 0 15px;
+        padding: 0 20px;
         max-width: 100%;
     }
 
-    /* Ensure navbar stays on top */
+    /* Premium Modern Navbar - Mobile */
     .modern-navbar,
     .navbar {
         position: fixed;
         top: 0;
         width: 100%;
         z-index: 9999;
-        background: rgba(255, 255, 255, 0.98);
-        backdrop-filter: blur(10px);
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        padding: 12px 0;
+    }
+
+    .logo {
+        gap: 10px;
+    }
+
+    .logo-image {
+        height: 40px;
+        width: auto;
+    }
+
+    .logo-text h1 {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+
+    .logo-text span {
+        font-size: 10px;
+        letter-spacing: 0.5px;
     }
 
     /* Mobile Navigation */
@@ -170,91 +230,186 @@
         width: 100%;
     }
 
-    /* Hero Section */
+    /* ===== HERO SLIDER - PREMIUM MOBILE DESIGN ===== */
     .fullscreen-slider {
         height: auto;
-        min-height: 70vh;
-        padding-top: 70px;
-        margin-top: 0;
+        min-height: 85vh;
+        padding-top: 90px !important;
+        margin-top: 0 !important;
         position: relative;
         z-index: 1;
+        background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
     }
 
     .slider-slide {
         height: auto;
-        min-height: 70vh;
-        padding-top: 20px;
+        min-height: calc(85vh - 90px);
+        padding: 40px 0 40px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: flex-start !important;
+        position: relative !important;
     }
 
     .slide {
         height: auto;
-        min-height: 70vh;
+        min-height: calc(85vh - 90px);
+        padding: 0 !important;
     }
 
+    .slide-content {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        transform: none !important;
+        width: 100% !important;
+        padding: 0 20px !important;
+        margin-top: 0 !important;
+    }
+
+    /* Slide Images - Enhanced Mobile Display */
     .slide-image {
-        margin-top: 0;
-        padding-top: 0;
+        margin: 0 auto 25px;
+        padding: 0;
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        border-radius: 20px;
+        box-shadow: 0 15px 50px rgba(211, 65, 63, 0.15);
+        overflow: hidden;
+        transform: scale(1);
+        transition: transform 0.3s ease;
     }
 
-    .hero-content {
-        padding: 30px 15px;
+    .slide-image img {
+        width: 100%;
+        height: auto;
+        max-height: 300px;
+        object-fit: cover;
+        display: block;
+    }
+
+    /* Hero Content - Modern Typography */
+    .hero-content,
+    .slide-content {
+        padding: 20px 20px 30px;
         text-align: center;
     }
 
-    .hero-title {
-        font-size: 28px;
+    .hero-title,
+    .slide-content h1 {
+        font-size: 32px !important;
         line-height: 1.2;
-        margin-bottom: 15px;
+        margin-bottom: 18px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        background: linear-gradient(135deg, #1a1a1a 0%, #D3413F 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
     }
 
-    .hero-subtitle {
-        font-size: 14px;
-        margin-bottom: 20px;
-        line-height: 1.5;
+    .hero-subtitle,
+    .slide-content p {
+        font-size: 15px !important;
+        margin-bottom: 25px;
+        line-height: 1.6;
+        color: #666;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
+    /* Premium CTA Buttons - Mobile */
     .slide-buttons,
     .hero-buttons {
         flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        padding: 0 20px;
+        align-items: center;
+    }
+
+    .btn,
+    .slide-buttons .btn {
+        width: 100%;
+        max-width: 300px;
+        padding: 16px 30px;
+        font-size: 15px;
+        font-weight: 700;
+        border-radius: 50px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        box-shadow: 0 8px 25px rgba(211, 65, 63, 0.25);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .btn:active {
+        transform: scale(0.97);
+    }
+
+    /* Slider Navigation - Mobile Optimized */
+    .slider-nav {
+        bottom: 20px;
         gap: 12px;
-        width: 100%;
     }
 
-    .btn {
-        width: 100%;
-        max-width: 280px;
-        padding: 12px 25px;
-        font-size: 14px;
+    .slider-nav button {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
     }
 
-    /* Hide slide counter on mobile to prevent overlap */
-    .slide-counter {
-        display: none !important;
-    }
-
-    /* Hide slide number overlays on mobile */
+    /* Hide slide counter & numbers */
+    .slide-counter,
     .slide-number {
         display: none !important;
     }
 
-    /* Sections */
+    /* ===== SECTIONS - PREMIUM MOBILE LAYOUT ===== */
     section {
-        padding: 50px 0;
+        padding: 60px 0;
+        position: relative;
     }
 
     .section-title {
-        font-size: 28px;
+        font-size: 32px;
         line-height: 1.2;
+        margin-bottom: 18px;
+        text-align: center;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        background: linear-gradient(135deg, #1a1a1a 0%, #D3413F 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
     }
 
     .section-subtitle {
         font-size: 11px;
         padding: 5px 14px;
+        text-align: center;
+        margin-bottom: 25px;
     }
 
     .section-description {
-        font-size: 14px;
+        font-size: 15px;
         line-height: 1.6;
+        color: #666;
+        text-align: center;
+        max-width: 90%;
+        margin: 0 auto 30px;
+    }
+
+    .title-underline {
+        width: 80px;
+        height: 4px;
+        background: linear-gradient(135deg, #D3413F 0%, #ff6b6b 100%);
+        margin: 0 auto 30px;
+        border-radius: 2px;
     }
 
     /* Services Grid */
@@ -293,19 +448,63 @@
 
     /* Products Grid */
     .products-grid,
+    /* ===== PRODUCT GRID - 2 COLUMN LAYOUT ===== */
     .product-grid,
-    .catalogue-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
+    .catalogue-grid,
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+        padding: 0;
     }
 
     .product-card {
-        margin: 0 auto;
-        max-width: 100%;
+        margin: 0;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        background: white;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .product-card:active {
+        transform: scale(0.98);
     }
 
     .product-image {
-        height: 250px;
+        height: 180px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .product-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+
+    .product-card:hover img {
+        transform: scale(1.05);
+    }
+
+    .product-card h3 {
+        font-size: 16px;
+        margin: 12px 0 6px;
+        padding: 0 12px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+    }
+
+    .product-card p {
+        font-size: 13px;
+        margin-bottom: 12px;
+        padding: 0 12px;
+        color: #666;
+        line-height: 1.4;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
     }
 
     /* Catalogue Pages */
@@ -419,20 +618,105 @@
     }
 }
 
-/* Small Mobile (480px and below) */
+/* ============================================
+   SMALL MOBILE (480px and below)
+   ============================================ */
 @media (max-width: 480px) {
-    .hero-title {
-        font-size: 24px;
+    body {
+        font-size: 14px;
     }
 
+    .container {
+        padding: 0 16px;
+    }
+
+    /* Logo - Compact */
+    .logo-image {
+        height: 35px;
+    }
+
+    .logo-text h1 {
+        font-size: 16px;
+    }
+
+    .logo-text span {
+        font-size: 9px;
+    }
+
+    /* Hero - Extra Compact */
+    .hero-title,
+    .slide-content h1 {
+        font-size: 26px !important;
+        letter-spacing: 0.5px;
+    }
+
+    .hero-subtitle,
+    .slide-content p {
+        font-size: 14px !important;
+    }
+
+    .slide-image {
+        max-width: 280px;
+        max-height: 250px;
+    }
+
+    .slide-image img {
+        max-height: 250px;
+    }
+
+    /* Section Titles */
     .section-title {
-        font-size: 24px;
+        font-size: 26px;
+        letter-spacing: 1px;
     }
 
+    .section-description {
+        font-size: 14px;
+    }
+
+    /* Product Grid - 2 Columns Compact */
+    .product-grid,
+    .catalogue-grid,
+    .products-grid {
+        gap: 15px;
+    }
+
+    .product-image {
+        height: 160px;
+    }
+
+    .product-card h3 {
+        font-size: 14px;
+        margin: 10px 0 5px;
+        padding: 0 10px;
+    }
+
+    .product-card p {
+        font-size: 12px;
+        padding: 0 10px;
+        margin-bottom: 10px;
+        -webkit-line-clamp: 2;
+    }
+
+    /* Stats Grid - Stacked */
     .stats-grid {
         grid-template-columns: 1fr;
+        gap: 15px;
     }
 
+    .stat-card {
+        padding: 18px;
+    }
+
+    .stat-number {
+        font-size: 28px;
+    }
+
+    .stat-label {
+        font-size: 12px;
+    }
+
+    /* Service/Product Carousels */
     .service-slide,
     .product-slide,
     .testimonial-slide {
@@ -440,15 +724,46 @@
         max-width: 260px;
     }
 
-    /* Reduce side padding on small screens to avoid horizontal scroll */
     .services-carousel-wrapper,
     .products-carousel-wrapper,
     .testimonials-carousel-wrapper {
-        padding: 0 20px;
+        padding: 0 15px;
     }
 
-    .product-image {
-        height: 220px;
+    /* CTA Section - Compact */
+    .cta-content h2 {
+        font-size: 22px;
+        letter-spacing: 1px;
+    }
+
+    .cta-content p {
+        font-size: 14px;
+    }
+
+    .cta-buttons {
+        gap: 12px;
+    }
+
+    .cta-btn-primary,
+    .cta-btn-secondary {
+        padding: 14px 25px;
+        font-size: 13px;
+    }
+
+    /* Floating Buttons - Smaller */
+    .floating-whatsapp,
+    .floating-call {
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
+    }
+
+    .floating-whatsapp {
+        bottom: 85px;
+    }
+
+    .floating-call {
+        bottom: 20px;
     }
 
     .btn {
