@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description" content="Premium SS Trolley India | Stainless Steel Hospital Trolleys, Kitchen Trolleys, Industrial Trolleys | Modern Trolley Designs | Custom SS Trolleys India">
+    <meta name="keywords" content="SS Trolley Mumbai, Stainless Steel Trolley Bangalore, Hospital Trolley India, Kitchen Trolley, Industrial Trolley, SS Drawer Trolley, Shelf Trolley, Premium Metal Trolley">
+    <title>Premium SS Trolley | Stainless Steel Hospital & Kitchen Trolleys | Shree Ashish Industries</title>
+    <link rel="stylesheet" href="css/style.css?v=36">
+    <link rel="stylesheet" href="css/mobile-responsive.css?v=36">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .catalogue-hero {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            padding: 140px 20px 60px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            margin-top: 70px;
+            min-height: auto;
+        }
+        .catalogue-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('images/ss trolley/ss trolly simple.jpg') center/cover;
+            opacity: 0.15;
+        }
+        .catalogue-hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        .catalogue-hero p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .catalogue-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 30px;
+            padding: 40px 0 60px;
+        }
+
+        .catalogue-section {
+            padding: 0;
+        }
+        .catalogue-item {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .catalogue-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(211, 65, 63, 0.2);
+        }
+        .catalogue-item img {
+            width: 100%;
+            height: 350px;
+            object-fit: contain;
+            background: #f8f8f8;
+            padding: 15px;
+        }
+        .catalogue-info {
+            padding: 25px;
+        }
+        .catalogue-info h3 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+        }
+        .catalogue-info p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .catalogue-badge {
+            display: inline-block;
+            background: #D3413F;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-top: 10px;
+        }
+        .whatsapp-btn-green, .whatsapp-btn-blue, .whatsapp-btn-red, 
+        .whatsapp-btn-purple, .whatsapp-btn-orange, .whatsapp-btn-teal {
+            display: block;
+            width: 100%;
+            color: white;
+            text-align: center;
+            padding: 12px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+        .whatsapp-btn-green { background: #25D366; }
+        .whatsapp-btn-green:hover { background: #20BA5A; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3); }
+        
+        .whatsapp-btn-blue { background: #0088cc; }
+        .whatsapp-btn-blue:hover { background: #006ba8; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(0, 136, 204, 0.3); }
+        
+        .whatsapp-btn-red { background: #D3413F; }
+        .whatsapp-btn-red:hover { background: #b32f2d; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(211, 65, 63, 0.3); }
+        
+        .whatsapp-btn-purple { background: #8B5CF6; }
+        .whatsapp-btn-purple:hover { background: #7C3AED; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(139, 92, 246, 0.3); }
+        
+        .whatsapp-btn-orange { background: #F97316; }
+        .whatsapp-btn-orange:hover { background: #EA580C; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(249, 115, 22, 0.3); }
+        
+        .whatsapp-btn-teal { background: #14B8A6; }
+        .whatsapp-btn-teal:hover { background: #0D9488; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(20, 184, 166, 0.3); }
+
+        .whatsapp-btn-green svg, .whatsapp-btn-blue svg, .whatsapp-btn-red svg,
+        .whatsapp-btn-purple svg, .whatsapp-btn-orange svg, .whatsapp-btn-teal svg {
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+
+        /* Modern CTA Section Styles */
+        .cta-section {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%);
+            padding: 80px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 30% 50%, rgba(211, 65, 63, 0.1) 0%, transparent 50%),
+                        radial-gradient(circle at 70% 50%, rgba(249, 115, 22, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .cta-section h2 {
+            color: white;
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-section p {
+            color: #ddd;
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-btn {
+            padding: 18px 45px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+            border: 2px solid transparent;
+        }
+
+        .cta-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .cta-btn:hover::before {
+            left: 100%;
+        }
+
+        .cta-btn-primary {
+            background: linear-gradient(135deg, #D3413F 0%, #F97316 100%);
+            color: white;
+        }
+
+        .cta-btn-primary:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 15px 40px rgba(211, 65, 63, 0.4);
+        }
+
+        .cta-btn-secondary {
+            background: white;
+            color: #1a1a1a;
+            border: 2px solid #D3413F;
+        }
+
+        .cta-btn-secondary:hover {
+            transform: translateY(-5px) scale(1.05);
+            background: linear-gradient(135deg, #D3413F 0%, #F97316 100%);
+            color: white;
+            box-shadow: 0 15px 40px rgba(249, 115, 22, 0.4);
+        }
+
+        .cta-btn svg {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+
+        @media (max-width: 768px) {
+            .catalogue-hero {
+                padding: 100px 15px 40px !important;
+            }
+            .catalogue-hero h1 {
+                font-size: 2rem !important;
+            }
+            .catalogue-hero p {
+                font-size: 1rem !important;
+            }
+            .catalogue-grid {
+                grid-template-columns: repeat(2, 1fr) !important;
+                gap: 15px;
+            }
+            .catalogue-item img {
+                height: 200px;
+            }
+            .catalogue-info {
+                padding: 15px;
+            }
+            .catalogue-info h3 {
+                font-size: 1.1rem;
+            }
+            .catalogue-info p {
+                font-size: 0.85rem;
+            }
+            .cta-section h2 {
+                font-size: 1.8rem;
+            }
+            .cta-section p {
+                font-size: 1rem;
+            }
+            .cta-buttons {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .cta-btn {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="modern-navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <img src="images/logo-removebg-preview.png" alt="SS Grills Logo" class="logo-image">
+                    <div class="logo-text">
+                        <h1>SS GRILLS</h1>
+                        <span>Premium Metal Works</span>
+                    </div>
+                </div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="has-dropdown">
+                        <a href="services.html">Metal Works <span class="dropdown-arrow">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="ss-grills.html">SS Grills Works</a></li>
+                            <li><a href="ss-gates.html">Designer SS Gates</a></li>
+                            <li><a href="ss-railing.html">SS Railing & Handrails</a></li>
+                            <li><a href="pvd-tables.html">PVD Center Tables</a></li>
+                            <li><a href="dining-tables.html">SS Dining Tables</a></li>
+                            <li><a href="ss-trolley.html" class="active">SS Trolley</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="services.html">Glass Works <span class="dropdown-arrow">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="glass-railing.html">Glass Railing Systems</a></li>
+                            <li><a href="shower-partition.html">Shower & Bathroom Partitions</a></li>
+                            <li><a href="glass-works.html">Glass Works</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html" class="nav-cta">Get Quote</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="catalogue-hero">
+        <div class="container">
+            <h1>🛒 Premium SS Trolley</h1>
+            <p>Stainless Steel Hospital Trolleys, Kitchen Trolleys & Industrial Trolleys in India | Hygienic & Durable</p>
+        </div>
+    </section>
+
+    <!-- Catalogue Grid -->
+    <section class="container catalogue-section">
+        <div class="catalogue-grid">
+
+            <!-- Trolley 1 -->
+            <div class="catalogue-item">
+                <img src="images/ss trolley/ss trolly simple.jpg" alt="Simple SS Trolley India">
+                <div class="catalogue-info">
+                    <h3>Simple SS Trolley</h3>
+                    <p>Basic stainless steel trolley with solid construction. Perfect for hospitals, kitchens, and industrial use with easy mobility.</p>
+                    <span class="catalogue-badge">Popular</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Simple%20SS%20Trolley*%20from%20your%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-green" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        WhatsApp Inquiry
+                    </a>
+                </div>
+            </div>
+
+            <!-- Trolley 2 -->
+            <div class="catalogue-item">
+                <img src="images/ss trolley/small trolley.jpg" alt="Small SS Trolley Bangalore">
+                <div class="catalogue-info">
+                    <h3>Compact Small Trolley</h3>
+                    <p>Space-saving small trolley ideal for tight spaces. Lightweight yet sturdy design for medical and commercial applications.</p>
+                    <span class="catalogue-badge">Compact</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Small%20SS%20Trolley*%20from%20your%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-blue" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Get Quote on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Trolley 3 -->
+            <div class="catalogue-item">
+                <img src="images/ss trolley/ss 2 slab trolley.jpg" alt="2 Tier SS Trolley India">
+                <div class="catalogue-info">
+                    <h3>SS 2 Slab Trolley</h3>
+                    <p>Two-tier trolley with dual shelves for maximum storage. Ideal for hospitals and hotels with smooth-rolling casters.</p>
+                    <span class="catalogue-badge">Premium</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*SS%202%20Slab%20Trolley*%20from%20your%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-red" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Chat with Us
+                    </a>
+                </div>
+            </div>
+
+            <!-- Trolley 4 -->
+            <div class="catalogue-item">
+                <img src="images/ss trolley/SS 3 slab trolley.jpg" alt="3 Tier SS Trolley Bangalore">
+                <div class="catalogue-info">
+                    <h3>SS 3 Slab Trolley</h3>
+                    <p>Three-tier trolley offering ample storage space. Perfect for commercial kitchens and medical facilities with heavy-duty construction.</p>
+                    <span class="catalogue-badge">Best Seller</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*SS%203%20Slab%20Trolley*%20from%20your%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-purple" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        WhatsApp Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Trolley 5 -->
+            <div class="catalogue-item">
+                <img src="images/ss trolley/ss 3 slab trolley with railing system.jpg" alt="SS Trolley with Railing India">
+                <div class="catalogue-info">
+                    <h3>3 Slab Trolley with Railing</h3>
+                    <p>Three-tier trolley with safety railing system. Prevents items from falling, ideal for hospitals and restaurants.</p>
+                    <span class="catalogue-badge">Safety</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*3%20Slab%20Trolley%20with%20Railing*%20from%20your%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-orange" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Inquire on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Trolley 6 -->
+            <div class="catalogue-item">
+                <img src="images/ss trolley/ss 3 drawer type trolley.jpg" alt="SS Drawer Trolley Bangalore">
+                <div class="catalogue-info">
+                    <h3>SS 3 Drawer Type Trolley</h3>
+                    <p>Trolley with three drawers for organized storage. Perfect for medical supplies, tools, and instruments with lockable drawers.</p>
+                    <span class="catalogue-badge">Organized</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*SS%203%20Drawer%20Type%20Trolley*%20from%20your%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-teal" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Ask on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Trolley 7 -->
+            <div class="catalogue-item">
+                <img src="images/ss trolley/ss drawer trolley.jpg" alt="SS Drawer Trolley India">
+                <div class="catalogue-info">
+                    <h3>SS Drawer Trolley</h3>
+                    <p>Multi-drawer trolley for efficient storage and organization. Ideal for hospitals, labs, and industrial applications.</p>
+                    <span class="catalogue-badge">Professional</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*SS%20Drawer%20Trolley*%20from%20your%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-green" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        WhatsApp Inquiry
+                    </a>
+                </div>
+            </div>
+
+            <!-- Trolley 8 -->
+            <div class="catalogue-item">
+                <img src="images/ss trolley/ss trolley with full railing system 4 side.jpg" alt="SS Trolley Full Railing India">
+                <div class="catalogue-info">
+                    <h3>Full Railing System Trolley</h3>
+                    <p>Four-side railing system for maximum safety. Premium trolley for hospitals and food service with complete protection.</p>
+                    <span class="catalogue-badge">Heavy Duty</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Full%20Railing%20System%20Trolley*%20from%20your%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-blue" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Get Quote on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Trolley 9 -->
+            <div class="catalogue-item">
+                <img src="images/ss trolley/ss trolley with mosquito mesh.jpg" alt="SS Trolley with Mesh Cover India">
+                <div class="catalogue-info">
+                    <h3>Trolley with Mosquito Mesh</h3>
+                    <p>Trolley with protective mosquito mesh cover. Ideal for food service, hospitals, and outdoor use with hygiene protection.</p>
+                    <span class="catalogue-badge">Hygienic</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Trolley%20with%20Mosquito%20Mesh*%20from%20your%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-red" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Chat with Us
+                    </a>
+                </div>
+            </div>
+
+            <!-- Trolley 10 -->
+            <div class="catalogue-item">
+                <img src="images/ss trolley/ss trolly with 2 slab.jpg" alt="SS 2 Tier Trolley Bangalore">
+                <div class="catalogue-info">
+                    <h3>SS Trolley with 2 Slab</h3>
+                    <p>Dual-tier trolley with sturdy construction. Versatile design for kitchens, labs, and healthcare facilities.</p>
+                    <span class="catalogue-badge">Versatile</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*SS%20Trolley%20with%202%20Slab*%20from%20your%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-purple" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        WhatsApp Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Trolley 11 -->
+            <div class="catalogue-item">
+                <img src="images/ss trolley/Trolley for hospital.jpg" alt="Hospital Trolley India">
+                <div class="catalogue-info">
+                    <h3>Hospital Medical Trolley</h3>
+                    <p>Specialized medical trolley for hospitals. Designed for medical equipment and supplies with smooth maneuverability.</p>
+                    <span class="catalogue-badge">Medical</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Hospital%20Medical%20Trolley*%20from%20your%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-orange" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Inquire on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Trolley 12 -->
+            <div class="catalogue-item">
+                <img src="images/ss trolley/Shelf Trolleys Multiple Tier Shelf Trolleys Unit.jpg" alt="Multi Tier Shelf Trolley India">
+                <div class="catalogue-info">
+                    <h3>Multiple Tier Shelf Trolley</h3>
+                    <p>Multi-level shelf trolley unit for maximum storage. Industrial-grade trolley for warehouses and commercial use.</p>
+                    <span class="catalogue-badge">Industrial</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Multiple%20Tier%20Shelf%20Trolley*%20from%20your%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-teal" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Ask on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Trolley 13 -->
+            <div class="catalogue-item">
+                <img src="images/ss trolley/ss trolley 2 opposuite handle.jpg" alt="SS Trolley with Opposite Handles India">
+                <div class="catalogue-info">
+                    <h3>Platform Trolley - Double Handle</h3>
+                    <p>Premium platform trolley with dual opposite handles for easy maneuvering from both sides. Heavy-duty wheels for smooth transport in warehouses and industrial settings.</p>
+                    <span class="catalogue-badge">Heavy Duty</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Platform%20Trolley%20with%20Double%20Handle*%20from%20your%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-green" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        WhatsApp Inquiry
+                    </a>
+                </div>
+            </div>
+
+            <!-- Trolley 14 - NEW -->
+            <div class="catalogue-item">
+                <img src="images/ss trolley/ss trolley with jumbo wheel pl;atform.jpg" alt="SS Platform Trolley with Jumbo Wheels India">
+                <div class="catalogue-info">
+                    <h3>Jumbo Wheel Platform Trolley</h3>
+                    <p>Heavy-duty platform trolley with extra-large jumbo wheels for effortless movement over rough surfaces. Perfect for warehouses, factories, and loading docks with superior weight capacity.</p>
+                    <span class="catalogue-badge">Premium</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Jumbo%20Wheel%20Platform%20Trolley*%20from%20your%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-blue" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Get Quote on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Get Your Premium SS Trolley?</h2>
+            <p>Get a free consultation and quote today!</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="cta-btn cta-btn-primary">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                    Get Free Quote
+                </a>
+                <a href="tel:+919844010835" class="cta-btn cta-btn-secondary">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+                    </svg>
+                    Call: +91 98440 10835
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/918951845341?text=Hello! I'm interested in your SS Trolley products" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.737 5.607 2.137 8.048l-2.137 7.952 7.933-2.127c2.42 1.37 5.173 2.127 8.067 2.127 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.467c-2.482 0-4.908-0.646-7.07-1.87l-0.507-0.292-4.713 1.262 1.262-4.669-0.292-0.508c-1.207-2.100-1.847-4.507-1.847-6.924 0-7.435 6.050-13.485 13.485-13.485s13.485 6.050 13.485 13.485c0 7.435-6.050 13.485-13.485 13.485zM21.960 18.828c-0.305-0.153-1.802-0.889-2.082-0.991s-0.483-0.153-0.686 0.153c-0.203 0.305-0.788 0.991-0.966 1.194s-0.356 0.230-0.661 0.077c-0.305-0.153-1.288-0.475-2.454-1.513-0.908-0.809-1.521-1.809-1.699-2.114s-0.018-0.470 0.134-0.622c0.138-0.137 0.305-0.356 0.458-0.534s0.203-0.305 0.305-0.508c0.102-0.203 0.051-0.381-0.025-0.534s-0.686-1.653-0.940-2.263c-0.248-0.594-0.499-0.513-0.686-0.522-0.178-0.008-0.381-0.010-0.584-0.010s-0.533 0.076-0.813 0.381c-0.280 0.305-1.067 1.042-1.067 2.542s1.093 2.948 1.245 3.151c0.153 0.203 2.146 3.278 5.199 4.596 0.726 0.313 1.293 0.500 1.735 0.640 0.729 0.232 1.393 0.199 1.918 0.121 0.585-0.087 1.802-0.737 2.056-1.447s0.254-1.321 0.178-1.447c-0.076-0.127-0.280-0.203-0.584-0.356z"/>
+        </svg>
+    </a>
+
+    <!-- Floating Call Button -->
+    <a href="tel:+918951845341" class="call-float" aria-label="Call Us">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+        </svg>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>🏭 SS Grills</h3>
+                    <p>Premium stainless steel works and fabrication services with ultimate finishing and quality .</p>
+                    <div style="margin-top: 20px;">
+                        <div style="display: inline-flex; gap: 12px; flex-wrap: wrap;">
+                            <a href="https://wa.me/918951845341" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: linear-gradient(135deg, #25D366 0%, #128C7E 100%); border-radius: 50%; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);" onmouseover="this.style.transform='translateY(-3px) scale(1.1)'; this.style.boxShadow='0 6px 20px rgba(37, 211, 102, 0.4)';" onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 4px 15px rgba(37, 211, 102, 0.3)';">
+                                <svg width="20" height="20" fill="white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                            </a>
+                            <a href="tel:+918951845341" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: linear-gradient(135deg, #0891b2 0%, #06b6d4 100%); border-radius: 50%; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(8, 145, 178, 0.3);" onmouseover="this.style.transform='translateY(-3px) scale(1.1)'; this.style.boxShadow='0 6px 20px rgba(8, 145, 178, 0.4)';" onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 4px 15px rgba(8, 145, 178, 0.3)';">
+                                <svg width="18" height="18" fill="white" viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
+                            </a>
+                            <a href="mailto:infodia@grillswala.com" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: linear-gradient(135deg, #D3413F 0%, #b32f2d 100%); border-radius: 50%; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(211, 65, 63, 0.3);" onmouseover="this.style.transform='translateY(-3px) scale(1.1)'; this.style.boxShadow='0 6px 20px rgba(211, 65, 63, 0.4)';" onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 4px 15px rgba(211, 65, 63, 0.3)';">
+                                <svg width="18" height="18" fill="white" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Our Products</h4>
+                    <ul>
+                        <li><a href="ss-grills.html">SS Grills</a></li>
+                        <li><a href="ss-gates.html">SS Gates</a></li>
+                        <li><a href="ss-railing.html">SS Railing</a></li>
+                        <li><a href="glass-railing.html">Glass Railing</a></li>
+                        <li><a href="pvd-tables.html">PVD Tables</a></li>
+                        <li><a href="dining-tables.html">Dining Tables</a></li>
+                        <li><a href="ss-trolley.html">SS Trolley</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p>📍 <strong>Shree Ashish Industries</strong></p>
+                    <p>#19, 3rd Cross, Left Side, Magadi Road<br>Bangalore - 560023</p>
+                    <p>📧 <a href="mailto:infodia@grillswala.com">infodia@grillswala.com</a></p>
+                    <p>📧 <a href="mailto:shree.ashishindustries@gmail.com">shree.ashishindustries@gmail.com</a></p>
+                    <p>📞 <a href="tel:+918951845341">+91 8951845341</a></p>
+                    <p>📞 <a href="tel:+919844010835">+91 9844010835</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; SS Grills - Shree Ashish Industries. All rights reserved. | Designed with ❤️ in Bangalore | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

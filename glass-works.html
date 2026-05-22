@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-    <meta name="description" content="Complete Glass Works Mumbai Bangalore | Premium Glass Doors, Windows, Partitions | Modern Glass Solutions 2024 | Designer Glass Works India | Latest Glass Installations">
-    <meta name="keywords" content="Glass Works Mumbai, Complete Glass Solutions Bangalore, Glass Doors India, Glass Windows, Glass Partitions, Modern Glass Works 2024, Designer Glass Installations">
-    <title>Complete Glass Works Mumbai Bangalore | Premium Glass Doors Windows Partitions 2024 | Shree Ashish Industries</title>
+    <meta name="description" content="Premium Glass Works India | Toughened Glass Doors, Windows, Partitions & Facades | Modern Glass Solutions | Designer Glass Works India | Expert Glass Installations">
+    <parameter name="keywords" content="Glass Works Mumbai, Glass Solutions Bangalore, Glass Doors India, Glass Windows, Glass Partitions, Modern Glass Works, Designer Glass Installations, Toughened Glass">
+    <title>Premium Glass Works India | Toughened Glass Doors Windows Partitions & Facades | Shree Ashish Industries</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mobile-responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         .catalogue-hero {
-            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
-            padding: 120px 0 80px;
+            background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+            padding: 140px 0 100px;
             text-align: center;
             color: white;
             position: relative;
@@ -25,24 +25,101 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url('images/Glass Railing/7befa7f15e6519136d84e73c319a0713-removebg-preview.png') center/cover;
-            opacity: 0.15;
+            background:
+                radial-gradient(circle at 20% 50%, rgba(211, 65, 63, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.08) 0%, transparent 50%);
+            animation: pulse 8s ease-in-out infinite;
+        }
+        .catalogue-hero::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 60px,
+                rgba(255, 255, 255, 0.02) 60px,
+                rgba(255, 255, 255, 0.02) 120px
+            );
+            animation: slide 20s linear infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.6; }
+        }
+        @keyframes slide {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
         }
         .catalogue-hero h1 {
-            font-size: 3.5rem;
+            font-size: 4rem;
             font-weight: 700;
+            margin-bottom: 25px;
+            position: relative;
+            z-index: 1;
+            text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+            letter-spacing: 1px;
+            background: linear-gradient(to right, #fff, #e0e0e0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: fadeInDown 0.8s ease-out;
+        }
+        .catalogue-hero h1 .sparkle {
+            display: inline-block;
+            animation: sparkle 2s ease-in-out infinite;
+        }
+        @keyframes sparkle {
+            0%, 100% { transform: scale(1); filter: brightness(1); }
+            50% { transform: scale(1.1); filter: brightness(1.3); }
+        }
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .catalogue-hero p {
+            font-size: 1.4rem;
+            margin-bottom: 35px;
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
+            line-height: 1.8;
+            font-weight: 300;
+            animation: fadeInUp 0.8s ease-out 0.2s both;
+        }
+        .catalogue-hero p strong {
+            font-weight: 600;
+            color: #D3413F;
+            text-shadow: 0 0 10px rgba(211, 65, 63, 0.5);
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .hero-badge {
+            display: inline-block;
+            background: rgba(211, 65, 63, 0.2);
+            border: 2px solid #D3413F;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-size: 0.95rem;
+            font-weight: 600;
             margin-bottom: 20px;
             position: relative;
             z-index: 1;
+            animation: fadeIn 0.8s ease-out 0.4s both;
+            box-shadow: 0 0 20px rgba(211, 65, 63, 0.3);
         }
-        .catalogue-hero p {
-            font-size: 1.3rem;
-            margin-bottom: 30px;
-            position: relative;
-            z-index: 1;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
         .catalogue-grid {
             display: grid;
@@ -128,24 +205,104 @@
             margin-right: 8px;
         }
         .seo-section {
-            background: #f8f8f8;
-            padding: 60px 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        .seo-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background:
+                radial-gradient(circle at 10% 20%, rgba(211, 65, 63, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 90% 80%, rgba(211, 65, 63, 0.03) 0%, transparent 50%);
+            pointer-events: none;
         }
         .seo-content {
-            max-width: 1000px;
+            max-width: 1100px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 30px;
+            position: relative;
+            z-index: 1;
         }
         .seo-content h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
+            font-size: 2.8rem;
+            margin-bottom: 30px;
             color: #1a1a1a;
+            font-weight: 700;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 15px;
+        }
+        .seo-content h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #D3413F, transparent);
+            border-radius: 2px;
+        }
+        .seo-content h2:first-child {
+            margin-top: 0;
+        }
+        .seo-intro {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            margin-bottom: 40px;
+            border-left: 5px solid #D3413F;
         }
         .seo-content p {
-            font-size: 1.1rem;
-            line-height: 1.8;
+            font-size: 1.15rem;
+            line-height: 1.9;
             color: #444;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
+        }
+        .seo-content p strong {
+            color: #D3413F;
+            font-weight: 600;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        .service-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border-top: 3px solid #D3413F;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(211, 65, 63, 0.15);
+        }
+        .service-card .icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+        .service-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+            font-weight: 600;
+        }
+        .service-card p {
+            font-size: 1rem;
+            color: #666;
+            margin: 0;
+            line-height: 1.6;
         }
         .cta-section {
             background: linear-gradient(135deg, #D3413F 0%, #a32f2d 100%);
@@ -189,9 +346,207 @@
             color: #D3413F;
         }
         @media (max-width: 768px) {
-            .catalogue-hero h1 { font-size: 2.5rem; }
-            .catalogue-grid { grid-template-columns: 1fr; gap: 20px; }
-            .seo-content h2 { font-size: 2rem; }
+            .catalogue-hero {
+                padding: 180px 0 60px !important;
+            }
+            .catalogue-hero h1 {
+                font-size: 2.2rem;
+                letter-spacing: 0.5px;
+            }
+            .catalogue-hero p {
+                font-size: 1.1rem;
+                line-height: 1.6;
+            }
+            .hero-badge {
+                font-size: 0.85rem;
+                padding: 6px 15px;
+            }
+            .catalogue-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+            }
+            .catalogue-item img {
+                height: 160px;
+                padding: 8px;
+            }
+            .catalogue-info {
+                padding: 12px;
+            }
+            .catalogue-info h3 {
+                font-size: 0.95rem;
+                margin-bottom: 6px;
+            }
+            .catalogue-info p {
+                display: none;
+            }
+            .catalogue-badge {
+                font-size: 0.7rem;
+                padding: 3px 10px;
+                margin-top: 6px;
+                margin-bottom: 8px;
+            }
+            .whatsapp-btn-green, .whatsapp-btn-blue, .whatsapp-btn-red,
+            .whatsapp-btn-purple, .whatsapp-btn-orange, .whatsapp-btn-teal {
+                padding: 8px 12px;
+                font-size: 0.8rem;
+            }
+            .whatsapp-btn-green svg, .whatsapp-btn-blue svg, .whatsapp-btn-red svg,
+            .whatsapp-btn-purple svg, .whatsapp-btn-orange svg, .whatsapp-btn-teal svg {
+                width: 14px;
+                height: 14px;
+                margin-right: 4px;
+            }
+            .seo-section {
+                padding: 30px 0;
+            }
+            .seo-content {
+                padding: 0 15px;
+            }
+            .seo-content h2 {
+                font-size: 1.4rem;
+                margin-bottom: 15px;
+                padding-bottom: 10px;
+            }
+            .seo-content h2::after {
+                width: 50px;
+                height: 3px;
+            }
+            .seo-intro {
+                padding: 15px;
+                margin-bottom: 20px;
+            }
+            .seo-intro p {
+                font-size: 0.9rem;
+                line-height: 1.6;
+                margin-bottom: 12px;
+            }
+            .seo-intro p:last-child {
+                margin-bottom: 0;
+            }
+            .seo-content p {
+                font-size: 0.9rem;
+                margin-bottom: 15px;
+                line-height: 1.6;
+            }
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+                margin: 20px 0;
+            }
+            .service-card {
+                padding: 12px;
+            }
+            .service-card .icon {
+                font-size: 1.6rem;
+                margin-bottom: 8px;
+            }
+            .service-card h3 {
+                font-size: 0.95rem;
+                margin-bottom: 6px;
+            }
+            .service-card p {
+                font-size: 0.8rem;
+                line-height: 1.4;
+            }
+        }
+        @media (max-width: 480px) {
+            .catalogue-hero {
+                padding: 170px 0 50px !important;
+            }
+            .catalogue-hero h1 {
+                font-size: 1.8rem;
+            }
+            .catalogue-hero p {
+                font-size: 1rem;
+            }
+            .hero-badge {
+                font-size: 0.75rem;
+                padding: 5px 12px;
+            }
+            .catalogue-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+            .catalogue-item img {
+                height: 140px;
+                padding: 6px;
+            }
+            .catalogue-info {
+                padding: 10px;
+            }
+            .catalogue-info h3 {
+                font-size: 0.9rem;
+                margin-bottom: 5px;
+            }
+            .catalogue-info p {
+                display: none;
+            }
+            .catalogue-badge {
+                font-size: 0.65rem;
+                padding: 3px 8px;
+                margin-top: 5px;
+                margin-bottom: 6px;
+            }
+            .whatsapp-btn-green, .whatsapp-btn-blue, .whatsapp-btn-red,
+            .whatsapp-btn-purple, .whatsapp-btn-orange, .whatsapp-btn-teal {
+                padding: 6px 10px;
+                font-size: 0.75rem;
+            }
+            .whatsapp-btn-green svg, .whatsapp-btn-blue svg, .whatsapp-btn-red svg,
+            .whatsapp-btn-purple svg, .whatsapp-btn-orange svg, .whatsapp-btn-teal svg {
+                width: 12px;
+                height: 12px;
+                margin-right: 3px;
+            }
+            .seo-section {
+                padding: 25px 0;
+            }
+            .seo-content {
+                padding: 0 12px;
+            }
+            .seo-content h2 {
+                font-size: 1.2rem;
+                margin-bottom: 12px;
+                padding-bottom: 8px;
+            }
+            .seo-content h2::after {
+                width: 40px;
+                height: 2px;
+            }
+            .seo-intro {
+                padding: 12px;
+                margin-bottom: 15px;
+            }
+            .seo-intro p {
+                font-size: 0.85rem;
+                line-height: 1.5;
+                margin-bottom: 10px;
+            }
+            .seo-content p {
+                font-size: 0.85rem;
+                margin-bottom: 12px;
+                line-height: 1.5;
+            }
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+                margin: 15px 0;
+            }
+            .service-card {
+                padding: 10px;
+            }
+            .service-card .icon {
+                font-size: 1.4rem;
+                margin-bottom: 6px;
+            }
+            .service-card h3 {
+                font-size: 0.85rem;
+                margin-bottom: 5px;
+            }
+            .service-card p {
+                font-size: 0.75rem;
+                line-height: 1.3;
+            }
         }
     </style>
 </head>
@@ -201,9 +556,11 @@
         <div class="container">
             <div class="nav-wrapper">
                 <div class="logo">
-                    <a href="index.html">
-                        <img src="images/logo-removebg-preview.png" alt="SS Grills Logo" style="height: 60px;">
-                    </a>
+                    <img src="images/logo-removebg-preview.png" alt="SS Grills Logo" class="logo-image">
+                    <div class="logo-text">
+                        <h1>SS GRILLS</h1>
+                        <span>Premium Metal Works</span>
+                    </div>
                 </div>
                 <button class="mobile-menu-toggle" id="mobileMenuToggle">
                     <span></span>
@@ -218,10 +575,10 @@
                         <ul class="dropdown-menu">
                             <li><a href="ss-grills.html">SS Grills Works</a></li>
                             <li><a href="ss-gates.html">Designer SS Gates</a></li>
-                            <li><a href="pvd-gates.html">PVD Coated Gates</a></li>
                             <li><a href="ss-railing.html">SS Railing & Handrails</a></li>
                             <li><a href="pvd-tables.html">PVD Center Tables</a></li>
                             <li><a href="dining-tables.html">SS Dining Tables</a></li>
+                            <li><a href="ss-trolley.html">SS Trolley</a></li>
                         </ul>
                     </li>
                     <li class="has-dropdown">
@@ -229,7 +586,7 @@
                         <ul class="dropdown-menu">
                             <li><a href="glass-railing.html">Glass Railing Systems</a></li>
                             <li><a href="shower-partition.html">Shower & Bathroom Partitions</a></li>
-                            <li><a href="glass-works.html" class="active">Complete Glass Works</a></li>
+                            <li><a href="glass-works.html" class="active">Glass Works</a></li>
                         </ul>
                     </li>
                     <li><a href="products.html">Products</a></li>
@@ -243,8 +600,13 @@
     <!-- Hero Section -->
     <section class="catalogue-hero">
         <div class="container">
-            <h1>Complete Glass Works</h1>
-            <p>Premium Glass Doors, Windows, Partitions & All Glass Solutions in Mumbai & Bangalore | Modern Glass Works 2024</p>
+            <div class="hero-badge">🏆 Expert Glass Solutions Since Years</div>
+            <h1><span class="sparkle">✨</span> Premium Glass Works <span class="sparkle">✨</span></h1>
+            <p>
+                <strong>Toughened Glass Doors</strong> • <strong>Windows</strong> • <strong>Partitions</strong> • <strong>Facades</strong> • <strong>Skylights</strong> • <strong>Pergolas</strong>
+                <br>
+                Modern Glass Solutions Across India | Commercial & Residential Excellence
+            </p>
         </div>
     </section>
 
@@ -253,7 +615,7 @@
         <div class="catalogue-grid">
 
             <div class="catalogue-item">
-                <img src="images/Glass Railing/7befa7f15e6519136d84e73c319a0713-removebg-preview.png" alt="Glass Doors Mumbai">
+                <img src="images/Glass works/Glass doors.jpg" alt="Glass Doors Mumbai">
                 <div class="catalogue-info">
                     <h3>Glass Doors</h3>
                     <p>Premium glass doors for homes and offices. Frameless and framed options available.</p>
@@ -266,12 +628,12 @@
             </div>
 
             <div class="catalogue-item">
-                <img src="images/Glass Railing/0946a71bccf7fda8f033632c906c11b7-removebg-preview.png" alt="Glass Windows Bangalore">
+                <img src="images/Glass works/PVD glass dfoor.jpg" alt="PVD Glass Doors Bangalore">
                 <div class="catalogue-info">
-                    <h3>Glass Windows</h3>
-                    <p>Modern glass window systems with energy-efficient glazing. Custom sizes available.</p>
-                    <span class="catalogue-badge">Energy Efficient</span>
-                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Glass%20Windows*%20from%20your%20Glass%20Works%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-blue" target="_blank">
+                    <h3>PVD Glass Doors</h3>
+                    <p>Luxury PVD coated glass doors with premium hardware. Custom finishes for exclusive projects.</p>
+                    <span class="catalogue-badge">Luxury</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*PVD%20Glass%20Doors*%20from%20your%20Glass%20Works%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-blue" target="_blank">
                         <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
                         Get Quote on WhatsApp
                     </a>
@@ -279,7 +641,7 @@
             </div>
 
             <div class="catalogue-item">
-                <img src="images/Glass Railing/10fa0e6007b143eae105cb065b6d01ce-removebg-preview.png" alt="Office Glass Partitions India">
+                <img src="images/Glass works/office partion.jpg" alt="Office Glass Partitions India">
                 <div class="catalogue-info">
                     <h3>Office Glass Partitions</h3>
                     <p>Professional glass partitions for modern offices. Creates open yet defined spaces.</p>
@@ -292,7 +654,7 @@
             </div>
 
             <div class="catalogue-item">
-                <img src="images/Glass Railing/94dd3ec87e9a55fee010b3f9d4301bd3-removebg-preview.png" alt="Glass Facades Mumbai">
+                <img src="images/Glass works/Glass Facades 1.jpg" alt="Glass Facades Mumbai">
                 <div class="catalogue-info">
                     <h3>Glass Facades</h3>
                     <p>Stunning glass facade systems for commercial buildings. Modern architectural solutions.</p>
@@ -305,12 +667,12 @@
             </div>
 
             <div class="catalogue-item">
-                <img src="images/Glass Railing/7befa7f15e6519136d84e73c319a0713-removebg-preview.png" alt="Sliding Glass Doors Bangalore">
+                <img src="images/Glass works/Glass Facades2.jpg" alt="Glass Facades Type 2 Bangalore">
                 <div class="catalogue-info">
-                    <h3>Sliding Glass Doors</h3>
-                    <p>Space-saving sliding glass door systems. Perfect for balconies and patios.</p>
-                    <span class="catalogue-badge">Space Saver</span>
-                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Sliding%20Glass%20Doors*%20from%20your%20Glass%20Works%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-orange" target="_blank">
+                    <h3>Glass Facades - Advanced Design</h3>
+                    <p>Modern glass facade systems with structural glazing. Contemporary architectural excellence.</p>
+                    <span class="catalogue-badge">Premium</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Glass%20Facades%20Advanced%20Design*%20from%20your%20Glass%20Works%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-orange" target="_blank">
                         <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
                         Inquire on WhatsApp
                     </a>
@@ -318,7 +680,7 @@
             </div>
 
             <div class="catalogue-item">
-                <img src="images/Glass Railing/0946a71bccf7fda8f033632c906c11b7-removebg-preview.png" alt="Glass Canopies India">
+                <img src="images/Glass works/Glass canopies.jpg" alt="Glass Canopies India">
                 <div class="catalogue-info">
                     <h3>Glass Canopies</h3>
                     <p>Elegant glass canopies for entrances and outdoor spaces. Weather protection with style.</p>
@@ -331,12 +693,12 @@
             </div>
 
             <div class="catalogue-item">
-                <img src="images/Glass Railing/10fa0e6007b143eae105cb065b6d01ce-removebg-preview.png" alt="Frameless Glass Systems Mumbai">
+                <img src="images/Glass works/Glass skylite.jpg" alt="Glass Skylights Mumbai">
                 <div class="catalogue-info">
-                    <h3>Frameless Glass Systems</h3>
-                    <p>Modern frameless glass systems for contemporary spaces. Minimal hardware, maximum impact.</p>
-                    <span class="catalogue-badge">Modern</span>
-                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Frameless%20Glass%20Systems*%20from%20your%20Glass%20Works%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-green" target="_blank">
+                    <h3>Glass Skylights</h3>
+                    <p>Natural light solutions with glass skylights. Modern glass roofing systems for homes and offices.</p>
+                    <span class="catalogue-badge">Natural Light</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Glass%20Skylights*%20from%20your%20Glass%20Works%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-green" target="_blank">
                         <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
                         WhatsApp Inquiry
                     </a>
@@ -344,12 +706,12 @@
             </div>
 
             <div class="catalogue-item">
-                <img src="images/Glass Railing/94dd3ec87e9a55fee010b3f9d4301bd3-removebg-preview.png" alt="Glass Balustrades Bangalore">
+                <img src="images/Glass works/Glass skylite2.jpg" alt="Modern Glass Skylights Bangalore">
                 <div class="catalogue-info">
-                    <h3>Glass Balustrades</h3>
-                    <p>Premium glass balustrades for staircases and balconies. Safety meets aesthetics.</p>
-                    <span class="catalogue-badge">Safety</span>
-                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Glass%20Balustrades*%20from%20your%20Glass%20Works%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-blue" target="_blank">
+                    <h3>Modern Glass Skylights</h3>
+                    <p>Contemporary skylight designs with toughened glass. Energy-efficient natural lighting solutions.</p>
+                    <span class="catalogue-badge">Modern</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Modern%20Glass%20Skylights*%20from%20your%20Glass%20Works%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-blue" target="_blank">
                         <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
                         Get Quote on WhatsApp
                     </a>
@@ -357,12 +719,12 @@
             </div>
 
             <div class="catalogue-item">
-                <img src="images/Glass Railing/7befa7f15e6519136d84e73c319a0713-removebg-preview.png" alt="Custom Glass Solutions India">
+                <img src="images/Glass works/Slope skylite.jpg" alt="Slope Glass Skylights India">
                 <div class="catalogue-info">
-                    <h3>Custom Glass Solutions</h3>
-                    <p>Fully customizable glass solutions for unique projects. Tailored to your vision.</p>
-                    <span class="catalogue-badge">Custom</span>
-                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Custom%20Glass%20Solutions*%20from%20your%20Glass%20Works%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-red" target="_blank">
+                    <h3>Slope Glass Skylights</h3>
+                    <p>Angled glass skylight systems for sloped roofs. Perfect for architectural lighting requirements.</p>
+                    <span class="catalogue-badge">Architectural</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Slope%20Glass%20Skylights*%20from%20your%20Glass%20Works%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-red" target="_blank">
                         <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
                         Chat with Us
                     </a>
@@ -370,14 +732,79 @@
             </div>
 
             <div class="catalogue-item">
-                <img src="images/Glass Railing/0946a71bccf7fda8f033632c906c11b7-removebg-preview.png" alt="Designer Glass Works Mumbai">
+                <img src="images/Glass works/Glass pergola 2.jpg" alt="Glass Pergolas Mumbai">
                 <div class="catalogue-info">
-                    <h3>Designer Glass Works</h3>
-                    <p>Exclusive designer glass installations. Premium quality for luxury projects.</p>
+                    <h3>Glass Pergolas</h3>
+                    <p>Elegant glass pergola systems for outdoor spaces. Weather-resistant luxury outdoor installations.</p>
                     <span class="catalogue-badge">Luxury</span>
-                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Designer%20Glass%20Works*%20from%20your%20Glass%20Works%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-purple" target="_blank">
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Glass%20Pergolas*%20from%20your%20Glass%20Works%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-purple" target="_blank">
                         <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
                         WhatsApp Now
+                    </a>
+                </div>
+            </div>
+
+            <div class="catalogue-item">
+                <img src="images/Glass works/Glass Facades 3.jpg" alt="Glass Facades Type 3 Bangalore">
+                <div class="catalogue-info">
+                    <h3>Glass Facades - Commercial Grade</h3>
+                    <p>High-performance glass facade systems for large commercial buildings. Professional installation.</p>
+                    <span class="catalogue-badge">Commercial</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Glass%20Facades%20Commercial%20Grade*%20from%20your%20Glass%20Works%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-orange" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Inquire on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <div class="catalogue-item">
+                <img src="images/Glass works/Glass skylite 3.jpg" alt="Glass Skylight Design 3 India">
+                <div class="catalogue-info">
+                    <h3>Premium Glass Skylights</h3>
+                    <p>Premium skylight installations with advanced glazing. Custom designs for unique spaces.</p>
+                    <span class="catalogue-badge">Premium</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Premium%20Glass%20Skylights*%20from%20your%20Glass%20Works%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-teal" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Ask on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <div class="catalogue-item">
+                <img src="images/Glass works/Glass skylite5.jpg" alt="Advanced Glass Skylights Mumbai">
+                <div class="catalogue-info">
+                    <h3>Advanced Glass Skylights</h3>
+                    <p>State-of-the-art glass skylight systems with thermal insulation. Energy-efficient designs.</p>
+                    <span class="catalogue-badge">Advanced</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Advanced%20Glass%20Skylights*%20from%20your%20Glass%20Works%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-green" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        WhatsApp Inquiry
+                    </a>
+                </div>
+            </div>
+
+            <div class="catalogue-item">
+                <img src="images/Glass works/Glass bend and black skylite].jpg" alt="Bent Glass Black Skylight Bangalore">
+                <div class="catalogue-info">
+                    <h3>Bent Glass with Black Frame Skylight</h3>
+                    <p>Curved glass skylight with black framing. Modern design with architectural appeal.</p>
+                    <span class="catalogue-badge">Designer</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Bent%20Glass%20Black%20Skylight*%20from%20your%20Glass%20Works%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-blue" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Get Quote on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <div class="catalogue-item">
+                <img src="images/Glass works/Glass bend and clear glass skylte.jpg" alt="Bent Glass Clear Skylight India">
+                <div class="catalogue-info">
+                    <h3>Bent Glass with Clear Skylight</h3>
+                    <p>Curved clear glass skylight system. Maximum natural light with elegant curved design.</p>
+                    <span class="catalogue-badge">Elegant</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Bent%20Glass%20Clear%20Skylight*%20from%20your%20Glass%20Works%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-red" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Chat with Us
                     </a>
                 </div>
             </div>
@@ -388,28 +815,63 @@
     <!-- SEO Content Section -->
     <section class="seo-section">
         <div class="container seo-content">
-            <h2>Complete Glass Works in Mumbai & Bangalore - Shree Ashish Industries</h2>
-            <p>Experience comprehensive <strong>glass solutions from Shree Ashish Industries</strong>. Our <strong>complete glass works in Mumbai and Bangalore</strong> cover everything from doors and windows to facades and partitions.</p>
+            <h2>Premium Glass Works in India - Shree Ashish Industries</h2>
 
-            <p>Our <strong>glass works 2024 portfolio</strong> includes residential, commercial, and architectural glass solutions. From <strong>frameless glass doors</strong> to <strong>office partitions</strong>, from <strong>glass facades</strong> to <strong>custom installations</strong>, we handle it all.</p>
+            <div class="seo-intro">
+                <p>Experience world-class <strong>glass solutions from Shree Ashish Industries</strong>. Our <strong>premium glass works in India</strong> cover everything from toughened glass doors and windows to modern facades and elegant partitions.</p>
+
+                <p>Our <strong>glass works portfolio</strong> includes residential, commercial, and architectural glass solutions. From <strong>frameless glass doors</strong> to <strong>office partitions</strong>, from <strong>glass facades</strong> to <strong>custom installations</strong> - we deliver excellence in every project.</p>
+            </div>
 
             <h2>Our Glass Works Services</h2>
-            <p>✓ <strong>Glass Doors & Windows</strong> - Residential and commercial<br>
-            ✓ <strong>Office Partitions</strong> - Modern workspace solutions<br>
-            ✓ <strong>Glass Facades</strong> - Architectural glazing systems<br>
-            ✓ <strong>Shower Enclosures</strong> - Bathroom glass solutions<br>
-            ✓ <strong>Glass Railing</strong> - Safety and aesthetics combined<br>
-            ✓ <strong>Custom Projects</strong> - Unique glass installations</p>
 
-            <p>From <strong>luxury glass doors for villas</strong> to <strong>commercial glass facades</strong>, from <strong>office glass partitions</strong> to <strong>custom architectural glass</strong>, we deliver excellence. Serving Mumbai, Bangalore, and across India since 1984.</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <span class="icon">🚪</span>
+                    <h3>Glass Doors & Windows</h3>
+                    <p>Residential and commercial glass door and window solutions with premium hardware and toughened safety glass.</p>
+                </div>
+
+                <div class="service-card">
+                    <span class="icon">🏢</span>
+                    <h3>Office Partitions</h3>
+                    <p>Modern workspace solutions with frameless and framed glass partitions for open yet defined office spaces.</p>
+                </div>
+
+                <div class="service-card">
+                    <span class="icon">🏗️</span>
+                    <h3>Glass Facades</h3>
+                    <p>Architectural glazing systems for commercial buildings with structural glass and modern design aesthetics.</p>
+                </div>
+
+                <div class="service-card">
+                    <span class="icon">🚿</span>
+                    <h3>Shower Enclosures</h3>
+                    <p>Bathroom glass solutions including frameless shower doors, partitions, and custom enclosures.</p>
+                </div>
+
+                <div class="service-card">
+                    <span class="icon">🪜</span>
+                    <h3>Glass Railing</h3>
+                    <p>Safety and aesthetics combined with toughened glass railing systems for stairs, balconies, and terraces.</p>
+                </div>
+
+                <div class="service-card">
+                    <span class="icon">☀️</span>
+                    <h3>Glass Skylights</h3>
+                    <p>Natural lighting solutions with curved, flat, and slope glass skylights for residential and commercial spaces.</p>
+                </div>
+            </div>
+
+            <p style="margin-top: 40px;">From <strong>luxury glass doors for villas</strong> to <strong>commercial glass facades</strong>, from <strong>office glass partitions</strong> to <strong>custom architectural glass</strong>, we deliver excellence. <strong>Serving India</strong> with premium glass solutions that combine beauty, safety, and durability.</p>
         </div>
     </section>
 
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
-            <h2>Ready for Complete Glass Solutions?</h2>
-            <p>Get a free consultation and quote today!</p>
+            <h2>Ready for Premium Glass Solutions?</h2>
+            <p>Transform your space with our expert glass works - Get a free consultation and quote today!</p>
             <div class="cta-buttons">
                 <a href="contact.html" class="cta-btn cta-btn-primary">Get Free Quote</a>
                 <a href="tel:+919844010835" class="cta-btn cta-btn-secondary">Call: +91 98440 10835</a>
@@ -417,13 +879,27 @@
         </div>
     </section>
 
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/918951845341?text=Hello! I'm interested in your SS Grills services" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.737 5.607 2.137 8.048l-2.137 7.952 7.933-2.127c2.42 1.37 5.173 2.127 8.067 2.127 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.467c-2.482 0-4.908-0.646-7.07-1.87l-0.507-0.292-4.713 1.262 1.262-4.669-0.292-0.508c-1.207-2.100-1.847-4.507-1.847-6.924 0-7.435 6.050-13.485 13.485-13.485s13.485 6.050 13.485 13.485c0 7.435-6.050 13.485-13.485 13.485zM21.960 18.828c-0.305-0.153-1.802-0.889-2.082-0.991s-0.483-0.153-0.686 0.153c-0.203 0.305-0.788 0.991-0.966 1.194s-0.356 0.230-0.661 0.077c-0.305-0.153-1.288-0.475-2.454-1.513-0.908-0.809-1.521-1.809-1.699-2.114s-0.018-0.470 0.134-0.622c0.138-0.137 0.305-0.356 0.458-0.534s0.203-0.305 0.305-0.508c0.102-0.203 0.051-0.381-0.025-0.534s-0.686-1.653-0.940-2.263c-0.248-0.594-0.499-0.513-0.686-0.522-0.178-0.008-0.381-0.010-0.584-0.010s-0.533 0.076-0.813 0.381c-0.280 0.305-1.067 1.042-1.067 2.542s1.093 2.948 1.245 3.151c0.153 0.203 2.146 3.278 5.199 4.596 0.726 0.313 1.293 0.500 1.735 0.640 0.729 0.232 1.393 0.199 1.918 0.121 0.585-0.087 1.802-0.737 2.056-1.447s0.254-1.321 0.178-1.447c-0.076-0.127-0.280-0.203-0.584-0.356z"/>
+        </svg>
+    </a>
+
+    <!-- Floating Call Button -->
+    <a href="tel:+918951845341" class="call-float" aria-label="Call Us">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+        </svg>
+    </a>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-col">
-                    <h3>\ud83c\udfed SS Grills</h3>
-                    <p>Premium stainless steel works and fabrication services with ultimate finishing and quality since 1984.</p>
+                    <h3>🏭 SS Grills</h3>
+                    <p>Premium stainless steel works and fabrication services with ultimate finishing and quality .</p>
                     <div style="margin-top: 20px;">
                         <div style="display: inline-flex; gap: 12px; flex-wrap: wrap;">
                             <a href="https://wa.me/918951845341" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: linear-gradient(135deg, #25D366 0%, #128C7E 100%); border-radius: 50%; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);" onmouseover="this.style.transform='translateY(-3px) scale(1.1)'; this.style.boxShadow='0 6px 20px rgba(37, 211, 102, 0.4)';" onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 4px 15px rgba(37, 211, 102, 0.3)';">
@@ -458,20 +934,21 @@
                         <li><a href="glass-railing.html">Glass Railing</a></li>
                         <li><a href="pvd-tables.html">PVD Tables</a></li>
                         <li><a href="dining-tables.html">Dining Tables</a></li>
+                        <li><a href="ss-trolley.html">SS Trolley</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Contact Us</h4>
-                    <p>\ud83d\udccd <strong>Shree Ashish Industries</strong></p>
-                    <p>#37, 3rd Cross, Magadi Road<br>Bangalore, Karnataka - 560023</p>
-                    <p>\ud83d\udce7 <a href="mailto:infodia@grillswala.com">infodia@grillswala.com</a></p>
-                    <p>\ud83d\udce7 <a href="mailto:shree.ashishindustries@gmail.com">shree.ashishindustries@gmail.com</a></p>
-                    <p>\ud83d\udcde <a href="tel:+918951845341">+91 8951845341</a></p>
-                    <p>\ud83d\udcde <a href="tel:+919844010835">+91 9844010835</a></p>
+                    <p>📍 <strong>Shree Ashish Industries</strong></p>
+                    <p>#19, 3rd Cross, Left Side, Magadi Road<br>Bangalore - 560023</p>
+                    <p>📧 <a href="mailto:infodia@grillswala.com">infodia@grillswala.com</a></p>
+                    <p>📧 <a href="mailto:shree.ashishindustries@gmail.com">shree.ashishindustries@gmail.com</a></p>
+                    <p>📞 <a href="tel:+918951845341">+91 8951845341</a></p>
+                    <p>📞 <a href="tel:+919844010835">+91 9844010835</a></p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 SS Grills - Shree Ashish Industries. All rights reserved. | Designed with \u2764\ufe0f in Bangalore | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+                <p>&copy; SS Grills - Shree Ashish Industries. All rights reserved. | Designed with ❤️ in Bangalore | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
             </div>
         </div>
     </footer>

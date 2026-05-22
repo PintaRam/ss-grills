@@ -1,0 +1,35 @@
+# robots.txt for SS Grills - Shree Ashish Industries
+# www.grillswala.com
+
+User-agent: *
+Allow: /
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Disallow admin or temporary files
+Disallow: /cgi-bin/
+Disallow: /*.php$
+Disallow: /admin/
+
+# Sitemap location
+Sitemap: https://www.grillswala.com/sitemap.xml
+
+# Crawl-delay (optional - remove if causing issues)
+Crawl-delay: 1
+
+# Allow all major search engine bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Yahoo! Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
