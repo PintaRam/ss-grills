@@ -7,6 +7,7 @@
 
 html, body {
     overflow-x: hidden !important;
+    overflow-y: auto !important;
     max-width: 100vw !important;
     width: 100%;
     margin: 0;
@@ -78,8 +79,7 @@ html, body {
     color: var(--white);
     margin-top: 70px;
     position: relative;
-    overflow-x: hidden;
-    overflow-y: visible;
+    overflow: hidden;
     max-width: 100vw;
 }
 
@@ -110,8 +110,7 @@ html, body {
 
 .product-section {
     padding: 80px 0;
-    overflow-x: hidden;
-    overflow-y: visible;
+    overflow: visible;
 }
 
 .alt-bg {
@@ -125,8 +124,7 @@ html, body {
 
 section {
     max-width: 100vw !important;
-    overflow-x: hidden !important;
-    overflow-y: visible !important;
+    overflow: visible !important;
 }
 
 .section-header {
@@ -303,11 +301,11 @@ section {
 
 .container {
     max-width: 100%;
-    overflow-x: hidden;
 }
 
 body {
     overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .product-badge {
