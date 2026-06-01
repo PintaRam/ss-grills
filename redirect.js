@@ -1,6 +1,6 @@
-// Automatic URL cleanup - Remove .html from browser URL bar
+// Automatic URL cleanup - Remove .html and replace hyphens with spaces
 // This works on ALL hosting platforms (GitHub Pages, Netlify, Apache, etc.)
-// Version 3 - Updated to handle index.html redirect to root
+// Version 4 - Updated to show spaces instead of hyphens in URL
 
 (function() {
     // Get current URL
@@ -26,11 +26,29 @@
         // Remove .html from URL
         var cleanURL = currentURL.replace('.html', '');
 
+        // Replace hyphens with spaces in the URL path
+        // This will show as %20 in the browser but display nicely
+        cleanURL = cleanURL.replace(/-/g, ' ');
+
         // Update browser URL without reloading page
         if (window.history && window.history.pushState) {
             try {
                 window.history.pushState({}, document.title, cleanURL);
-                console.log('URL cleaned:', cleanURL);
+                console.log('URL cleaned with spaces:', cleanURL);
+            } catch(e) {
+                console.error('Could not update URL:', e);
+            }
+        }
+    }
+    // If URL already has no .html but has hyphens, also convert to spaces
+    else if (currentPath.indexOf('-') !== -1 && currentPath !== '/') {
+        // Replace hyphens with spaces
+        var spacedURL = window.location.origin + currentPath.replace(/-/g, ' ') + window.location.search + window.location.hash;
+
+        if (window.history && window.history.pushState) {
+            try {
+                window.history.pushState({}, document.title, spacedURL);
+                console.log('URL hyphens converted to spaces:', spacedURL);
             } catch(e) {
                 console.error('Could not update URL:', e);
             }
