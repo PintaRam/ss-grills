@@ -1,6 +1,6 @@
-// Automatic URL cleanup - Remove .html and replace hyphens with spaces
+// Automatic URL cleanup - Remove .html and hyphens for clean single-word URLs
 // This works on ALL hosting platforms (GitHub Pages, Netlify, Apache, etc.)
-// Version 4 - Updated to show spaces instead of hyphens in URL
+// Version 5 - Updated to remove hyphens completely (e.g., /ssgrill instead of /ss-grills)
 
 (function() {
     // Get current URL
@@ -26,29 +26,28 @@
         // Remove .html from URL
         var cleanURL = currentURL.replace('.html', '');
 
-        // Replace hyphens with spaces in the URL path
-        // This will show as %20 in the browser but display nicely
-        cleanURL = cleanURL.replace(/-/g, ' ');
+        // Remove hyphens completely to create single-word URLs
+        cleanURL = cleanURL.replace(/-/g, '');
 
         // Update browser URL without reloading page
         if (window.history && window.history.pushState) {
             try {
                 window.history.pushState({}, document.title, cleanURL);
-                console.log('URL cleaned with spaces:', cleanURL);
+                console.log('URL cleaned (no hyphens):', cleanURL);
             } catch(e) {
                 console.error('Could not update URL:', e);
             }
         }
     }
-    // If URL already has no .html but has hyphens, also convert to spaces
+    // If URL already has no .html but has hyphens, remove them
     else if (currentPath.indexOf('-') !== -1 && currentPath !== '/') {
-        // Replace hyphens with spaces
-        var spacedURL = window.location.origin + currentPath.replace(/-/g, ' ') + window.location.search + window.location.hash;
+        // Remove hyphens completely
+        var cleanedURL = window.location.origin + currentPath.replace(/-/g, '') + window.location.search + window.location.hash;
 
         if (window.history && window.history.pushState) {
             try {
-                window.history.pushState({}, document.title, spacedURL);
-                console.log('URL hyphens converted to spaces:', spacedURL);
+                window.history.pushState({}, document.title, cleanedURL);
+                console.log('URL hyphens removed:', cleanedURL);
             } catch(e) {
                 console.error('Could not update URL:', e);
             }
