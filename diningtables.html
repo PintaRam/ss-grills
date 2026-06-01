@@ -12,21 +12,23 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-    <meta name="description" content="Premium Glass Works India | Toughened Glass Doors, Windows, Partitions & Facades | Modern Glass Solutions | Designer Glass Works India | Expert Glass Installations">
-    <parameter name="keywords" content="Glass Works Mumbai, Glass Solutions Bangalore, Glass Doors India, Glass Windows, Glass Partitions, Modern Glass Works, Designer Glass Installations, Toughened Glass">
-    <title>Premium Glass Works India | Toughened Glass Doors Windows Partitions & Facades | Shree Ashish Industries</title>
+    <meta name="description" content="SS Dining Tables India | Premium Stainless Steel Dining Tables | Modern Dining Furniture | Designer SS Tables India | Latest Luxury Dining Tables">
+    <meta name="keywords" content="SS Dining Tables Mumbai, Stainless Steel Dining Tables Bangalore, Modern Dining Tables India, Designer Dining Furniture, Premium SS Tables, Luxury Dining Tables">
+    <title>SS Dining Tables India | Premium Stainless Steel Dining Furniture | Shree Ashish Industries</title>
     <script src="redirect.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mobile-responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         .catalogue-hero {
-            background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
-            padding: 140px 0 100px;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            padding: 100px 20px 60px;
             text-align: center;
             color: white;
             position: relative;
             overflow: hidden;
+            margin-top: 70px;
+            min-height: auto;
         }
         .catalogue-hero::before {
             content: '';
@@ -35,107 +37,50 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background:
-                radial-gradient(circle at 20% 50%, rgba(211, 65, 63, 0.15) 0%, transparent 50%),
-                radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.08) 0%, transparent 50%);
-            animation: pulse 8s ease-in-out infinite;
-        }
-        .catalogue-hero::after {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: repeating-linear-gradient(
-                45deg,
-                transparent,
-                transparent 60px,
-                rgba(255, 255, 255, 0.02) 60px,
-                rgba(255, 255, 255, 0.02) 120px
-            );
-            animation: slide 20s linear infinite;
-        }
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.6; }
-        }
-        @keyframes slide {
-            0% { transform: translate(0, 0); }
-            100% { transform: translate(50px, 50px); }
+            background: url('images/SS PVD Table/SS Table/SS Table 1.jpg') center/cover;
+            opacity: 0.15;
         }
         .catalogue-hero h1 {
-            font-size: 4rem;
+            font-size: 3.5rem;
             font-weight: 700;
-            margin-bottom: 25px;
-            position: relative;
-            z-index: 1;
-            text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
-            letter-spacing: 1px;
-            background: linear-gradient(to right, #fff, #e0e0e0);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            animation: fadeInDown 0.8s ease-out;
-        }
-        .catalogue-hero h1 .sparkle {
-            display: inline-block;
-            animation: sparkle 2s ease-in-out infinite;
-        }
-        @keyframes sparkle {
-            0%, 100% { transform: scale(1); filter: brightness(1); }
-            50% { transform: scale(1.1); filter: brightness(1.3); }
-        }
-        @keyframes fadeInDown {
-            from { opacity: 0; transform: translateY(-30px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .catalogue-hero p {
-            font-size: 1.4rem;
-            margin-bottom: 35px;
-            position: relative;
-            z-index: 1;
-            max-width: 900px;
-            margin-left: auto;
-            margin-right: auto;
-            text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
-            line-height: 1.8;
-            font-weight: 300;
-            animation: fadeInUp 0.8s ease-out 0.2s both;
-        }
-        .catalogue-hero p strong {
-            font-weight: 600;
-            color: #D3413F;
-            text-shadow: 0 0 10px rgba(211, 65, 63, 0.5);
-        }
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .hero-badge {
-            display: inline-block;
-            background: rgba(211, 65, 63, 0.2);
-            border: 2px solid #D3413F;
-            color: white;
-            padding: 8px 20px;
-            border-radius: 25px;
-            font-size: 0.95rem;
-            font-weight: 600;
             margin-bottom: 20px;
             position: relative;
             z-index: 1;
-            animation: fadeIn 0.8s ease-out 0.4s both;
-            box-shadow: 0 0 20px rgba(211, 65, 63, 0.3);
         }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+        .catalogue-hero p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
         }
         .catalogue-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
             gap: 30px;
-            padding: 60px 0;
+            padding: 40px 0 60px;
+        }
+
+        .catalogue-section {
+            padding: 0;
+        }
+
+        .section-heading {
+            text-align: center;
+            margin: 60px 0 40px;
+        }
+
+        .section-heading h2 {
+            font-size: 2.5rem;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+        }
+
+        .section-heading p {
+            font-size: 1.1rem;
+            color: #666;
         }
         .catalogue-item {
             background: white;
@@ -215,104 +160,172 @@
             margin-right: 8px;
         }
         .seo-section {
-            background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
-            padding: 80px 0;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 60px 0;
             position: relative;
-            overflow: hidden;
         }
+
         .seo-section::before {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
-            width: 100%;
-            height: 100%;
-            background:
-                radial-gradient(circle at 10% 20%, rgba(211, 65, 63, 0.05) 0%, transparent 50%),
-                radial-gradient(circle at 90% 80%, rgba(211, 65, 63, 0.03) 0%, transparent 50%);
-            pointer-events: none;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #0891b2 0%, #06b6d4 50%, #0891b2 100%);
         }
+
         .seo-content {
             max-width: 1100px;
             margin: 0 auto;
-            padding: 0 30px;
+            padding: 35px 30px;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 249, 250, 0.95) 100%);
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
             position: relative;
-            z-index: 1;
+            border: 1px solid rgba(0, 0, 0, 0.05);
         }
-        .seo-content h2 {
-            font-size: 2.8rem;
-            margin-bottom: 30px;
-            color: #1a1a1a;
-            font-weight: 700;
-            position: relative;
-            display: inline-block;
-            padding-bottom: 15px;
-        }
-        .seo-content h2::after {
+
+        .seo-content::before {
             content: '';
             position: absolute;
-            bottom: 0;
             left: 0;
-            width: 80px;
-            height: 4px;
-            background: linear-gradient(90deg, #D3413F, transparent);
-            border-radius: 2px;
+            top: 0;
+            bottom: 0;
+            width: 5px;
+            background: linear-gradient(135deg, #0891b2 0%, #06b6d4 100%);
+            border-radius: 20px 0 0 20px;
         }
-        .seo-content h2:first-child {
-            margin-top: 0;
-        }
-        .seo-intro {
-            background: white;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-            margin-bottom: 40px;
-            border-left: 5px solid #D3413F;
-        }
-        .seo-content p {
-            font-size: 1.15rem;
-            line-height: 1.9;
-            color: #444;
+
+        .seo-content h2 {
+            font-size: 2.2rem;
             margin-bottom: 25px;
-        }
-        .seo-content p strong {
-            color: #D3413F;
-            font-weight: 600;
-        }
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-            margin: 30px 0;
-        }
-        .service-card {
-            background: white;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-            transition: all 0.3s ease;
-            border-top: 3px solid #D3413F;
-        }
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(211, 65, 63, 0.15);
-        }
-        .service-card .icon {
-            font-size: 2.5rem;
-            margin-bottom: 15px;
-            display: block;
-        }
-        .service-card h3 {
-            font-size: 1.3rem;
-            margin-bottom: 10px;
             color: #1a1a1a;
-            font-weight: 600;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            line-height: 1.3;
         }
-        .service-card p {
-            font-size: 1rem;
-            color: #666;
-            margin: 0;
-            line-height: 1.6;
+
+        .seo-content p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        .seo-content strong {
+            color: #333;
+            font-weight: 400;
+        }
+
+        .intro-text {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .intro-text strong {
+            color: #333;
+            font-weight: 400;
+        }
+
+        /* Section Badge */
+        .section-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+            color: #1a1a1a;
+            padding: 6px 20px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+        }
+
+        /* Grade Badges */
+        .grade-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #0891b2 0%, #06b6d4 100%);
+            color: white;
+            padding: 4px 14px;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            font-weight: 800;
+            letter-spacing: 0.8px;
+            margin: 0 4px;
+            box-shadow: 0 4px 12px rgba(8, 145, 178, 0.3);
+            border: 2px solid rgba(6, 182, 212, 0.3);
+        }
+
+        /* Features Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 20px;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 249, 250, 0.9) 100%);
+            border-radius: 15px;
+            border: 2px solid rgba(8, 145, 178, 0.1);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(135deg, #0891b2 0%, #06b6d4 100%);
+            transform: scaleY(0);
+            transition: transform 0.4s ease;
+        }
+
+        .feature-item:hover::before {
+            transform: scaleY(1);
+        }
+
+        .feature-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(8, 145, 178, 0.2);
+            border-color: rgba(6, 182, 212, 0.3);
+        }
+
+        .feature-icon {
+            font-size: 32px;
+            flex-shrink: 0;
+            filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.1));
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .feature-item:hover .feature-icon {
+            transform: scale(1.2) rotate(5deg);
+        }
+
+        .feature-text {
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: #555;
+        }
+
+        .feature-text strong {
+            display: block;
+            color: #1a1a1a;
+            font-size: 1.05rem;
+            margin-bottom: 3px;
+            letter-spacing: 0.3px;
+            font-weight: 900;
         }
         .cta-section {
             background: linear-gradient(135deg, #D3413F 0%, #a32f2d 100%);
@@ -355,28 +368,163 @@
             background: white;
             color: #D3413F;
         }
-        @media (max-width: 768px) {
+        @media (max-width: 992px) {
             .catalogue-hero {
-                padding: 180px 0 60px !important;
+                padding: 90px 20px 60px !important;
+                margin-top: 70px !important;
             }
             .catalogue-hero h1 {
-                font-size: 2.2rem;
-                letter-spacing: 0.5px;
+                font-size: 2rem !important;
             }
             .catalogue-hero p {
                 font-size: 1.1rem;
-                line-height: 1.6;
             }
-            .hero-badge {
-                font-size: 0.85rem;
-                padding: 6px 15px;
+        }
+
+        @media (max-width: 768px) {
+            .catalogue-hero {
+                padding: 80px 15px 40px !important;
+                min-height: auto !important;
+            }
+            .catalogue-hero h1 {
+                font-size: 1.5rem !important;
+                margin-bottom: 12px !important;
+                line-height: 1.3 !important;
+            }
+            .catalogue-hero p {
+                font-size: 0.9rem;
+                margin-bottom: 20px !important;
+                line-height: 1.5;
             }
             .catalogue-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 12px;
+                grid-template-columns: repeat(2, 1fr) !important;
+                gap: 15px;
+                padding: 30px 0 40px !important;
+            }
+            .catalogue-item {
+                border-radius: 10px;
             }
             .catalogue-item img {
-                height: 160px;
+                height: 140px;
+                padding: 10px;
+            }
+            .catalogue-info {
+                padding: 15px;
+            }
+            .catalogue-info h3 {
+                font-size: 1.05rem;
+                margin-bottom: 8px;
+            }
+            .catalogue-info p {
+                font-size: 0.8rem;
+                line-height: 1.4;
+                margin-bottom: 10px;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+            .catalogue-badge {
+                font-size: 0.7rem;
+                padding: 3px 10px;
+                margin-top: 5px;
+            }
+            .whatsapp-btn-green, .whatsapp-btn-blue, .whatsapp-btn-red,
+            .whatsapp-btn-purple, .whatsapp-btn-orange, .whatsapp-btn-teal {
+                padding: 10px 12px;
+                font-size: 0.8rem;
+                margin-top: 10px;
+            }
+            .whatsapp-btn-green svg, .whatsapp-btn-blue svg, .whatsapp-btn-red svg,
+            .whatsapp-btn-purple svg, .whatsapp-btn-orange svg, .whatsapp-btn-teal svg {
+                width: 16px;
+                height: 16px;
+                margin-right: 6px;
+            }
+            .section-heading {
+                margin: 35px 0 25px;
+            }
+            .section-heading h2 {
+                font-size: 1.5rem !important;
+                margin-bottom: 8px;
+            }
+            .section-heading p {
+                font-size: 0.9rem !important;
+                padding: 0 10px;
+            }
+            .seo-section {
+                padding: 40px 0;
+            }
+            .seo-content {
+                padding: 25px 15px;
+                border-radius: 15px;
+                margin: 0 15px;
+            }
+            .seo-content::before {
+                width: 3px;
+            }
+            .section-badge {
+                font-size: 0.75rem;
+                padding: 5px 15px;
+                margin-bottom: 15px;
+            }
+            .seo-content h2 {
+                font-size: 1.4rem;
+                margin-bottom: 15px;
+                letter-spacing: 0.5px;
+                line-height: 1.3;
+            }
+            .intro-text {
+                font-size: 0.95rem;
+                line-height: 1.7;
+                margin-bottom: 20px;
+                color: #444;
+            }
+            .grade-badge {
+                font-size: 0.9rem;
+                padding: 2px 10px;
+                margin: 0 2px;
+            }
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+                margin-top: 20px;
+            }
+            .feature-item {
+                padding: 15px;
+                gap: 12px;
+            }
+            .feature-icon {
+                font-size: 24px;
+            }
+            .feature-text {
+                font-size: 0.85rem;
+                line-height: 1.4;
+            }
+            .feature-text strong {
+                font-size: 0.9rem;
+                margin-bottom: 2px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .catalogue-hero {
+                padding: 70px 12px 30px !important;
+            }
+            .catalogue-hero h1 {
+                font-size: 1.3rem !important;
+                margin-bottom: 10px !important;
+            }
+            .catalogue-hero p {
+                font-size: 0.85rem;
+                line-height: 1.4;
+            }
+            .catalogue-grid {
+                gap: 12px;
+                padding: 25px 0 35px !important;
+            }
+            .catalogue-item img {
+                height: 130px;
                 padding: 8px;
             }
             .catalogue-info {
@@ -387,175 +535,98 @@
                 margin-bottom: 6px;
             }
             .catalogue-info p {
-                display: none;
+                font-size: 0.75rem;
+                line-height: 1.3;
+                margin-bottom: 8px;
+                -webkit-line-clamp: 2;
             }
             .catalogue-badge {
-                font-size: 0.7rem;
-                padding: 3px 10px;
-                margin-top: 6px;
-                margin-bottom: 8px;
+                font-size: 0.65rem;
+                padding: 2px 8px;
             }
             .whatsapp-btn-green, .whatsapp-btn-blue, .whatsapp-btn-red,
             .whatsapp-btn-purple, .whatsapp-btn-orange, .whatsapp-btn-teal {
-                padding: 8px 12px;
-                font-size: 0.8rem;
+                padding: 8px 10px;
+                font-size: 0.75rem;
+                margin-top: 8px;
             }
-            .whatsapp-btn-green svg, .whatsapp-btn-blue svg, .whatsapp-btn-red svg,
-            .whatsapp-btn-purple svg, .whatsapp-btn-orange svg, .whatsapp-btn-teal svg {
-                width: 14px;
-                height: 14px;
-                margin-right: 4px;
+            .section-heading {
+                margin: 25px 0 20px;
+            }
+            .section-heading h2 {
+                font-size: 1.3rem !important;
+                margin-bottom: 6px;
+            }
+            .section-heading p {
+                font-size: 0.8rem !important;
+                padding: 0 8px;
+                line-height: 1.4;
             }
             .seo-section {
                 padding: 30px 0;
             }
             .seo-content {
-                padding: 0 15px;
+                padding: 18px 12px;
+                margin: 0 10px;
+                border-radius: 12px;
             }
-            .seo-content h2 {
-                font-size: 1.4rem;
-                margin-bottom: 15px;
-                padding-bottom: 10px;
+            .seo-content::before {
+                width: 3px;
             }
-            .seo-content h2::after {
-                width: 50px;
-                height: 3px;
-            }
-            .seo-intro {
-                padding: 15px;
-                margin-bottom: 20px;
-            }
-            .seo-intro p {
-                font-size: 0.9rem;
-                line-height: 1.6;
-                margin-bottom: 12px;
-            }
-            .seo-intro p:last-child {
-                margin-bottom: 0;
-            }
-            .seo-content p {
-                font-size: 0.9rem;
-                margin-bottom: 15px;
-                line-height: 1.6;
-            }
-            .services-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 12px;
-                margin: 20px 0;
-            }
-            .service-card {
-                padding: 12px;
-            }
-            .service-card .icon {
-                font-size: 1.6rem;
-                margin-bottom: 8px;
-            }
-            .service-card h3 {
-                font-size: 0.95rem;
-                margin-bottom: 6px;
-            }
-            .service-card p {
-                font-size: 0.8rem;
-                line-height: 1.4;
-            }
-        }
-        @media (max-width: 480px) {
-            .catalogue-hero {
-                padding: 170px 0 50px !important;
-            }
-            .catalogue-hero h1 {
-                font-size: 1.8rem;
-            }
-            .catalogue-hero p {
-                font-size: 1rem;
-            }
-            .hero-badge {
-                font-size: 0.75rem;
-                padding: 5px 12px;
-            }
-            .catalogue-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 10px;
-            }
-            .catalogue-item img {
-                height: 140px;
-                padding: 6px;
-            }
-            .catalogue-info {
-                padding: 10px;
-            }
-            .catalogue-info h3 {
-                font-size: 0.9rem;
-                margin-bottom: 5px;
-            }
-            .catalogue-info p {
-                display: none;
-            }
-            .catalogue-badge {
-                font-size: 0.65rem;
-                padding: 3px 8px;
-                margin-top: 5px;
-                margin-bottom: 6px;
-            }
-            .whatsapp-btn-green, .whatsapp-btn-blue, .whatsapp-btn-red,
-            .whatsapp-btn-purple, .whatsapp-btn-orange, .whatsapp-btn-teal {
-                padding: 6px 10px;
-                font-size: 0.75rem;
-            }
-            .whatsapp-btn-green svg, .whatsapp-btn-blue svg, .whatsapp-btn-red svg,
-            .whatsapp-btn-purple svg, .whatsapp-btn-orange svg, .whatsapp-btn-teal svg {
-                width: 12px;
-                height: 12px;
-                margin-right: 3px;
-            }
-            .seo-section {
-                padding: 25px 0;
-            }
-            .seo-content {
-                padding: 0 12px;
-            }
-            .seo-content h2 {
-                font-size: 1.2rem;
-                margin-bottom: 12px;
-                padding-bottom: 8px;
-            }
-            .seo-content h2::after {
-                width: 40px;
-                height: 2px;
-            }
-            .seo-intro {
-                padding: 12px;
-                margin-bottom: 15px;
-            }
-            .seo-intro p {
-                font-size: 0.85rem;
-                line-height: 1.5;
+            .section-badge {
+                font-size: 0.7rem;
+                padding: 4px 12px;
                 margin-bottom: 10px;
             }
-            .seo-content p {
-                font-size: 0.85rem;
-                margin-bottom: 12px;
-                line-height: 1.5;
+            .seo-content h2 {
+                font-size: 1.1rem;
+                margin-bottom: 10px;
+                line-height: 1.3;
             }
-            .services-grid {
+            .intro-text {
+                font-size: 0.85rem;
+                line-height: 1.5;
+                margin-bottom: 16px;
+            }
+            .grade-badge {
+                font-size: 0.8rem;
+                padding: 2px 8px;
+                margin: 0 1px;
+                border-radius: 5px;
+            }
+            .features-grid {
                 grid-template-columns: repeat(2, 1fr);
                 gap: 10px;
-                margin: 15px 0;
+                margin-top: 16px;
             }
-            .service-card {
-                padding: 10px;
+            .feature-item {
+                padding: 10px 8px;
+                gap: 8px;
+                border-radius: 10px;
             }
-            .service-card .icon {
-                font-size: 1.4rem;
-                margin-bottom: 6px;
+            .feature-icon {
+                font-size: 20px;
             }
-            .service-card h3 {
-                font-size: 0.85rem;
-                margin-bottom: 5px;
-            }
-            .service-card p {
-                font-size: 0.75rem;
+            .feature-text {
+                font-size: 0.7rem;
                 line-height: 1.3;
+            }
+            .feature-text strong {
+                font-size: 0.75rem;
+                margin-bottom: 2px;
+            }
+            .feature-text br {
+                display: none;
+            }
+            .cta-section {
+                padding: 40px 0;
+            }
+            .cta-section h2 {
+                font-size: 1.5rem;
+                margin-bottom: 15px;
+            }
+            .cta-section p {
+                font-size: 0.95rem;
             }
         }
     </style>
@@ -586,20 +657,20 @@
                     <li class="has-dropdown">
                         <a href="services.html" class="dropdown-toggle">Metal Works <span class="dropdown-arrow">▼</span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="ss-grills.html">SS Grills Works</a></li>
-                            <li><a href="ss-gates.html">Designer SS Gates</a></li>
-                            <li><a href="ss-railing.html">SS Railing & Handrails</a></li>
-                            <li><a href="pvd-tables.html">PVD Center Tables</a></li>
-                            <li><a href="dining-tables.html">SS Dining Tables</a></li>
-                            <li><a href="ss-trolley.html">SS Trolley</a></li>
+                            <li><a href="ssgrill.html">SS Grills Works</a></li>
+                            <li><a href="ssgates.html">Designer SS Gates</a></li>
+                            <li><a href="ssrailing.html">SS Railing & Handrails</a></li>
+                            <li><a href="pvdtables.html">PVD Center Tables</a></li>
+                            <li><a href="diningtables.html" class="active">SS Dining Tables</a></li>
+                            <li><a href="sstrolley.html">SS Trolley</a></li>
                         </ul>
                     </li>
                     <li class="has-dropdown">
                         <a href="services.html" class="dropdown-toggle">Glass Works <span class="dropdown-arrow">▼</span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="glass-railing.html">Glass Railing Systems</a></li>
-                            <li><a href="shower-partition.html">Shower & Bathroom Partitions</a></li>
-                            <li><a href="glass-works.html" class="active">Glass Works</a></li>
+                            <li><a href="glassrailing.html">Glass Railing Systems</a></li>
+                            <li><a href="showerpartition.html">Shower & Bathroom Partitions</a></li>
+                            <li><a href="glassworks.html">Glass Works</a></li>
                         </ul>
                     </li>
                     <li><a href="products.html">Products</a></li>
@@ -613,13 +684,8 @@
     <!-- Hero Section -->
     <section class="catalogue-hero">
         <div class="container">
-            <div class="hero-badge">🏆 Expert Glass Solutions Since Years</div>
-            <h1><span class="sparkle">✨</span> Premium Glass Works <span class="sparkle">✨</span></h1>
-            <p>
-                <strong>Toughened Glass Doors</strong> • <strong>Windows</strong> • <strong>Partitions</strong> • <strong>Facades</strong> • <strong>Skylights</strong> • <strong>Pergolas</strong>
-                <br>
-                Modern Glass Solutions Across India | Commercial & Residential Excellence
-            </p>
+            <h1>SS Dining Tables</h1>
+            <p>Premium Stainless Steel Dining Tables in India | Modern Dining Furniture | Designer SS Tables India</p>
         </div>
     </section>
 
@@ -627,197 +693,240 @@
     <section class="container">
         <div class="catalogue-grid">
 
+            <!-- Table 1 -->
             <div class="catalogue-item">
-                <img src="images/Glass%20works/Glass doors.jpg" alt="Glass Doors Mumbai">
+                <img src="images/SS PVD Table/SS Table/SS Table 1.jpg" alt="Premium SS Dining Table India">
                 <div class="catalogue-info">
-                    <h3>Glass Doors</h3>
-                    <p>Premium glass doors for homes and offices. Frameless and framed options available.</p>
+                    <h3>Premium SS Dining Table</h3>
+                    <p>High-quality stainless steel dining table with glass top. Perfect for modern dining rooms in India.</p>
                     <span class="catalogue-badge">Premium</span>
-                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Glass%20Doors*%20from%20your%20Glass%20Works%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-green" target="_blank">
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Premium%20SS%20Dining%20Table*%20from%20your%20Dining%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-green" target="_blank">
                         <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
                         WhatsApp Inquiry
                     </a>
                 </div>
             </div>
 
+            <!-- Table 2 -->
             <div class="catalogue-item">
-                <img src="images/Glass%20works/PVD glass dfoor.jpg" alt="PVD Glass Doors Bangalore">
+                <img src="images/SS PVD Table/SS Table/SS 6seater folding type.jpg" alt="6 Seater Folding Dining Table Bangalore India">
                 <div class="catalogue-info">
-                    <h3>PVD Glass Doors</h3>
-                    <p>Luxury PVD coated glass doors with premium hardware. Custom finishes for exclusive projects.</p>
-                    <span class="catalogue-badge">Luxury</span>
-                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*PVD%20Glass%20Doors*%20from%20your%20Glass%20Works%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-blue" target="_blank">
+                    <h3>6-Seater Folding Dining Table</h3>
+                    <p>Space-efficient folding dining table for 6 people. Perfect for families and compact dining spaces with modern design.</p>
+                    <span class="catalogue-badge">Space Saver</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*6-Seater%20Folding%20Dining%20Table*%20from%20your%20Dining%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-blue" target="_blank">
                         <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
                         Get Quote on WhatsApp
                     </a>
                 </div>
             </div>
 
+            <!-- Table 3 -->
             <div class="catalogue-item">
-                <img src="images/Glass%20works/office partion.jpg" alt="Office Glass Partitions India">
+                <img src="images/SS PVD Table/SS Table/SS DInign tbale 4 seater folding type.jpg" alt="4 Seater Folding Dining Table Mumbai">
                 <div class="catalogue-info">
-                    <h3>Office Glass Partitions</h3>
-                    <p>Professional glass partitions for modern offices. Creates open yet defined spaces.</p>
-                    <span class="catalogue-badge">Professional</span>
-                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Office%20Glass%20Partitions*%20from%20your%20Glass%20Works%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-red" target="_blank">
+                    <h3>4-Seater Folding Dining Table</h3>
+                    <p>Compact folding dining table for 4 people. Ideal for small apartments and homes with limited space.</p>
+                    <span class="catalogue-badge">Compact</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*4-Seater%20Folding%20Dining%20Table*%20from%20your%20Dining%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-red" target="_blank">
                         <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
                         Chat with Us
                     </a>
                 </div>
             </div>
 
+            <!-- Table 4 -->
             <div class="catalogue-item">
-                <img src="images/Glass%20works/Glass Facades 1.jpg" alt="Glass Facades Mumbai">
+                <img src="images/SS PVD Table/SS Table/SS DIning tbale with seater.jpg" alt="SS Dining Table with Seating Bangalore">
                 <div class="catalogue-info">
-                    <h3>Glass Facades</h3>
-                    <p>Stunning glass facade systems for commercial buildings. Modern architectural solutions.</p>
-                    <span class="catalogue-badge">Architectural</span>
-                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Glass%20Facades*%20from%20your%20Glass%20Works%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-purple" target="_blank">
+                    <h3>SS Dining Table with Seating</h3>
+                    <p>Complete stainless steel dining table with integrated seating. Modern design for contemporary dining areas.</p>
+                    <span class="catalogue-badge">Complete Set</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*SS%20Dining%20Table%20with%20Seating*%20from%20your%20Dining%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-purple" target="_blank">
                         <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
                         WhatsApp Now
                     </a>
                 </div>
             </div>
 
+            <!-- Table 5 -->
             <div class="catalogue-item">
-                <img src="images/Glass%20works/Glass Facades2.jpg" alt="Glass Facades Type 2 Bangalore">
+                <img src="images/SS PVD Table/SS Table/ss burner table.jpg" alt="Commercial SS Burner Table Mumbai India">
                 <div class="catalogue-info">
-                    <h3>Glass Facades - Advanced Design</h3>
-                    <p>Modern glass facade systems with structural glazing. Contemporary architectural excellence.</p>
-                    <span class="catalogue-badge">Premium</span>
-                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Glass%20Facades%20Advanced%20Design*%20from%20your%20Glass%20Works%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-orange" target="_blank">
-                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-                        Inquire on WhatsApp
-                    </a>
-                </div>
-            </div>
-
-            <div class="catalogue-item">
-                <img src="images/Glass%20works/Glass canopies.jpg" alt="Glass Canopies India">
-                <div class="catalogue-info">
-                    <h3>Glass Canopies</h3>
-                    <p>Elegant glass canopies for entrances and outdoor spaces. Weather protection with style.</p>
-                    <span class="catalogue-badge">Elegant</span>
-                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Glass%20Canopies*%20from%20your%20Glass%20Works%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-teal" target="_blank">
-                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-                        Ask on WhatsApp
-                    </a>
-                </div>
-            </div>
-
-            <div class="catalogue-item">
-                <img src="images/Glass%20works/Glass skylite.jpg" alt="Glass Skylights Mumbai">
-                <div class="catalogue-info">
-                    <h3>Glass Skylights</h3>
-                    <p>Natural light solutions with glass skylights. Modern glass roofing systems for homes and offices.</p>
-                    <span class="catalogue-badge">Natural Light</span>
-                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Glass%20Skylights*%20from%20your%20Glass%20Works%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-green" target="_blank">
-                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-                        WhatsApp Inquiry
-                    </a>
-                </div>
-            </div>
-
-            <div class="catalogue-item">
-                <img src="images/Glass%20works/Glass skylite2.jpg" alt="Modern Glass Skylights Bangalore">
-                <div class="catalogue-info">
-                    <h3>Modern Glass Skylights</h3>
-                    <p>Contemporary skylight designs with toughened glass. Energy-efficient natural lighting solutions.</p>
-                    <span class="catalogue-badge">Modern</span>
-                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Modern%20Glass%20Skylights*%20from%20your%20Glass%20Works%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-blue" target="_blank">
-                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-                        Get Quote on WhatsApp
-                    </a>
-                </div>
-            </div>
-
-            <div class="catalogue-item">
-                <img src="images/Glass%20works/Slope skylite.jpg" alt="Slope Glass Skylights India">
-                <div class="catalogue-info">
-                    <h3>Slope Glass Skylights</h3>
-                    <p>Angled glass skylight systems for sloped roofs. Perfect for architectural lighting requirements.</p>
-                    <span class="catalogue-badge">Architectural</span>
-                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Slope%20Glass%20Skylights*%20from%20your%20Glass%20Works%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-red" target="_blank">
-                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-                        Chat with Us
-                    </a>
-                </div>
-            </div>
-
-            <div class="catalogue-item">
-                <img src="images/Glass%20works/Glass pergola 2.jpg" alt="Glass Pergolas Mumbai">
-                <div class="catalogue-info">
-                    <h3>Glass Pergolas</h3>
-                    <p>Elegant glass pergola systems for outdoor spaces. Weather-resistant luxury outdoor installations.</p>
-                    <span class="catalogue-badge">Luxury</span>
-                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Glass%20Pergolas*%20from%20your%20Glass%20Works%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-purple" target="_blank">
-                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-                        WhatsApp Now
-                    </a>
-                </div>
-            </div>
-
-            <div class="catalogue-item">
-                <img src="images/Glass%20works/Glass Facades 3.jpg" alt="Glass Facades Type 3 Bangalore">
-                <div class="catalogue-info">
-                    <h3>Glass Facades - Commercial Grade</h3>
-                    <p>High-performance glass facade systems for large commercial buildings. Professional installation.</p>
+                    <h3>Commercial SS Burner Table</h3>
+                    <p>Heavy-duty stainless steel burner table for commercial kitchens. Heat-resistant and durable for professional cooking.</p>
                     <span class="catalogue-badge">Commercial</span>
-                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Glass%20Facades%20Commercial%20Grade*%20from%20your%20Glass%20Works%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-orange" target="_blank">
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Commercial%20SS%20Burner%20Table*%20from%20your%20Dining%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-orange" target="_blank">
                         <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
                         Inquire on WhatsApp
                     </a>
                 </div>
             </div>
 
+            <!-- Table 6 -->
             <div class="catalogue-item">
-                <img src="images/Glass%20works/Glass skylite 3.jpg" alt="Glass Skylight Design 3 India">
+                <img src="images/SS PVD Table/SS Table/SS canteen servinf table.jpg" alt="SS Canteen Serving Table Bangalore">
                 <div class="catalogue-info">
-                    <h3>Premium Glass Skylights</h3>
-                    <p>Premium skylight installations with advanced glazing. Custom designs for unique spaces.</p>
-                    <span class="catalogue-badge">Premium</span>
-                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Premium%20Glass%20Skylights*%20from%20your%20Glass%20Works%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-teal" target="_blank">
+                    <h3>SS Canteen Serving Table</h3>
+                    <p>Professional canteen serving table with stainless steel construction. Ideal for cafeterias and institutional kitchens.</p>
+                    <span class="catalogue-badge">Institutional</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*SS%20Canteen%20Serving%20Table*%20from%20your%20Dining%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-teal" target="_blank">
                         <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
                         Ask on WhatsApp
                     </a>
                 </div>
             </div>
 
+            <!-- Table 7 -->
             <div class="catalogue-item">
-                <img src="images/Glass%20works/Glass skylite5.jpg" alt="Advanced Glass Skylights Mumbai">
+                <img src="images/SS PVD Table/SS Table/SS Drawer ana closed slab type table.jpg" alt="SS Drawer Slab Table Mumbai India">
                 <div class="catalogue-info">
-                    <h3>Advanced Glass Skylights</h3>
-                    <p>State-of-the-art glass skylight systems with thermal insulation. Energy-efficient designs.</p>
-                    <span class="catalogue-badge">Advanced</span>
-                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Advanced%20Glass%20Skylights*%20from%20your%20Glass%20Works%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-green" target="_blank">
+                    <h3>SS Drawer Slab Table</h3>
+                    <p>Functional table with drawer and closed slab design. Perfect for kitchens and utility areas with storage needs.</p>
+                    <span class="catalogue-badge">Functional</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*SS%20Drawer%20Slab%20Table*%20from%20your%20Dining%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-green" target="_blank">
                         <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
                         WhatsApp Inquiry
                     </a>
                 </div>
             </div>
 
+            <!-- Table 8 -->
             <div class="catalogue-item">
-                <img src="images/Glass%20works/Glass bend and black skylite].jpg" alt="Bent Glass Black Skylight Bangalore">
+                <img src="images/SS PVD Table/SS Table/SS Drawer type tbal;e.jpg" alt="SS Drawer Type Table Bangalore">
                 <div class="catalogue-info">
-                    <h3>Bent Glass with Black Frame Skylight</h3>
-                    <p>Curved glass skylight with black framing. Modern design with architectural appeal.</p>
-                    <span class="catalogue-badge">Designer</span>
-                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Bent%20Glass%20Black%20Skylight*%20from%20your%20Glass%20Works%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-blue" target="_blank">
+                    <h3>SS Drawer Type Table</h3>
+                    <p>Practical stainless steel table with storage drawers. Combines workspace with storage solutions.</p>
+                    <span class="catalogue-badge">Storage</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*SS%20Drawer%20Type%20Table*%20from%20your%20Dining%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-blue" target="_blank">
                         <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
                         Get Quote on WhatsApp
                     </a>
                 </div>
             </div>
 
+            <!-- Table 9 -->
             <div class="catalogue-item">
-                <img src="images/Glass%20works/Glass bend and clear glass skylte.jpg" alt="Bent Glass Clear Skylight India">
+                <img src="images/SS PVD Table/SS Table/ss double sink.jpg" alt="SS Double Sink Table India Mumbai">
                 <div class="catalogue-info">
-                    <h3>Bent Glass with Clear Skylight</h3>
-                    <p>Curved clear glass skylight system. Maximum natural light with elegant curved design.</p>
-                    <span class="catalogue-badge">Elegant</span>
-                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Bent%20Glass%20Clear%20Skylight*%20from%20your%20Glass%20Works%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-red" target="_blank">
+                    <h3>SS Double Sink Table</h3>
+                    <p>Commercial double sink table with stainless steel construction. Perfect for restaurants and commercial kitchens.</p>
+                    <span class="catalogue-badge">Commercial</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*SS%20Double%20Sink%20Table*%20from%20your%20Dining%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-red" target="_blank">
                         <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
                         Chat with Us
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table 10 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS Table/SS serving table.jpg" alt="SS Serving Table India">
+                <div class="catalogue-info">
+                    <h3>SS Serving Table</h3>
+                    <p>Professional serving table with stainless steel construction. Ideal for restaurants and catering services.</p>
+                    <span class="catalogue-badge">Professional</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*SS%20Serving%20Table*%20from%20your%20Dining%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-purple" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        WhatsApp Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table 11 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS Table/ss serving with heavy wheel.jpg" alt="SS Serving Table with Wheels India">
+                <div class="catalogue-info">
+                    <h3>SS Serving Table with Wheels</h3>
+                    <p>Mobile serving table with heavy-duty wheels. Easy to move and perfect for hospitality industry.</p>
+                    <span class="catalogue-badge">Mobile</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*SS%20Serving%20Table%20with%20Wheels*%20from%20your%20Dining%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-orange" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Inquire on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table 12 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS Table/ss side table.jpg" alt="SS Side Table India">
+                <div class="catalogue-info">
+                    <h3>SS Side Table</h3>
+                    <p>Versatile stainless steel side table. Perfect for living rooms, bedrooms, and office spaces.</p>
+                    <span class="catalogue-badge">Versatile</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*SS%20Side%20Table*%20from%20your%20Dining%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-teal" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Ask on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table 13 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS Table/SS sink type table.jpg" alt="SS Sink Table India">
+                <div class="catalogue-info">
+                    <h3>SS Sink Type Table</h3>
+                    <p>Industrial sink table with stainless steel construction. Perfect for commercial kitchens and laboratories.</p>
+                    <span class="catalogue-badge">Industrial</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*SS%20Sink%20Type%20Table*%20from%20your%20Dining%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-green" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        WhatsApp Inquiry
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table 14 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS Table/SS Slab type table.jpg" alt="SS Slab Table India">
+                <div class="catalogue-info">
+                    <h3>SS Slab Type Table</h3>
+                    <p>Heavy-duty slab type stainless steel table. Durable construction for commercial and industrial use.</p>
+                    <span class="catalogue-badge">Heavy Duty</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*SS%20Slab%20Type%20Table*%20from%20your%20Dining%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-blue" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Get Quote on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table 15 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS Table/SS Slab type.jpg" alt="SS Slab Work Table India">
+                <div class="catalogue-info">
+                    <h3>SS Slab Work Table</h3>
+                    <p>Professional work table with solid slab top. Ideal for food preparation and industrial applications.</p>
+                    <span class="catalogue-badge">Professional</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*SS%20Slab%20Work%20Table*%20from%20your%20Dining%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-red" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Chat with Us
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table 16 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS Table/SS Slab.jpg" alt="Heavy Duty SS Slab Table Bangalore">
+                <div class="catalogue-info">
+                    <h3>Heavy Duty SS Slab Table</h3>
+                    <p>Industrial-grade stainless steel slab table. Robust construction for heavy-duty commercial and industrial applications.</p>
+                    <span class="catalogue-badge">Industrial</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Heavy%20Duty%20SS%20Slab%20Table*%20from%20your%20Dining%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-purple" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        WhatsApp Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table 17 -->
+            <div class="catalogue-item">
+                <img src="images/SS PVD Table/SS Table/SS unique center tabl;e.jpg" alt="Unique SS Center Table India">
+                <div class="catalogue-info">
+                    <h3>Unique SS Center Table</h3>
+                    <p>One-of-a-kind unique stainless steel center table. Custom design for those seeking exclusive furniture pieces.</p>
+                    <span class="catalogue-badge">Exclusive</span>
+                    <a href="https://wa.me/918951845341?text=Hi%2C%20I'm%20interested%20in%20the%20*Unique%20SS%20Center%20Table*%20from%20your%20Dining%20Tables%20collection.%20Please%20share%20more%20details%2C%20pricing%2C%20and%20availability." class="whatsapp-btn-orange" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Inquire on WhatsApp
                     </a>
                 </div>
             </div>
@@ -828,63 +937,44 @@
     <!-- SEO Content Section -->
     <section class="seo-section">
         <div class="container seo-content">
-            <h2>Premium Glass Works in India - Shree Ashish Industries</h2>
+            <div class="section-badge">✨ </div>
+            <h2>SS Dining Tables in India</h2>
+            <p class="intro-text">Looking for premium stainless steel dining tables? We manufacture in <span class="grade-badge">Grade 202, 304</span> & <span class="grade-badge">316</span>. Shree Ashish Industries specializes in modern SS dining tables, custom sizes, and luxury PVD coated dining furniture.</p>
 
-            <div class="seo-intro">
-                <p>Experience world-class <strong>glass solutions from Shree Ashish Industries</strong>. Our <strong>premium glass works in India</strong> cover everything from toughened glass doors and windows to modern facades and elegant partitions.</p>
-
-                <p>Our <strong>glass works portfolio</strong> includes residential, commercial, and architectural glass solutions. From <strong>frameless glass doors</strong> to <strong>office partitions</strong>, from <strong>glass facades</strong> to <strong>custom installations</strong> - we deliver excellence in every project.</p>
-            </div>
-
-            <h2>Our Glass Works Services</h2>
-
-            <div class="services-grid">
-                <div class="service-card">
-                    <span class="icon">🚪</span>
-                    <h3>Glass Doors & Windows</h3>
-                    <p>Residential and commercial glass door and window solutions with premium hardware and toughened safety glass.</p>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <span class="feature-icon">🏆</span>
+                    <span class="feature-text"><strong>Premium SS</strong><br>304 / 316 Stainless Steel</span>
                 </div>
-
-                <div class="service-card">
-                    <span class="icon">🏢</span>
-                    <h3>Office Partitions</h3>
-                    <p>Modern workspace solutions with frameless and framed glass partitions for open yet defined office spaces.</p>
+                <div class="feature-item">
+                    <span class="feature-icon">📏</span>
+                    <span class="feature-text"><strong>Custom Sizes</strong><br>Tailored to Your Space</span>
                 </div>
-
-                <div class="service-card">
-                    <span class="icon">🏗️</span>
-                    <h3>Glass Facades</h3>
-                    <p>Architectural glazing systems for commercial buildings with structural glass and modern design aesthetics.</p>
+                <div class="feature-item">
+                    <span class="feature-icon">🎨</span>
+                    <span class="feature-text"><strong>Modern Designs</strong><br>Contemporary Styles</span>
                 </div>
-
-                <div class="service-card">
-                    <span class="icon">🚿</span>
-                    <h3>Shower Enclosures</h3>
-                    <p>Bathroom glass solutions including frameless shower doors, partitions, and custom enclosures.</p>
+                <div class="feature-item">
+                    <span class="feature-icon">💎</span>
+                    <span class="feature-text"><strong>Durable Build</strong><br>Lasts for Decades</span>
                 </div>
-
-                <div class="service-card">
-                    <span class="icon">🪜</span>
-                    <h3>Glass Railing</h3>
-                    <p>Safety and aesthetics combined with toughened glass railing systems for stairs, balconies, and terraces.</p>
+                <div class="feature-item">
+                    <span class="feature-icon">🔧</span>
+                    <span class="feature-text"><strong>Expert Craft</strong><br>40+ Years Experience</span>
                 </div>
-
-                <div class="service-card">
-                    <span class="icon">☀️</span>
-                    <h3>Glass Skylights</h3>
-                    <p>Natural lighting solutions with curved, flat, and slope glass skylights for residential and commercial spaces.</p>
+                <div class="feature-item">
+                    <span class="feature-icon">✅</span>
+                    <span class="feature-text"><strong>Quality Assured</strong><br>Warranty Backed</span>
                 </div>
             </div>
-
-            <p style="margin-top: 40px;">From <strong>luxury glass doors for villas</strong> to <strong>commercial glass facades</strong>, from <strong>office glass partitions</strong> to <strong>custom architectural glass</strong>, we deliver excellence. <strong>Serving India</strong> with premium glass solutions that combine beauty, safety, and durability.</p>
         </div>
     </section>
 
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
-            <h2>Ready for Premium Glass Solutions?</h2>
-            <p>Transform your space with our expert glass works - Get a free consultation and quote today!</p>
+            <h2>Ready for a Premium SS Dining Table?</h2>
+            <p>Get a free consultation and quote today!</p>
             <div class="cta-buttons">
                 <a href="contact.html" class="cta-btn cta-btn-primary">Get Free Quote</a>
                 <a href="tel:+919844010835" class="cta-btn cta-btn-secondary">Call: +91 98440 10835</a>
@@ -941,13 +1031,13 @@
                 <div class="footer-col">
                     <h4>Our Products</h4>
                     <ul>
-                        <li><a href="ss-grills.html">SS GRILL</a></li>
-                        <li><a href="ss-gates.html">SS Gates</a></li>
-                        <li><a href="ss-railing.html">SS Railing</a></li>
-                        <li><a href="glass-railing.html">Glass Railing</a></li>
-                        <li><a href="pvd-tables.html">PVD Tables</a></li>
-                        <li><a href="dining-tables.html">Dining Tables</a></li>
-                        <li><a href="ss-trolley.html">SS Trolley</a></li>
+                        <li><a href="ssgrill.html">SS GRILL</a></li>
+                        <li><a href="ssgates.html">SS Gates</a></li>
+                        <li><a href="ssrailing.html">SS Railing</a></li>
+                        <li><a href="glassrailing.html">Glass Railing</a></li>
+                        <li><a href="pvdtables.html">PVD Tables</a></li>
+                        <li><a href="diningtables.html">Dining Tables</a></li>
+                        <li><a href="sstrolley.html">SS Trolley</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -961,7 +1051,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; SS Grills - Shree Ashish Industries. All rights reserved. | Designed with ❤️ in Bangalore | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+                <p>&copy; SS Grills - Shree Ashish Industries. All rights reserved. | Designed with \u2764\ufe0f in Bangalore | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
             </div>
         </div>
     </footer>
